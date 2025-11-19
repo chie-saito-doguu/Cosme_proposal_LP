@@ -1,11 +1,7 @@
 import React from 'react';
 import { Sparkles } from 'lucide-react';
 
-interface HeroProps {
-  onCtaClick: () => void;
-}
-
-const Hero: React.FC<HeroProps> = ({ onCtaClick }) => {
+const Hero: React.FC = () => {
   return (
     <section className="relative w-full pt-12 pb-20 md:pt-24 md:pb-32 bg-primary text-white overflow-hidden font-black">
       
@@ -19,9 +15,9 @@ const Hero: React.FC<HeroProps> = ({ onCtaClick }) => {
         </div>
         
         {/* Main Heading - Adjusted font size for mobile to keep it in 3 lines */}
-        <h1 className="text-2xl sm:text-3xl md:text-5xl lg:text-6xl font-black leading-snug tracking-tight mb-8 md:mb-8 drop-shadow-sm">
+        <h1 className="text-2xl sm:text-3xl md:text-5xl lg:text-6xl font-black leading-snug md:leading-relaxed tracking-tight mb-8 md:mb-8 drop-shadow-sm">
           買い足さなくていい。<br />
-          “あなたの可愛い”は、<br />
+          「あなたの可愛い」は、<br />
           自分でアップデートできる。
         </h1>
         
@@ -31,9 +27,9 @@ const Hero: React.FC<HeroProps> = ({ onCtaClick }) => {
           <div className="absolute inset-0 bg-black/20 blur-3xl transform translate-y-10 rounded-full"></div>
           
           <div className="bg-white rounded-[2.5rem] p-3 md:p-4 shadow-2xl rotate-1 md:rotate-0 transition-transform hover:rotate-0">
-             <div className="bg-gray-50 rounded-[2rem] overflow-hidden border border-gray-100 flex flex-col md:flex-row">
+              <div className="bg-gray-50 rounded-[2rem] overflow-hidden border border-gray-100 flex flex-col md:flex-row">
                 {/* Image */}
-                <div className="w-full md:w-1/2 relative h-64 md:h-[400px]">
+                <div className="w-full md:w-1/2 aspect-square relative">
                   <img 
                     src="/hero-image.png" 
                     alt="Makeup Model" 
@@ -46,15 +42,17 @@ const Hero: React.FC<HeroProps> = ({ onCtaClick }) => {
 
                 {/* Content */}
                 <div className="w-full md:w-1/2 p-8 md:p-12 flex flex-col justify-center text-left bg-white text-text-main">
-                   <div className="mb-4">
-                     <span className="inline-block w-12 h-2 bg-primary rounded-full mb-6"></span>
-                     <h3 className="text-3xl md:text-4xl font-black leading-tight mb-4 text-primary">
-                       ラテカラーの目元で<br/>抜け感を演出
-                     </h3>
-                   </div>
-                   
+                <div className="mb-2 md:mb-4">
+                  {/* 上の赤いライン */}
+                  <span className="inline-block w-10 h-2 bg-primary rounded-full mb-3 md:mb-6"></span>
+
+                  {/* タイトル（スマホだけ少し小さく） */}
+                  <h3 className="text-2xl sm:text-3xl md:text-4xl font-black leading-snug md:leading-tight mb-3 md:mb-4 text-primary">
+                    ラテカラーの目元で<br/>抜け感を演出
+                  </h3>
+                </div>
                    <div className="space-y-4 mb-8">
-                     <p className="text-text-main font-black text-xl leading-relaxed">
+                     <p className="text-text-main font-black text-base md:text-xl leading-relaxed">
                        単色のアイシャドウを組み合わせて、知的な大人の雰囲気に。締め色を使わないのがポイント。
                      </p>
                    </div>

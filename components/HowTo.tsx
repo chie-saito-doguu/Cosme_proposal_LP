@@ -9,7 +9,7 @@ const HowTo: React.FC = () => {
             HOW TO USE
           </h2>
           <h3 className="text-5xl md:text-7xl font-black text-black">
-            3ステップで完了
+            3ステップだけ
           </h3>
         </div>
 
@@ -27,7 +27,7 @@ const HowTo: React.FC = () => {
               </p>
             </div>
             {/* Mobile Screen Placeholder - Shortened height (approx 2/3) */}
-            <div className="mt-auto relative w-full max-w-[240px] mx-auto aspect-[9/13] bg-gray-100 rounded-[2rem] border-8 border-gray-50 shadow-inner flex items-center justify-center overflow-hidden">
+             <div className="mt-auto relative w-full max-w-[320px] md:max-w-[360px] mx-auto aspect-[9/13] bg-gray-100 rounded-[2rem] border-8 border-gray-50 shadow-inner overflow-hidden">
               <img 
                 src="/step1.png" 
                 alt="コスメ登録画面" 
@@ -47,7 +47,7 @@ const HowTo: React.FC = () => {
               </p>
             </div>
             {/* Mobile Screen Placeholder - Shortened height (approx 2/3) */}
-            <div className="mt-auto relative w-full max-w-[240px] mx-auto aspect-[9/13] bg-gray-100 rounded-[2rem] border-8 border-gray-50 shadow-inner flex items-center justify-center overflow-hidden">
+            <div className="mt-auto relative w-full max-w-[320px] md:max-w-[360px] mx-auto aspect-[9/13] bg-gray-100 rounded-[2rem] border-8 border-gray-50 shadow-inner overflow-hidden">
               <img 
                 src="/step2.png" 
                 alt="気分入力画面" 
@@ -68,7 +68,7 @@ const HowTo: React.FC = () => {
               </p>
             </div>
             {/* Mobile Screen Placeholder - Shortened height (approx 2/3) */}
-            <div className="mt-auto relative w-full max-w-[240px] mx-auto aspect-[9/13] bg-gray-100 rounded-[2rem] border-8 border-gray-50 shadow-inner flex items-center justify-center overflow-hidden">
+            <div className="mt-auto relative w-full max-w-[320px] md:max-w-[360px] mx-auto aspect-[9/13] bg-gray-100 rounded-[2rem] border-8 border-gray-50 shadow-inner overflow-hidden">
               <img 
                 src="/step3.png" 
                 alt="メイク提案画面" 
