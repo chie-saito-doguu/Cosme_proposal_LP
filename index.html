@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cosme AI | あなたの“可愛い”を、手持ちコスメで。</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Zen+Kaku+Gothic+New:wght@400;500;700;900&display=swap" rel="stylesheet">
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            fontFamily: {
+              sans: ['"Zen Kaku Gothic New"', 'sans-serif'],
+            },
+            colors: {
+              primary: {
+                DEFAULT: '#E11D48', // Rose 600
+                light: '#FB7185',   // Rose 400
+                dark: '#9F1239',    // Rose 800
+              },
+              accent: {
+                DEFAULT: '#4F46E5', // Indigo 600 (Darker/Vivid)
+                light: '#818CF8',
+                dark: '#3730A3',
+              },
+              text: {
+                main: '#111827', // Gray 900 (Almost Black)
+                sub: '#4B5563',  // Gray 600
+              },
+              bg: {
+                DEFAULT: '#FFFFFF',
+                soft: '#FFF1F2',
+              }
+            }
+          }
+        }
+      }
+    </script>
+    <style>
+      body {
+        font-family: 'Zen Kaku Gothic New', sans-serif;
+        scroll-behavior: smooth;
+        color: #111827;
+        background-color: #FFFFFF;
+      }
+      ::selection {
+        background: #4F46E5;
+        color: #FFFFFF;
+      }
+    </style>
+  <script type="importmap">
+{
+  "imports": {
+    "lucide-react": "https://aistudiocdn.com/lucide-react@^0.554.0",
+    "react/": "https://aistudiocdn.com/react@^19.2.0/",
+    "react": "https://aistudiocdn.com/react@^19.2.0",
+    "react-dom/": "https://aistudiocdn.com/react-dom@^19.2.0/",
+    "@google/genai": "https://aistudiocdn.com/@google/genai@^1.30.0"
+  }
+}
+</script>
+</head>
+  <body class="antialiased">
+    <div id="root"></div>
+    <script type="module" src="/index.tsx"></script>
+  </body>
+</html>
