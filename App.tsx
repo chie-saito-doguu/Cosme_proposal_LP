@@ -45,7 +45,7 @@ const App: React.FC = () => {
           <p className="text-gray-400 text-sm font-black mb-10">
             © 2024 Cosme AI. All rights reserved.
           </p>
-          <div className="flex justify-center gap-8 text-sm text-gray-300 font-black">
+          <div className="flex justify-center gap-6 text-xs sm:text-sm text-gray-300 font-black">
             <a href="#" className="hover:text-white transition">プライバシーポリシー</a>
             <a href="#" className="hover:text-white transition">利用規約</a>
             <a href="#" className="hover:text-white transition">お問い合わせ</a>
