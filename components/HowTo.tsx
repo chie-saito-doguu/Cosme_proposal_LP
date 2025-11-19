@@ -71,7 +71,7 @@ const HowTo: React.FC = () => {
             <div className="mt-auto relative w-full max-w-[240px] mx-auto aspect-[9/13] bg-gray-100 rounded-[2rem] border-8 border-gray-50 shadow-inner flex items-center justify-center overflow-hidden">
               <img 
                 src="/step3.png" 
-                alt="提案画面" 
+                alt="メイク提案画面" 
                 className="w-full h-full object-cover"
               />
             </div>
