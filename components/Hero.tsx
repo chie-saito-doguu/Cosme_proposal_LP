@@ -48,12 +48,12 @@ const Hero: React.FC = () => {
 
                   {/* タイトル（スマホだけ少し小さく） */}
                   <h3 className="text-2xl sm:text-3xl md:text-4xl font-black leading-snug md:leading-tight mb-3 md:mb-4 text-primary">
-                    ラテカラーの目元で<br/>抜け感を演出
+                    あなたのコスメで<br/>トレンドメイクを提案
                   </h3>
                 </div>
                    <div className="space-y-4 mb-8">
                      <p className="text-text-main font-black text-base md:text-xl leading-relaxed">
-                       単色のアイシャドウを組み合わせて、知的な大人の雰囲気に。締め色を使わないのがポイント。
+                       気分や着る服に合わせてくれる<br/>あなただけのメイクアドバイザー<br/>毎日のメイク時間が楽しくなる。
                      </p>
                    </div>
                    
@@ -63,7 +63,7 @@ const Hero: React.FC = () => {
                      </div>
                      <div>
                        <p className="text-xs text-primary font-black mb-0.5">AI ADVISOR</p>
-                       <p className="text-base font-black text-text-main">お手持ちのコスメで<br/>再現できます！</p>
+                       <p className="text-base font-black text-text-main">おすすめアイテムも<br/>ご紹介します！</p>
                      </div>
                    </div>
                 </div>
