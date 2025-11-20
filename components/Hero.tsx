@@ -47,9 +47,13 @@ const Hero: React.FC = () => {
                   <span className="inline-block w-10 h-2 bg-primary rounded-full mb-3 md:mb-6"></span>
 
                   {/* タイトル（スマホだけ少し小さく） */}
-                  <h3 className="text-2xl sm:text-3xl md:text-4xl font-black leading-snug md:leading-tight mb-3 md:mb-4 text-primary">
-                    あなたのコスメで<br/>トレンドメイクを提案
-                  </h3>
+                    <h3 className="text-2xl sm:text-3xl md:text-4xl font-black leading-snug md:leading-tight mb-3 md:mb-4 text-primary">
+                      あなたのコスメで
+                      <span className="block md:inline"></span>
+                      <br className="hidden md:block" />
+                      トレンドメイクを提案
+                    </h3>
+
                 </div>
                    <div className="space-y-4 mb-8">
                      <p className="text-text-main font-black text-base md:text-xl leading-relaxed">
