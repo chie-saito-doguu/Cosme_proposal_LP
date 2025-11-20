@@ -48,10 +48,10 @@ const Hero: React.FC = () => {
 
                   {/* タイトル（スマホだけ少し小さく） */}
                     <h3 className="text-2xl sm:text-3xl md:text-4xl font-black leading-snug md:leading-tight mb-3 md:mb-4 text-primary">
-                      マイコスメで
+                      あなたのコスメで
                       <span className="block md:inline"></span>
                       <br className="hidden md:block" />
-                      トレンドメイクを提案
+                      毎日メイクを提案
                     </h3>
 
                 </div>
@@ -67,7 +67,7 @@ const Hero: React.FC = () => {
                      </div>
                      <div>
                        <p className="text-xs text-primary font-black mb-0.5">AI ADVISOR</p>
-                       <p className="text-base font-black text-text-main">おすすめアイテムも<br/>ご紹介します！</p>
+                       <p className="text-base font-black text-text-main">トレンド感あるメイクを<br/>ご紹介します！</p>
                      </div>
                    </div>
                 </div>
