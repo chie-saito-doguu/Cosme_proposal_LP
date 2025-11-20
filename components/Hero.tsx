@@ -67,7 +67,7 @@ const Hero: React.FC = () => {
                      </div>
                      <div>
                        <p className="text-xs text-primary font-black mb-0.5">AI ADVISOR</p>
-                       <p className="text-base font-black text-text-main">トレンド感あるメイクを<br/>ご紹介します！</p>
+                       <p className="text-base font-black text-text-main">トレンドメイクを<br/>ご紹介します！</p>
                      </div>
                    </div>
                 </div>
