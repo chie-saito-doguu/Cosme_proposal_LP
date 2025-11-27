@@ -16,15 +16,17 @@ const App: React.FC = () => {
       <header className="fixed top-0 left-0 right-0 z-50 bg-primary border-b border-primary-dark/10">
         <div className="container mx-auto px-6 h-16 md:h-20 flex justify-between items-center">
 
+          {/* 左：ロゴ */}
           <Link
             to="/"
-            className="text-xl sm:text-2xl md:text-3xl font-black text-white tracking-tight">
+            className="text-xl sm:text-2xl md:text-3xl font-black text-white tracking-tight"
+          >
             Cosme AI
           </Link>
 
-          <div className="flex items-center gap-4">
+          {/* 右側：言語＋ボタン */}
+          <div className="flex items-center gap-4 justify-end">
             <LanguageSelector />
-            {/* ←ここを aタグ に変更 */}
             <a
               href="https://cosme-proposal.com/"
               target="_blank"
@@ -33,8 +35,7 @@ const App: React.FC = () => {
                         px-5 py-2.5 rounded-full 
                         text-xs sm:text-sm md:text-base 
                         font-black transition-colors shadow-md 
-                        flex items-center gap-2 
-                        whitespace-nowrap"
+                        flex items-center gap-2 whitespace-nowrap"
             >
               <Sparkles className="w-4 h-4 fill-primary" />
               {t.header.start}
