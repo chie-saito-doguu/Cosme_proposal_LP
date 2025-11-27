@@ -59,7 +59,7 @@ export const translations = {
         problem: {
             label: "MASALAH",
             title: "Apakah Anda punya\nmasalah ini?",
-            item1: "Ingin mencoba makeup baru\ntapi tidak tahu\ncara kombinasinya",
+            item1: "Ingin mencoba\nmakeup baru\ntapi tidak tahu\ncara kombinasinya",
             item2: "Banyak kosmetik yang\ndibeli tapi\ntidak terpakai",
             item3: "Malas berpikir sendiri,\njadi wajah\nselalu sama",
         },
