@@ -14,20 +14,30 @@ const App: React.FC = () => {
     <div className="min-h-screen flex flex-col font-sans bg-white text-text-main font-black">
 
       <header className="fixed top-0 left-0 right-0 z-50 bg-primary border-b border-primary-dark/10">
-        <div className="container mx-auto px-6 h-16 md:h-20 flex justify-between items-center">
+        <div className="
+          container mx-auto px-6 h-16 md:h-20 
+          flex md:flex justify-between items-center
+        ">
 
-          {/* 左：ロゴ */}
-          <Link
-            to="/"
-            className="text-xl sm:text-2xl md:text-3xl font-black text-white tracking-tight"
-          >
-            Cosme AI
-          </Link>
+          {/* 左：ロゴ（スマホは左端、PCも左端） */}
+          <div className="flex-1">
+            <Link
+              to="/"
+              className="text-xl sm:text-2xl md:text-3xl font-black text-white tracking-tight"
+            >
+              Cosme AI
+            </Link>
+          </div>
 
-          {/* 右側：ボタン（＋PC時のLanguageSelector） */}
-          <div className="flex items-center gap-4">
+          {/* 中央：言語セレクター（🔥スマホのみ表示） */}
+          <div className="flex-1 flex justify-center md:hidden">
+            <LanguageSelector />
+          </div>
 
-            {/* 🔥 PCだけ表示 */}
+          {/* 右：はじめるボタン＋PC用LanguageSelector */}
+          <div className="flex-1 flex justify-end items-center gap-4">
+
+            {/* 🔥 PCではここに言語セレクターを表示 */}
             <div className="hidden md:block">
               <LanguageSelector />
             </div>
@@ -48,12 +58,6 @@ const App: React.FC = () => {
           </div>
 
         </div>
-
-        {/* 🔥 スマホだけ中央表示 */}
-        <div className="md:hidden w-full flex justify-center mt-1">
-          <LanguageSelector />
-        </div>
-
       </header>
 
       <main className="flex-grow pt-16 md:pt-20">
