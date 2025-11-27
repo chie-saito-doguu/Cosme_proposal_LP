@@ -1,11 +1,11 @@
 import React from 'react';
-import Hero from './components/Hero';
-import Problem from './components/Problem';
-import HowTo from './components/HowTo';
-import CTA from './components/CTA';
+import { Routes, Route, Link } from 'react-router-dom';
 import { Sparkles } from 'lucide-react';
 import LanguageSelector from './components/LanguageSelector';
 import { useLanguage } from './LanguageContext';
+import HomePage from './pages/HomePage';
+import Terms from './pages/terms';
+import Privacy from './pages/privacy';
 
 const App: React.FC = () => {
   const { t } = useLanguage();
@@ -16,9 +16,9 @@ const App: React.FC = () => {
       <header className="fixed top-0 left-0 right-0 z-50 bg-primary border-b border-primary-dark/10">
         <div className="container mx-auto px-6 h-16 md:h-20 flex justify-between items-center">
 
-          <div className="text-2xl md:text-3xl font-black text-white tracking-tight">
+          <Link to="/" className="text-2xl md:text-3xl font-black text-white tracking-tight">
             Cosme AI
-          </div>
+          </Link>
 
           <div className="flex items-center gap-4">
             <LanguageSelector />
@@ -40,10 +40,11 @@ const App: React.FC = () => {
       </header>
 
       <main className="flex-grow pt-16 md:pt-20">
-        <Hero />
-        <Problem />
-        <HowTo />
-        <CTA />
+        <Routes>
+          <Route path="/" element={<HomePage />} />
+          <Route path="/terms" element={<Terms />} />
+          <Route path="/privacy" element={<Privacy />} />
+        </Routes>
       </main>
 
       <footer className="bg-gray-900 text-white py-16 border-t border-gray-800">
@@ -53,8 +54,8 @@ const App: React.FC = () => {
             {t.footer.copyright}
           </p>
           <div className="flex justify-center gap-6 text-xs sm:text-sm text-gray-300 font-black">
-            <a href="#" className="hover:text-white transition">{t.footer.privacy}</a>
-            <a href="#" className="hover:text-white transition">{t.footer.terms}</a>
+            <Link to="/privacy" className="hover:text-white transition">{t.footer.privacy}</Link>
+            <Link to="/terms" className="hover:text-white transition">{t.footer.terms}</Link>
             <a href="#" className="hover:text-white transition">{t.footer.contact}</a>
           </div>
         </div>
