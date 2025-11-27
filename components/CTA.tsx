@@ -1,7 +1,10 @@
 import React from "react";
 import { Sparkles, Heart } from "lucide-react";
+import { useLanguage } from "../LanguageContext";
 
 const CTA: React.FC = () => {
+  const { t } = useLanguage();
+
   return (
     <section className="py-32 md:py-48 bg-primary text-white text-center font-black relative overflow-hidden">
 
@@ -25,22 +28,30 @@ const CTA: React.FC = () => {
       `}</style>
 
       <div className="container mx-auto px-6 max-w-4xl relative z-10">
-        
+
         <h2 className="text-4xl sm:text-5xl md:text-8xl font-black mb-12 leading-none tracking-tight">
-          あなたのポーチに、<br />
-          革命を。
+          {t.cta.title.split('\n').map((line, i) => (
+            <React.Fragment key={i}>
+              {line}
+              {i < t.cta.title.split('\n').length - 1 && <br />}
+            </React.Fragment>
+          ))}
         </h2>
 
         <p className="text-lg sm:text-xl md:text-3xl font-black mb-10 md:mb-16 text-white/90 leading-relaxed">
-          買い足さずに、新しい自分へ。<br className="block md:hidden" />
-          30秒で始められます。
+          {t.cta.subtitle.split('\n').map((line, i) => (
+            <React.Fragment key={i}>
+              {line}
+              {i < t.cta.subtitle.split('\n').length - 1 && <br className="block md:hidden" />}
+            </React.Fragment>
+          ))}
         </p>
 
         <div className="flex flex-col items-center justify-center">
 
           {/* --- URLに飛ぶボタン --- */}
           <a
-            href="https://cosme-proposal.vercel.app/"
+            href="https://cosme-proposal.com/"
             target="_blank"
             rel="noopener noreferrer"
             className="group relative min-w-[240px] md:min-w-[300px] py-4 px-8 md:py-6 md:px-12 bg-white text-primary rounded-full font-black text-2xl md:text-4xl shadow-2xl hover:shadow-white/30 transition-all transform hover:-translate-y-1 active:scale-95 flex items-center justify-center overflow-visible cursor-pointer"
@@ -62,7 +73,7 @@ const CTA: React.FC = () => {
             </div>
 
             <Sparkles className="w-6 h-6 md:w-8 md:h-8 mr-3 fill-primary relative z-10" />
-            <span className="relative z-10">はじめる</span>
+            <span className="relative z-10">{t.cta.button}</span>
           </a>
         </div>
       </div>
