@@ -56,7 +56,6 @@ const App: React.FC = () => {
           <div className="flex justify-center gap-6 text-xs sm:text-sm text-gray-300 font-black">
             <Link to="/privacy" className="hover:text-white transition">{t.footer.privacy}</Link>
             <Link to="/terms" className="hover:text-white transition">{t.footer.terms}</Link>
-            <a href="#" className="hover:text-white transition">{t.footer.contact}</a>
           </div>
         </div>
       </footer>
