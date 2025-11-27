@@ -24,9 +24,14 @@ const App: React.FC = () => {
             Cosme AI
           </Link>
 
-          {/* 右側：言語＋ボタン */}
-          <div className="flex items-center gap-4 justify-end">
-            <LanguageSelector />
+          {/* 右側：ボタン（＋PC時のLanguageSelector） */}
+          <div className="flex items-center gap-4">
+
+            {/* 🔥 PCだけ表示 */}
+            <div className="hidden md:block">
+              <LanguageSelector />
+            </div>
+
             <a
               href="https://cosme-proposal.com/"
               target="_blank"
@@ -43,6 +48,12 @@ const App: React.FC = () => {
           </div>
 
         </div>
+
+        {/* 🔥 スマホだけ中央表示 */}
+        <div className="md:hidden w-full flex justify-center mt-1">
+          <LanguageSelector />
+        </div>
+
       </header>
 
       <main className="flex-grow pt-16 md:pt-20">
