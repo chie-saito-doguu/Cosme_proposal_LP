@@ -46,7 +46,7 @@ const Privacy = () => {
                         <ul className="list-disc pl-6 space-y-1">
                             <li>メイク提案の履歴(気分入力、提案内容、マッチングスコア)</li>
                             <li>お気に入り登録したメイク提案</li>
-                            <li>サービス利用回数(1日1回までの制限管理)</li>
+                            <li>サービス利用回数(1日3回までの制限管理)</li>
                             <li>コスメ登録回数(月3回までの制限管理)</li>
                             <li>コスメ画像解析結果(Google Cloud Vision APIによる属性抽出結果)</li>
                             <li>メイク画像生成履歴</li>

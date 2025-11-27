@@ -49,7 +49,7 @@ const Terms = () => {
                     <h3 className="text-xl font-bold mb-4">第4条(利用制限)</h3>
                     <p className="mb-4">本サービスには、以下の利用制限があります:</p>
                     <ol className="list-decimal pl-6 space-y-2">
-                        <li><strong> メイク提案 </strong>: 1日1回まで</li>
+                        <li><strong> メイク提案 </strong>: 1日3回まで</li>
                         <li><strong> コスメ登録 </strong>: 月3回まで</li>
                     </ol>
                     <p className="mt-4">これらの制限は、サービスの公平な利用と品質維持のために設けられています。</p>
@@ -233,7 +233,7 @@ const Terms = () => {
                     <h3 className="text-xl font-bold mb-4">Pasal 4(Batasan Penggunaan)</h3>
                     <p className="mb-4">Layanan memiliki batasan penggunaan berikut:</p>
                     <ol className="list-decimal pl-6 space-y-2">
-                        <li><strong> Saran Makeup </strong>: Hingga 1 kali per hari</li>
+                        <li><strong> Saran Makeup </strong>: Hingga 3 kali per hari</li>
                         <li><strong> Pendaftaran Kosmetik </strong>: Hingga 3 kali per bulan</li>
                     </ol>
                     <p className="mt-4">Batasan ini ditetapkan untuk penggunaan layanan yang adil dan pemeliharaan kualitas.</p>
