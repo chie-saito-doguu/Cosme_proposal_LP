@@ -44,8 +44,8 @@ const Tokushoho = () => {
                     <h3 className="text-xl font-bold mb-4">■ 販売価格</h3>
                     <ul className="list-disc pl-6 space-y-2">
                         <li><strong>Freeプラン:</strong> 0円</li>
-                        <li><strong>Proプラン:</strong> 880円/月(税込) / IDR 35,000.00/月</li>
-                        <li><strong>Premiumプラン:</strong> 1,980円/月(税込) / IDR 65,000.00/月</li>
+                        <li><strong>Proプラン:</strong> 500円/月(税込) / IDR 35,000.00/月</li>
+                        <li><strong>Premiumプラン:</strong> 880円/月(税込) / IDR 65,000.00/月</li>
                     </ul>
                     <p className="text-sm text-gray-600 mt-2">※価格は税込表記です。</p>
                 </div>
