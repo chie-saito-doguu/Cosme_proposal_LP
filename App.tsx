@@ -6,6 +6,7 @@ import { useLanguage } from './LanguageContext';
 import HomePage from './pages/HomePage';
 import Terms from './pages/terms';
 import Privacy from './pages/privacy';
+import Tokushoho from './pages/tokushoho';
 
 const App: React.FC = () => {
   const { t } = useLanguage();
@@ -65,6 +66,7 @@ const App: React.FC = () => {
           <Route path="/" element={<HomePage />} />
           <Route path="/terms" element={<Terms />} />
           <Route path="/privacy" element={<Privacy />} />
+          <Route path="/tokushoho" element={<Tokushoho />} />
         </Routes>
       </main>
 
@@ -77,6 +79,7 @@ const App: React.FC = () => {
           <div className="flex justify-center gap-6 text-xs sm:text-sm text-gray-300 font-black">
             <Link to="/privacy" className="hover:text-white transition">{t.footer.privacy}</Link>
             <Link to="/terms" className="hover:text-white transition">{t.footer.terms}</Link>
+            <Link to="/tokushoho" className="hover:text-white transition">{t.footer.tokushoho}</Link>
           </div>
         </div>
       </footer>

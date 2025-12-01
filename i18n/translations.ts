@@ -39,6 +39,7 @@ export const translations = {
         footer: {
             privacy: "プライバシーポリシー",
             terms: "利用規約",
+            tokushoho: "特定商取引法に基づく表記",
             copyright: "© 2025 Cosme AI. All rights reserved.",
         },
     },
@@ -80,6 +81,7 @@ export const translations = {
         footer: {
             privacy: "Kebijakan Privasi",
             terms: "Syarat & Ketentuan",
+            tokushoho: "Ketentuan Transaksi Komersial",
             copyright: "© 2025 Cosme AI. All rights reserved.",
         },
     },
