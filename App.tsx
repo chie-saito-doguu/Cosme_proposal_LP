@@ -76,7 +76,7 @@ const App: React.FC = () => {
           <p className="text-gray-400 text-sm font-black mb-10">
             {t.footer.copyright}
           </p>
-          <div className="flex justify-center gap-6 text-xs sm:text-sm text-gray-300 font-black">
+          <div className="flex justify-center gap-6 text-[10px] sm:text-sm text-gray-300 font-black">
             <Link to="/privacy" className="hover:text-white transition">{t.footer.privacy}</Link>
             <Link to="/terms" className="hover:text-white transition">{t.footer.terms}</Link>
             <Link to="/tokushoho" className="hover:text-white transition">{t.footer.tokushoho}</Link>
