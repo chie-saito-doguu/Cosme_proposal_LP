@@ -6,7 +6,7 @@ const Privacy = () => {
             <h1 className="text-3xl font-bold mb-4">プライバシーポリシー / Privacy Policy</h1>
 
             <p className="font-bold mb-8">
-                最終更新日: 2025年11月27日
+                最終更新日: 2025年12月3日
             </p>
 
             <hr className="my-8 border-gray-300" />
@@ -57,6 +57,15 @@ const Privacy = () => {
                         <h4 className="text-lg font-bold mb-2">2.4 問い合わせ情報</h4>
                         <ul className="list-disc pl-6 space-y-1">
                             <li>お問い合わせフォームから送信された内容(カテゴリ、メッセージ)</li>
+                        </ul>
+                    </div>
+
+                    <div className="mb-4">
+                        <h4 className="text-lg font-bold mb-2">2.5 支払い・サブスクリプション情報</h4>
+                        <ul className="list-disc pl-6 space-y-1">
+                            <li>サブスクリプションのプラン状況(Free / Pro / Premium)</li>
+                            <li>支払い履歴および請求ステータス</li>
+                            <li>※クレジットカード情報は決済代行会社(Stripe)が直接管理し、本サービスでは保持しません。</li>
                         </ul>
                     </div>
                 </div>
@@ -182,6 +191,15 @@ const Privacy = () => {
                             <li><strong> プライバシーポリシー </strong>: <a href="https://policies.google.com/privacy" className="text-blue-600 hover:underline" target="_blank" rel="noopener noreferrer">https://policies.google.com/privacy</a></li>
                         </ul>
                     </div>
+
+                    <div className="mb-4">
+                        <h4 className="text-lg font-bold mb-2">5.10 Stripe</h4>
+                        <ul className="list-disc pl-6 space-y-1">
+                            <li><strong> 用途 </strong>: クレジットカード決済処理</li>
+                            <li><strong> 提供情報 </strong>: クレジットカード情報(直接提供)、メールアドレス</li>
+                            <li><strong> プライバシーポリシー </strong>: <a href="https://stripe.com/jp/privacy" className="text-blue-600 hover:underline" target="_blank" rel="noopener noreferrer">https://stripe.com/jp/privacy</a></li>
+                        </ul>
+                    </div>
                 </div>
 
                 <div className="mb-8">
@@ -292,6 +310,15 @@ const Privacy = () => {
                         <h4 className="text-lg font-bold mb-2">2.4 Informasi Pertanyaan</h4>
                         <ul className="list-disc pl-6 space-y-1">
                             <li>Konten yang dikirim melalui formulir kontak(kategori, pesan)</li>
+                        </ul>
+                    </div>
+
+                    <div className="mb-4">
+                        <h4 className="text-lg font-bold mb-2">2.5 Informasi Pembayaran dan Langganan</h4>
+                        <ul className="list-disc pl-6 space-y-1">
+                            <li>Status paket langganan (Free / Pro / Premium)</li>
+                            <li>Riwayat pembayaran dan status penagihan</li>
+                            <li>※Informasi kartu kredit dikelola langsung oleh penyedia layanan pembayaran (Stripe) dan tidak disimpan oleh Layanan ini.</li>
                         </ul>
                     </div>
                 </div>
@@ -417,6 +444,15 @@ const Privacy = () => {
                             <li><strong> Kebijakan Privasi </strong>: <a href="https://policies.google.com/privacy" className="text-blue-600 hover:underline" target="_blank" rel="noopener noreferrer">https://policies.google.com/privacy</a></li>
                         </ul>
                     </div>
+
+                    <div className="mb-4">
+                        <h4 className="text-lg font-bold mb-2">5.10 Stripe</h4>
+                        <ul className="list-disc pl-6 space-y-1">
+                            <li><strong> Tujuan </strong>: Pemrosesan pembayaran kartu kredit</li>
+                            <li><strong> Informasi yang diberikan </strong>: Informasi kartu kredit (diberikan langsung), alamat email</li>
+                            <li><strong> Kebijakan Privasi </strong>: <a href="https://stripe.com/jp/privacy" className="text-blue-600 hover:underline" target="_blank" rel="noopener noreferrer">https://stripe.com/jp/privacy</a></li>
+                        </ul>
+                    </div>
                 </div>
 
                 <div className="mb-8">
@@ -482,7 +518,7 @@ const Privacy = () => {
             <hr className="my-8 border-gray-300" />
 
             <p className="font-bold">
-                Effective Date: November 27, 2025
+                Effective Date: December 3, 2025
             </p>
         </div>
     );

@@ -6,7 +6,7 @@ const Terms = () => {
             <h1 className="text-3xl font-bold mb-4">利用規約 / Terms of Service</h1>
 
             <p className="font-bold mb-8">
-                最終更新日: 2025年11月27日
+                最終更新日: 2025年12月3日
             </p>
 
             <hr className="my-8 border-gray-300" />
@@ -47,16 +47,51 @@ const Terms = () => {
 
                 <div className="mb-8">
                     <h3 className="text-xl font-bold mb-4">第4条(利用制限)</h3>
-                    <p className="mb-4">本サービスには、以下の利用制限があります:</p>
-                    <ol className="list-decimal pl-6 space-y-2">
-                        <li><strong> メイク提案 </strong>: 1日3回まで</li>
-                        <li><strong> コスメ登録 </strong>: 月3回まで</li>
-                    </ol>
+                    <p className="mb-4">本サービスは、プランに応じて以下の利用制限があります:</p>
+
+                    <div className="mb-4">
+                        <h4 className="font-bold mb-2">1. Free Plan (無料)</h4>
+                        <ul className="list-disc pl-6 space-y-1">
+                            <li>メイク画像生成: 月2回まで</li>
+                            <li>おすすめ提案: 月10回まで</li>
+                            <li>コスメ登録: 月3回まで</li>
+                        </ul>
+                    </div>
+
+                    <div className="mb-4">
+                        <h4 className="font-bold mb-2">2. Pro Plan</h4>
+                        <ul className="list-disc pl-6 space-y-1">
+                            <li>メイク画像生成: 月30回まで</li>
+                            <li>おすすめ提案: 無制限</li>
+                            <li>コスメ登録: 無制限</li>
+                        </ul>
+                    </div>
+
+                    <div className="mb-4">
+                        <h4 className="font-bold mb-2">3. Premium Plan</h4>
+                        <ul className="list-disc pl-6 space-y-1">
+                            <li>メイク画像生成: 月50回まで</li>
+                            <li>おすすめ提案: 無制限</li>
+                            <li>コスメ登録: 無制限</li>
+                        </ul>
+                    </div>
                     <p className="mt-4">これらの制限は、サービスの公平な利用と品質維持のために設けられています。</p>
                 </div>
 
                 <div className="mb-8">
-                    <h3 className="text-xl font-bold mb-4">第5条(禁止事項)</h3>
+                    <h3 className="text-xl font-bold mb-4">第5条(有料プラン)</h3>
+                    <ol className="list-decimal pl-6 space-y-2">
+                        <li><strong>プラン内容</strong>: Pro PlanおよびPremium Planの詳細は、本サービス内のプラン説明ページおよび特定商取引法に基づく表記に定めます。</li>
+                        <li><strong>利用料金</strong>: 利用料金は、別途定める料金表(特定商取引法に基づく表記)に従います。</li>
+                        <li><strong>支払方法</strong>: Stripeを通じたクレジットカード決済のみ受け付けます。</li>
+                        <li><strong>自動更新</strong>: 有料プランは1ヶ月ごとの自動更新となります。解約手続きが行われない限り、自動的に課金されます。</li>
+                        <li><strong>解約</strong>: ユーザーはマイページからいつでも解約手続きを行うことができます。解約した場合、即時にFreeプランへ移行します。</li>
+                        <li><strong>返金</strong>: 既にお支払いいただいた利用料金の返金には応じられません。</li>
+                    </ol>
+                </div>
+
+                <div className="mb-8">
+                    <h3 className="text-xl font-bold mb-4">第6条(禁止事項)</h3>
                     <p className="mb-4">ユーザーは、以下の行為を行ってはなりません:</p>
                     <ol className="list-decimal pl-6 space-y-2">
                         <li>法令または公序良俗に違反する行為</li>
@@ -74,7 +109,7 @@ const Terms = () => {
                 </div>
 
                 <div className="mb-8">
-                    <h3 className="text-xl font-bold mb-4">第6条(知的財産権)</h3>
+                    <h3 className="text-xl font-bold mb-4">第7条(知的財産権)</h3>
                     <ol className="list-decimal pl-6 space-y-2">
                         <li>本サービスに関する知的財産権は、運営者または正当な権利者に帰属します。</li>
                         <li>ユーザーが登録したコスメ画像の著作権は、ユーザーに帰属します。</li>
@@ -84,7 +119,7 @@ const Terms = () => {
                 </div>
 
                 <div className="mb-8">
-                    <h3 className="text-xl font-bold mb-4">第7条(ユーザーの責任)</h3>
+                    <h3 className="text-xl font-bold mb-4">第8条(ユーザーの責任)</h3>
                     <ol className="list-decimal pl-6 space-y-2">
                         <li>ユーザーは、自己の責任において本サービスを利用するものとします。</li>
                         <li>ユーザーは、登録した画像が第三者の権利を侵害しないことを保証します。</li>
@@ -93,7 +128,7 @@ const Terms = () => {
                 </div>
 
                 <div className="mb-8">
-                    <h3 className="text-xl font-bold mb-4">第8条(免責事項)</h3>
+                    <h3 className="text-xl font-bold mb-4">第9条(免責事項)</h3>
                     <ol className="list-decimal pl-6 space-y-2">
                         <li>
                             本サービスは「現状有姿」で提供され、運営者は以下について保証しません:
@@ -119,7 +154,7 @@ const Terms = () => {
                 </div>
 
                 <div className="mb-8">
-                    <h3 className="text-xl font-bold mb-4">第9条(サービスの変更・中断・終了)</h3>
+                    <h3 className="text-xl font-bold mb-4">第10条(サービスの変更・中断・終了)</h3>
                     <ol className="list-decimal pl-6 space-y-2">
                         <li>運営者は、ユーザーへの事前通知なく、本サービスの内容を変更、追加、削除できます。</li>
                         <li>
@@ -135,7 +170,7 @@ const Terms = () => {
                 </div>
 
                 <div className="mb-8">
-                    <h3 className="text-xl font-bold mb-4">第10条(アカウントの停止・削除)</h3>
+                    <h3 className="text-xl font-bold mb-4">第11条(アカウントの停止・削除)</h3>
                     <p className="mb-4">運営者は、ユーザーが以下に該当する場合、事前通知なくアカウントを停止または削除できます:</p>
                     <ol className="list-decimal pl-6 space-y-2">
                         <li>本規約に違反した場合</li>
@@ -146,7 +181,7 @@ const Terms = () => {
                 </div>
 
                 <div className="mb-8">
-                    <h3 className="text-xl font-bold mb-4">第11条(退会)</h3>
+                    <h3 className="text-xl font-bold mb-4">第12条(退会)</h3>
                     <ol className="list-decimal pl-6 space-y-2">
                         <li>ユーザーは、アプリ内の「お問い合わせ」フォームから退会を申請できます。</li>
                         <li>退会により、登録されたすべてのデータ(コスメ情報、提案履歴等)が削除されます。</li>
@@ -155,15 +190,16 @@ const Terms = () => {
                 </div>
 
                 <div className="mb-8">
-                    <h3 className="text-xl font-bold mb-4">第12条(個人情報の取扱いとデータ処理)</h3>
+                    <h3 className="text-xl font-bold mb-4">第13条(個人情報の取扱いとデータ処理)</h3>
                     <ol className="list-decimal pl-6 space-y-2">
                         <li>個人情報の取扱いについては、別途定める「プライバシーポリシー」に従います。</li>
                         <li>
-                            本サービスは、データ処理およびサービス提供のために以下の第三者サービスを利用します：
+                            本サービスは、データ処理およびサービス提供のために以下の第三者サービスを利用します:
                             <ul className="list-disc pl-6 mt-2 space-y-1">
                                 <li>Google Cloud Platform(Gemini, Imagen, Vision API等): AI処理、画像解析、データ保存</li>
                                 <li>Firebase: 認証、データベース</li>
                                 <li>SendGrid: メール送信</li>
+                                <li>Stripe: クレジットカード決済</li>
                             </ul>
                             <p className="mt-2">ユーザーは、本サービスの利用において、これらの第三者サービスによってデータが処理されることに同意するものとします。</p>
                         </li>
@@ -171,7 +207,7 @@ const Terms = () => {
                 </div>
 
                 <div className="mb-8">
-                    <h3 className="text-xl font-bold mb-4">第13条(規約の変更)</h3>
+                    <h3 className="text-xl font-bold mb-4">第14条(規約の変更)</h3>
                     <ol className="list-decimal pl-6 space-y-2">
                         <li>運営者は、必要に応じて本規約を変更できます。</li>
                         <li>重要な変更がある場合は、サービス内で通知します。</li>
@@ -180,7 +216,7 @@ const Terms = () => {
                 </div>
 
                 <div className="mb-8">
-                    <h3 className="text-xl font-bold mb-4">第14条(準拠法・管轄裁判所)</h3>
+                    <h3 className="text-xl font-bold mb-4">第15条(準拠法・管轄裁判所)</h3>
                     <ol className="list-decimal pl-6 space-y-2">
                         <li>本規約は、日本法に準拠します。</li>
                         <li>本サービスに関する紛争については、運営者の所在地を管轄する裁判所を専属的合意管轄裁判所とします。</li>
@@ -188,7 +224,7 @@ const Terms = () => {
                 </div>
 
                 <div className="mb-8">
-                    <h3 className="text-xl font-bold mb-4">第15条(お問い合わせ)</h3>
+                    <h3 className="text-xl font-bold mb-4">第16条(お問い合わせ)</h3>
                     <p>本規約に関するご質問は、アプリ内の「お問い合わせ」フォームからご連絡ください。</p>
                 </div>
             </section>
@@ -231,16 +267,51 @@ const Terms = () => {
 
                 <div className="mb-8">
                     <h3 className="text-xl font-bold mb-4">Pasal 4(Batasan Penggunaan)</h3>
-                    <p className="mb-4">Layanan memiliki batasan penggunaan berikut:</p>
-                    <ol className="list-decimal pl-6 space-y-2">
-                        <li><strong> Saran Makeup </strong>: Hingga 3 kali per hari</li>
-                        <li><strong> Pendaftaran Kosmetik </strong>: Hingga 3 kali per bulan</li>
-                    </ol>
+                    <p className="mb-4">Layanan memiliki batasan penggunaan berikut sesuai dengan paket:</p>
+
+                    <div className="mb-4">
+                        <h4 className="font-bold mb-2">1. Paket Free (Gratis)</h4>
+                        <ul className="list-disc pl-6 space-y-1">
+                            <li>Pembuatan gambar makeup: Hingga 2 kali per bulan</li>
+                            <li>Saran rekomendasi: Hingga 10 kali per bulan</li>
+                            <li>Pendaftaran kosmetik: Hingga 3 kali per bulan</li>
+                        </ul>
+                    </div>
+
+                    <div className="mb-4">
+                        <h4 className="font-bold mb-2">2. Paket Pro</h4>
+                        <ul className="list-disc pl-6 space-y-1">
+                            <li>Pembuatan gambar makeup: Hingga 30 kali per bulan</li>
+                            <li>Saran rekomendasi: Tanpa batas</li>
+                            <li>Pendaftaran kosmetik: Tanpa batas</li>
+                        </ul>
+                    </div>
+
+                    <div className="mb-4">
+                        <h4 className="font-bold mb-2">3. Paket Premium</h4>
+                        <ul className="list-disc pl-6 space-y-1">
+                            <li>Pembuatan gambar makeup: Hingga 50 kali per bulan</li>
+                            <li>Saran rekomendasi: Tanpa batas</li>
+                            <li>Pendaftaran kosmetik: Tanpa batas</li>
+                        </ul>
+                    </div>
                     <p className="mt-4">Batasan ini ditetapkan untuk penggunaan layanan yang adil dan pemeliharaan kualitas.</p>
                 </div>
 
                 <div className="mb-8">
-                    <h3 className="text-xl font-bold mb-4">Pasal 5(Tindakan yang Dilarang)</h3>
+                    <h3 className="text-xl font-bold mb-4">Pasal 5(Paket Berbayar)</h3>
+                    <ol className="list-decimal pl-6 space-y-2">
+                        <li><strong>Konten Paket</strong>: Detail Paket Pro dan Paket Premium ditentukan dalam halaman penjelasan paket dalam Layanan dan dalam ketentuan berdasarkan Undang-Undang Transaksi Komersial Tertentu.</li>
+                        <li><strong>Biaya Penggunaan</strong>: Biaya penggunaan mengikuti tabel harga yang ditetapkan secara terpisah (ketentuan berdasarkan Undang-Undang Transaksi Komersial Tertentu).</li>
+                        <li><strong>Metode Pembayaran</strong>: Hanya menerima pembayaran kartu kredit melalui Stripe.</li>
+                        <li><strong>Perpanjangan Otomatis</strong>: Paket berbayar akan diperpanjang secara otomatis setiap bulan. Kecuali prosedur pembatalan dilakukan, pembayaran akan dilakukan secara otomatis.</li>
+                        <li><strong>Pembatalan</strong>: Pengguna dapat melakukan prosedur pembatalan kapan saja dari halaman My Page. Jika dibatalkan, akan segera beralih ke Paket Free.</li>
+                        <li><strong>Pengembalian Dana</strong>: Kami tidak dapat memberikan pengembalian dana untuk biaya penggunaan yang telah dibayarkan.</li>
+                    </ol>
+                </div>
+
+                <div className="mb-8">
+                    <h3 className="text-xl font-bold mb-4">Pasal 6(Tindakan yang Dilarang)</h3>
                     <p className="mb-4">Pengguna tidak boleh melakukan tindakan berikut:</p>
                     <ol className="list-decimal pl-6 space-y-2">
                         <li>Tindakan yang melanggar hukum atau ketertiban umum</li>
@@ -257,7 +328,7 @@ const Terms = () => {
                 </div>
 
                 <div className="mb-8">
-                    <h3 className="text-xl font-bold mb-4">Pasal 6(Hak Kekayaan Intelektual)</h3>
+                    <h3 className="text-xl font-bold mb-4">Pasal 7(Hak Kekayaan Intelektual)</h3>
                     <ol className="list-decimal pl-6 space-y-2">
                         <li>Hak kekayaan intelektual terkait Layanan adalah milik operator atau pemegang hak yang sah.</li>
                         <li>Hak cipta gambar kosmetik yang didaftarkan oleh pengguna adalah milik pengguna.</li>
@@ -267,7 +338,7 @@ const Terms = () => {
                 </div>
 
                 <div className="mb-8">
-                    <h3 className="text-xl font-bold mb-4">Pasal 7(Tanggung Jawab Pengguna)</h3>
+                    <h3 className="text-xl font-bold mb-4">Pasal 8(Tanggung Jawab Pengguna)</h3>
                     <ol className="list-decimal pl-6 space-y-2">
                         <li>Pengguna menggunakan Layanan atas tanggung jawab sendiri.</li>
                         <li>Pengguna menjamin bahwa gambar yang didaftarkan tidak melanggar hak pihak ketiga.</li>
@@ -276,7 +347,7 @@ const Terms = () => {
                 </div>
 
                 <div className="mb-8">
-                    <h3 className="text-xl font-bold mb-4">Pasal 8(Penafian)</h3>
+                    <h3 className="text-xl font-bold mb-4">Pasal 9(Penafian)</h3>
                     <ol className="list-decimal pl-6 space-y-2">
                         <li>
                             Layanan disediakan "sebagaimana adanya", dan operator tidak menjamin hal - hal berikut:
@@ -302,7 +373,7 @@ const Terms = () => {
                 </div>
 
                 <div className="mb-8">
-                    <h3 className="text-xl font-bold mb-4">Pasal 9(Perubahan, Gangguan, Penghentian Layanan)</h3>
+                    <h3 className="text-xl font-bold mb-4">Pasal 10(Perubahan, Gangguan, Penghentian Layanan)</h3>
                     <ol className="list-decimal pl-6 space-y-2">
                         <li>Operator dapat mengubah, menambah, atau menghapus konten Layanan tanpa pemberitahuan sebelumnya kepada pengguna.</li>
                         <li>
@@ -318,7 +389,7 @@ const Terms = () => {
                 </div>
 
                 <div className="mb-8">
-                    <h3 className="text-xl font-bold mb-4">Pasal 10(Penangguhan atau Penghapusan Akun)</h3>
+                    <h3 className="text-xl font-bold mb-4">Pasal 11(Penangguhan atau Penghapusan Akun)</h3>
                     <p className="mb-4">Operator dapat menangguhkan atau menghapus akun tanpa pemberitahuan sebelumnya jika pengguna:</p>
                     <ol className="list-decimal pl-6 space-y-2">
                         <li>Melanggar ketentuan ini</li>
@@ -329,7 +400,7 @@ const Terms = () => {
                 </div>
 
                 <div className="mb-8">
-                    <h3 className="text-xl font-bold mb-4">Pasal 11(Penghapusan Akun)</h3>
+                    <h3 className="text-xl font-bold mb-4">Pasal 12(Penghapusan Akun)</h3>
                     <ol className="list-decimal pl-6 space-y-2">
                         <li>Pengguna dapat mengajukan penghapusan akun melalui formulir "Hubungi Kami" di dalam aplikasi.</li>
                         <li>Dengan penghapusan akun, semua data yang terdaftar(informasi kosmetik, riwayat saran, dll.) akan dihapus.</li>
@@ -338,7 +409,7 @@ const Terms = () => {
                 </div>
 
                 <div className="mb-8">
-                    <h3 className="text-xl font-bold mb-4">Pasal 12(Penanganan Informasi Pribadi dan Pemrosesan Data)</h3>
+                    <h3 className="text-xl font-bold mb-4">Pasal 13(Penanganan Informasi Pribadi dan Pemrosesan Data)</h3>
                     <ol className="list-decimal pl-6 space-y-2">
                         <li>Penanganan informasi pribadi mengikuti "Kebijakan Privasi" yang ditetapkan secara terpisah.</li>
                         <li>
@@ -347,6 +418,7 @@ const Terms = () => {
                                 <li>Google Cloud Platform(Gemini, Imagen, Vision API, dll.): Pemrosesan AI, analisis gambar, penyimpanan data</li>
                                 <li>Firebase: Autentikasi, basis data</li>
                                 <li>SendGrid: Pengiriman email</li>
+                                <li>Stripe: Pembayaran kartu kredit</li>
                             </ul>
                             <p className="mt-2">Pengguna setuju bahwa data akan diproses oleh layanan pihak ketiga ini dalam penggunaan Layanan.</p>
                         </li>
@@ -354,7 +426,7 @@ const Terms = () => {
                 </div>
 
                 <div className="mb-8">
-                    <h3 className="text-xl font-bold mb-4">Pasal 13(Perubahan Ketentuan)</h3>
+                    <h3 className="text-xl font-bold mb-4">Pasal 14(Perubahan Ketentuan)</h3>
                     <ol className="list-decimal pl-6 space-y-2">
                         <li>Operator dapat mengubah ketentuan ini sesuai kebutuhan.</li>
                         <li>Jika ada perubahan penting, akan diberitahukan melalui Layanan.</li>
@@ -363,7 +435,7 @@ const Terms = () => {
                 </div>
 
                 <div className="mb-8">
-                    <h3 className="text-xl font-bold mb-4">Pasal 14(Hukum yang Berlaku dan Yurisdiksi)</h3>
+                    <h3 className="text-xl font-bold mb-4">Pasal 15(Hukum yang Berlaku dan Yurisdiksi)</h3>
                     <ol className="list-decimal pl-6 space-y-2">
                         <li>Ketentuan ini diatur oleh hukum Jepang.</li>
                         <li>Untuk sengketa terkait Layanan, pengadilan yang memiliki yurisdiksi atas lokasi operator akan menjadi pengadilan yurisdiksi eksklusif yang disepakati.</li>
@@ -371,7 +443,7 @@ const Terms = () => {
                 </div>
 
                 <div className="mb-8">
-                    <h3 className="text-xl font-bold mb-4">Pasal 15(Kontak)</h3>
+                    <h3 className="text-xl font-bold mb-4">Pasal 16(Kontak)</h3>
                     <p>Untuk pertanyaan tentang ketentuan ini, silakan hubungi kami melalui formulir "Hubungi Kami" di dalam aplikasi.</p>
                 </div>
             </section>
@@ -379,7 +451,7 @@ const Terms = () => {
             <hr className="my-8 border-gray-300" />
 
             <p className="font-bold">
-                Effective Date: November 27, 2025
+                Effective Date: December 3, 2025
             </p>
         </div>
     );
