@@ -7,6 +7,11 @@ interface LanguageContextType {
     t: typeof translations.ja;
 }
 
+// Type guard to ensure language is valid
+const isValidLanguage = (lang: string): lang is Language => {
+    return lang === 'ja' || lang === 'id' || lang === 'en';
+};
+
 const LanguageContext = createContext<LanguageContextType | undefined>(undefined);
 
 export const LanguageProvider: React.FC<{ children: ReactNode }> = ({ children }) => {

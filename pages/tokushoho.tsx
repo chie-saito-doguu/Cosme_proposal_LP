@@ -197,6 +197,99 @@ const Tokushoho = () => {
 
             <hr className="my-8 border-gray-300" />
 
+            <section className="mb-12">
+                <h2 className="text-2xl font-bold mb-6">English</h2>
+
+                <div className="mb-8">
+                    <h3 className="text-xl font-bold mb-4">■ Seller</h3>
+                    <p>Cosme AI (Trade Name) / Saito Chie (Individual Business Owner)</p>
+                </div>
+
+                <div className="mb-8">
+                    <h3 className="text-xl font-bold mb-4">■ Operational Manager</h3>
+                    <p>Saito Chie</p>
+                </div>
+
+                <div className="mb-8">
+                    <h3 className="text-xl font-bold mb-4">■ Address</h3>
+                    <p>Will be disclosed without delay upon request from customers.</p>
+                </div>
+
+                <div className="mb-8">
+                    <h3 className="text-xl font-bold mb-4">■ Phone Number</h3>
+                    <p>Will be disclosed without delay upon request from customers.</p>
+                    <p className="text-sm text-gray-600 mt-2">※We primarily request contact via email.</p>
+                </div>
+
+                <div className="mb-8">
+                    <h3 className="text-xl font-bold mb-4">■ Email Address</h3>
+                    <p>cosmeai.proposal@gmail.com</p>
+                </div>
+
+                <div className="mb-8">
+                    <h3 className="text-xl font-bold mb-4">■ Sales Price</h3>
+                    <ul className="list-disc pl-6 space-y-2">
+                        <li><strong>Free Plan:</strong> Free</li>
+                        <li><strong>Pro Plan:</strong> ¥500/month (tax included) / IDR 35,000.00/month</li>
+                        <li><strong>Premium Plan:</strong> ¥880/month (tax included) / IDR 65,000.00/month</li>
+                    </ul>
+                    <p className="text-sm text-gray-600 mt-2">※Prices are tax-inclusive.</p>
+                </div>
+
+                <div className="mb-8">
+                    <h3 className="text-xl font-bold mb-4">■ Additional Fees Other Than Product Price</h3>
+                    <p>Communication fees (costs required for internet connection are borne by the customer)</p>
+                </div>
+
+                <div className="mb-8">
+                    <h3 className="text-xl font-bold mb-4">■ Payment Method</h3>
+                    <p>Credit card payment via Stripe</p>
+                </div>
+
+                <div className="mb-8">
+                    <h3 className="text-xl font-bold mb-4">■ Payment Timing</h3>
+                    <p>Credit card payment: Payment is processed immediately upon order.</p>
+                </div>
+
+                <div className="mb-8">
+                    <h3 className="text-xl font-bold mb-4">■ Delivery Time / Service Provision Time</h3>
+                    <p>Available for immediate use after payment completion.</p>
+                    <p className="mt-2">Monthly plans will automatically renew each month.</p>
+                </div>
+
+                <div className="mb-8">
+                    <h3 className="text-xl font-bold mb-4">■ Service Provision Period</h3>
+                    <p>From the contract date until the cancellation date.</p>
+                    <p className="mt-2">Free plan will be applied immediately after cancellation.</p>
+                </div>
+
+                <div className="mb-8">
+                    <h3 className="text-xl font-bold mb-4">■ Cancellation Method</h3>
+                    <p>Cancellation can be done from My Page.</p>
+                </div>
+
+                <div className="mb-8">
+                    <h3 className="text-xl font-bold mb-4">■ Returns and Cancellations</h3>
+                    <p className="mb-4">Since this Service is digital content, it is excluded from the application of cooling-off under Article 15-3 of the Act on Specified Commercial Transactions.</p>
+                    <p className="mb-4">We do not accept cancellations or refunds after purchase.</p>
+                    <p>However, if service becomes unavailable due to service malfunctions, we will handle it individually.</p>
+                    <p className="mt-2 text-sm text-gray-600">Contact: cosmeai.proposal@gmail.com</p>
+                </div>
+
+                <div className="mb-8">
+                    <h3 className="text-xl font-bold mb-4">■ Operating Environment</h3>
+                    <p>Supported browsers: Latest Google Chrome / Safari / Edge</p>
+                </div>
+
+                <div className="mb-8">
+                    <h3 className="text-xl font-bold mb-4">■ Contact Method</h3>
+                    <p>We accept emails 24 hours a day.</p>
+                    <p className="mt-2">Replies are usually made within 1-3 business days.</p>
+                </div>
+            </section>
+
+            <hr className="my-8 border-gray-300" />
+
             <p className="font-bold">
                 Effective Date: December 1, 2025
             </p>

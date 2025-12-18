@@ -1,4 +1,4 @@
-export type Language = 'ja' | 'id';
+export type Language = 'ja' | 'id' | 'en';
 
 export const translations = {
     ja: {
@@ -82,6 +82,48 @@ export const translations = {
             privacy: "Kebijakan Privasi",
             terms: "Syarat & Ketentuan",
             tokushoho: "Ketentuan Transaksi Komersial",
+            copyright: "© 2025 Cosme AI. All rights reserved.",
+        },
+    },
+    en: {
+        header: {
+            start: "Get Started",
+        },
+        hero: {
+            badge: "AI MAKEUP ADVISOR",
+            title: "No need to buy more.\nYour beauty can be\nupdated by yourself.",
+            subtitle: "Daily makeup suggestions\nwith your cosmetics",
+            description: "Your personal makeup advisor that adapts\nto your mood and outfit.\nMake your daily makeup time more enjoyable.",
+            match: "MATCH 98%",
+            advisor_label: "AI ADVISOR",
+            advisor_text: "Introducing\ntrendy makeup!",
+        },
+        problem: {
+            label: "PROBLEM",
+            title: "Do you have\nthese concerns?",
+            item1: "Want to try\nnew makeup but\ndon't know how\nto combine them",
+            item2: "Have cosmetics\nthat you bought\nbut rarely use",
+            item3: "Too lazy to think\nfor yourself,\nalways the same look",
+        },
+        howto: {
+            label: "HOW TO USE",
+            title: "Just 3 Steps",
+            step1_title: "Register Cosmetics",
+            step1_desc: "Just take a photo.\nAI automatically analyzes the colors.",
+            step2_title: "Enter Your Mood",
+            step2_desc: "Tell us your current mood or what you're wearing.",
+            step3_title: "Makeup Suggestions",
+            step3_desc: "Which cosmetics to use and how to apply them.\nYour personalized recipe will arrive.",
+        },
+        cta: {
+            title: "Revolution in\nyour makeup pouch.",
+            subtitle: "Transform yourself without buying more.\nYou can start in 30 seconds.",
+            button: "Get Started",
+        },
+        footer: {
+            privacy: "Privacy Policy",
+            terms: "Terms of Service",
+            tokushoho: "Commercial Transaction Terms",
             copyright: "© 2025 Cosme AI. All rights reserved.",
         },
     },

@@ -450,6 +450,226 @@ const Terms = () => {
 
             <hr className="my-8 border-gray-300" />
 
+            <section className="mb-12">
+                <h2 className="text-2xl font-bold mb-6">English</h2>
+
+                <div className="mb-8">
+                    <h3 className="text-xl font-bold mb-4">Article 1 (Application)</h3>
+                    <ol className="list-decimal pl-6 space-y-2">
+                        <li>These Terms set forth the conditions for the use of Cosme AI (hereinafter referred to as "the Service").</li>
+                        <li>Users are deemed to have agreed to these Terms by using the Service.</li>
+                        <li>If you do not agree to these Terms, you may not use the Service.</li>
+                    </ol>
+                </div>
+
+                <div className="mb-8">
+                    <h3 className="text-xl font-bold mb-4">Article 2 (Service Content)</h3>
+                    <p className="mb-4">The Service provides the following functions:</p>
+                    <ol className="list-decimal pl-6 space-y-2">
+                        <li><strong> AI Makeup Suggestion Function </strong>: AI (Google Gemini, etc.) generates personalized makeup suggestions based on user mood input</li>
+                        <li><strong> Cosmetic Registration Function </strong>: Take photos and register owned cosmetics, AI (Google Cloud Vision, etc.) automatically analyzes</li>
+                        <li><strong> Matching Function </strong>: Analyzes compatibility between suggested makeup and owned cosmetics</li>
+                        <li><strong> Recommendation Function </strong>: AI suggests alternative products for missing cosmetics (including Rakuten / Shopee affiliate links). The operator may receive fees when users purchase products through the links.</li>
+                        <li><strong> Appearance Customization Function </strong>: Set skin color, eye color, hair color, etc. to receive more personalized suggestions (uses Google Imagen 3, etc. for image generation)</li>
+                        <li><strong> Multilingual Support </strong>: Supports Japanese, Indonesian, and English</li>
+                    </ol>
+                </div>
+
+                <div className="mb-8">
+                    <h3 className="text-xl font-bold mb-4">Article 3 (Usage Registration)</h3>
+                    <ol className="list-decimal pl-6 space-y-2">
+                        <li>Use of the Service requires authentication through Firebase Authentication.</li>
+                        <li>Users are responsible for registering accurate and up-to-date information.</li>
+                        <li>Persons under 13 years of age may not use this Service.</li>
+                    </ol>
+                </div>
+
+                <div className="mb-8">
+                    <h3 className="text-xl font-bold mb-4">Article 4 (Usage Restrictions)</h3>
+                    <p className="mb-4">The Service has the following usage restrictions according to the plan:</p>
+
+                    <div className="mb-4">
+                        <h4 className="font-bold mb-2">1. Free Plan</h4>
+                        <ul className="list-disc pl-6 space-y-1">
+                            <li>Makeup image generation: Up to 2 times per month</li>
+                            <li>Recommendation suggestions: Up to 10 times per month</li>
+                            <li>Cosmetic registration: Up to 3 times per month</li>
+                        </ul>
+                    </div>
+
+                    <div className="mb-4">
+                        <h4 className="font-bold mb-2">2. Pro Plan</h4>
+                        <ul className="list-disc pl-6 space-y-1">
+                            <li>Makeup image generation: Up to 30 times per month</li>
+                            <li>Recommendation suggestions: Unlimited</li>
+                            <li>Cosmetic registration: Unlimited</li>
+                        </ul>
+                    </div>
+
+                    <div className="mb-4">
+                        <h4 className="font-bold mb-2">3. Premium Plan</h4>
+                        <ul className="list-disc pl-6 space-y-1">
+                            <li>Makeup image generation: Up to 50 times per month</li>
+                            <li>Recommendation suggestions: Unlimited</li>
+                            <li>Cosmetic registration: Unlimited</li>
+                        </ul>
+                    </div>
+                    <p className="mt-4">These restrictions are set for fair use of the service and quality maintenance.</p>
+                </div>
+
+                <div className="mb-8">
+                    <h3 className="text-xl font-bold mb-4">Article 5 (Paid Plans)</h3>
+                    <ol className="list-decimal pl-6 space-y-2">
+                        <li><strong>Plan Content</strong>: Details of Pro Plan and Premium Plan are specified in the plan description page within the Service and in the Commercial Transaction Terms.</li>
+                        <li><strong>Usage Fees</strong>: Usage fees follow the separately specified fee table (Commercial Transaction Terms).</li>
+                        <li><strong>Payment Method</strong>: Only credit card payments through Stripe are accepted.</li>
+                        <li><strong>Auto-Renewal</strong>: Paid plans will automatically renew monthly. Unless cancellation procedures are performed, billing will occur automatically.</li>
+                        <li><strong>Cancellation</strong>: Users can perform cancellation procedures at any time from My Page. If cancelled, will immediately switch to Free plan.</li>
+                        <li><strong>Refunds</strong>: We cannot provide refunds for usage fees already paid.</li>
+                    </ol>
+                </div>
+
+                <div className="mb-8">
+                    <h3 className="text-xl font-bold mb-4">Article 6 (Prohibited Acts)</h3>
+                    <p className="mb-4">Users must not perform the following acts:</p>
+                    <ol className="list-decimal pl-6 space-y-2">
+                        <li>Acts that violate laws or public order and morals</li>
+                        <li>Acts related to criminal acts</li>
+                        <li>Acts that interfere with the operation of the Service</li>
+                        <li>Acts that infringe on the rights of other users or third parties</li>
+                        <li>Registering false information</li>
+                        <li>Creating multiple accounts fraudulently to avoid usage restrictions</li>
+                        <li>Acts that threaten the security of the Service</li>
+                        <li>Reverse engineering, decompilation, or disassembly of the Service</li>
+                        <li>Unauthorized commercial use</li>
+                        <li>Uploading images taken by others or images that infringe on third-party rights</li>
+                        <li>Other acts deemed inappropriate by the operator</li>
+                    </ol>
+                </div>
+
+                <div className="mb-8">
+                    <h3 className="text-xl font-bold mb-4">Article 7 (Intellectual Property Rights)</h3>
+                    <ol className="list-decimal pl-6 space-y-2">
+                        <li>Intellectual property rights related to the Service belong to the operator or rightful owner.</li>
+                        <li>Copyright of cosmetic images registered by users belongs to the users.</li>
+                        <li>Users grant the operator permission to use registered images within the scope necessary for providing the Service.</li>
+                        <li>Copyright of makeup suggestion images generated by AI belongs to the operator. However, users may freely use them within the scope of personal use.</li>
+                    </ol>
+                </div>
+
+                <div className="mb-8">
+                    <h3 className="text-xl font-bold mb-4">Article 8 (User Responsibility)</h3>
+                    <ol className="list-decimal pl-6 space-y-2">
+                        <li>Users shall use the Service at their own responsibility.</li>
+                        <li>Users guarantee that registered images do not infringe on third-party rights.</li>
+                        <li>If user actions cause damage to the operator or third parties, the user shall bear all responsibility.</li>
+                    </ol>
+                </div>
+
+                <div className="mb-8">
+                    <h3 className="text-xl font-bold mb-4">Article 9 (Disclaimer)</h3>
+                    <ol className="list-decimal pl-6 space-y-2">
+                        <li>
+                            The Service is provided "as is," and the operator does not guarantee the following:
+                            <ul className="list-disc pl-6 mt-2 space-y-1">
+                                <li>Accuracy, completeness, usefulness of the Service</li>
+                                <li>Absence of interruptions, errors, or bugs in the Service</li>
+                                <li>Effectiveness or results of AI suggestions</li>
+                                <li>Makeup suggestion images are illustrations generated by AI (Google Imagen 3, etc.) and do not accurately guarantee actual makeup effects.</li>
+                                <li>Accuracy of product information from third-party services (Rakuten, Shopee, etc.)</li>
+                            </ul>
+                        </li>
+                        <li>
+                            The operator bears no responsibility in the following cases:
+                            <ul className="list-disc pl-6 mt-2 space-y-1">
+                                <li>Damage arising from user's use of the Service</li>
+                                <li>Damage due to communication line or computer failures</li>
+                                <li>Unauthorized access or data tampering by third parties</li>
+                                <li>Troubles related to transactions at external links (Rakuten, Shopee, etc.)</li>
+                            </ul>
+                        </li>
+                        <li>Information provided in the Service is reference information and is not medical or professional advice.</li>
+                    </ol>
+                </div>
+
+                <div className="mb-8">
+                    <h3 className="text-xl font-bold mb-4">Article 10 (Service Changes, Interruption, Termination)</h3>
+                    <ol className="list-decimal pl-6 space-y-2">
+                        <li>The operator may change, add, or delete Service content without prior notice to users.</li>
+                        <li>
+                            The operator may temporarily interrupt the Service in the following cases:
+                            <ul className="list-disc pl-6 mt-2 space-y-1">
+                                <li>When performing system maintenance or inspection</li>
+                                <li>When operation is difficult due to force majeure such as natural disasters</li>
+                                <li>Other cases deemed necessary for operation</li>
+                            </ul>
+                        </li>
+                        <li>The operator will notify in advance when possible if terminating the Service.</li>
+                    </ol>
+                </div>
+
+                <div className="mb-8">
+                    <h3 className="text-xl font-bold mb-4">Article 11 (Account Suspension or Deletion)</h3>
+                    <p className="mb-4">The operator may suspend or delete accounts without prior notice if users:</p>
+                    <ol className="list-decimal pl-6 space-y-2">
+                        <li>Violate these Terms</li>
+                        <li>Have false information in registration information</li>
+                        <li>Have no usage for a long period (more than 6 months)</li>
+                        <li>Other cases deemed inappropriate by the operator</li>
+                    </ol>
+                </div>
+
+                <div className="mb-8">
+                    <h3 className="text-xl font-bold mb-4">Article 12 (Account Deletion)</h3>
+                    <ol className="list-decimal pl-6 space-y-2">
+                        <li>Users can request account deletion through the "Contact" form in the app.</li>
+                        <li>Upon account deletion, all registered data (cosmetic information, suggestion history, etc.) will be deleted.</li>
+                        <li>Deleted data cannot be restored.</li>
+                    </ol>
+                </div>
+
+                <div className="mb-8">
+                    <h3 className="text-xl font-bold mb-4">Article 13 (Personal Information Handling and Data Processing)</h3>
+                    <ol className="list-decimal pl-6 space-y-2">
+                        <li>Personal information handling follows the separately specified "Privacy Policy."</li>
+                        <li>
+                            This Service uses the following third-party services for data processing and service provision:
+                            <ul className="list-disc pl-6 mt-2 space-y-1">
+                                <li>Google Cloud Platform (Gemini, Imagen, Vision API, etc.): AI processing, image analysis, data storage</li>
+                                <li>Firebase: Authentication, database</li>
+                                <li>SendGrid: Email sending</li>
+                                <li>Stripe: Credit card payment</li>
+                            </ul>
+                            <p className="mt-2">Users agree that data will be processed by these third-party services in using the Service.</p>
+                        </li>
+                    </ol>
+                </div>
+
+                <div className="mb-8">
+                    <h3 className="text-xl font-bold mb-4">Article 14 (Terms Changes)</h3>
+                    <ol className="list-decimal pl-6 space-y-2">
+                        <li>The operator may change these Terms as necessary.</li>
+                        <li>If there are important changes, notification will be made through the Service.</li>
+                        <li>If you continue using the Service after changes, you are deemed to have agreed to the changes.</li>
+                    </ol>
+                </div>
+
+                <div className="mb-8">
+                    <h3 className="text-xl font-bold mb-4">Article 15 (Governing Law and Jurisdiction)</h3>
+                    <ol className="list-decimal pl-6 space-y-2">
+                        <li>These Terms are governed by Japanese law.</li>
+                        <li>For disputes related to the Service, the court with jurisdiction over the operator's location shall be the exclusive agreed jurisdiction court.</li>
+                    </ol>
+                </div>
+
+                <div className="mb-8">
+                    <h3 className="text-xl font-bold mb-4">Article 16 (Contact)</h3>
+                    <p>For questions about these Terms, please contact us through the "Contact" form in the app.</p>
+                </div>
+            </section>
+
+            <hr className="my-8 border-gray-300" />
+
             <p className="font-bold">
                 Effective Date: December 3, 2025
             </p>

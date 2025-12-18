@@ -517,6 +517,259 @@ const Privacy = () => {
 
             <hr className="my-8 border-gray-300" />
 
+            <section className="mb-12">
+                <h2 className="text-2xl font-bold mb-6">English</h2>
+
+                <div className="mb-8">
+                    <h3 className="text-xl font-bold mb-4">1. Introduction</h3>
+                    <p>Thank you for using Cosme AI (hereinafter referred to as "the Service"). This Privacy Policy explains how the Service collects, uses, and protects users' personal information.</p>
+                </div>
+
+                <div className="mb-8">
+                    <h3 className="text-xl font-bold mb-4">2. Information Collected</h3>
+                    <p className="mb-4">The Service collects the following information:</p>
+
+                    <div className="mb-4">
+                        <h4 className="text-lg font-bold mb-2">2.1 Account Information</h4>
+                        <ul className="list-disc pl-6 space-y-1">
+                            <li>Authentication information provided through Firebase Authentication (UID, email address, etc.)</li>
+                            <li>Language settings (Japanese / Indonesian / English)</li>
+                            <li>Appearance settings (skin color, eye color, hair color, age, hijab usage, etc.)</li>
+                        </ul>
+                    </div>
+
+                    <div className="mb-4">
+                        <h4 className="text-lg font-bold mb-2">2.2 Cosmetic Information</h4>
+                        <ul className="list-disc pl-6 space-y-1">
+                            <li>Images of cosmetics registered by users</li>
+                            <li>Cosmetic attribute information (category, color, finish, etc.)</li>
+                            <li>Image analysis results from Google Cloud Vision API</li>
+                        </ul>
+                    </div>
+
+                    <div className="mb-4">
+                        <h4 className="text-lg font-bold mb-2">2.3 Usage Information</h4>
+                        <ul className="list-disc pl-6 space-y-1">
+                            <li>Makeup suggestion history (mood input, suggestion content, matching score)</li>
+                            <li>Makeup suggestions marked as favorites</li>
+                            <li>Service usage count (management of limit of 3 times per day)</li>
+                            <li>Cosmetic registration count (management of limit of 3 times per month)</li>
+                            <li>Cosmetic image analysis results (attribute extraction results from Google Cloud Vision API)</li>
+                            <li>Makeup image generation history</li>
+                        </ul>
+                    </div>
+
+                    <div className="mb-4">
+                        <h4 className="text-lg font-bold mb-2">2.4 Inquiry Information</h4>
+                        <ul className="list-disc pl-6 space-y-1">
+                            <li>Content submitted through the contact form (category, message)</li>
+                        </ul>
+                    </div>
+
+                    <div className="mb-4">
+                        <h4 className="text-lg font-bold mb-2">2.5 Payment and Subscription Information</h4>
+                        <ul className="list-disc pl-6 space-y-1">
+                            <li>Subscription plan status (Free / Pro / Premium)</li>
+                            <li>Payment history and billing status</li>
+                            <li>※Credit card information is managed directly by the payment processing company (Stripe) and is not stored by this Service.</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div className="mb-8">
+                    <h3 className="text-xl font-bold mb-4">3. Purpose of Information Use</h3>
+                    <p className="mb-4">Collected information is used for the following purposes:</p>
+                    <ul className="list-disc pl-6 space-y-1">
+                        <li>Generation of AI-powered personalized makeup suggestions</li>
+                        <li>Compatibility analysis with owned cosmetics</li>
+                        <li>User experience improvement and service enhancement</li>
+                        <li>Usage limit management (prevention of unauthorized use)</li>
+                        <li>Response to inquiries</li>
+                        <li>Service operation and maintenance</li>
+                    </ul>
+                </div>
+
+                <div className="mb-8">
+                    <h3 className="text-xl font-bold mb-4">4. Information Storage and Management</h3>
+
+                    <div className="mb-4">
+                        <h4 className="text-lg font-bold mb-2">4.1 Storage Location</h4>
+                        <ul className="list-disc pl-6 space-y-1">
+                            <li>User data: Google Cloud Firestore</li>
+                            <li>Image data: Google Cloud Storage</li>
+                            <li>Authentication information: Firebase Authentication</li>
+                        </ul>
+                    </div>
+
+                    <div className="mb-4">
+                        <h4 className="text-lg font-bold mb-2">4.2 Storage Period</h4>
+                        <ul className="list-disc pl-6 space-y-1">
+                            <li>Account information: Until account deletion</li>
+                            <li>Cosmetic images: Until user deletion or account deletion</li>
+                            <li>Suggestion history: Until account deletion</li>
+                            <li>Inquiry history: Until account deletion</li>
+                            <li>Usage count data: Retained as history after each period ends (until account deletion)</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div className="mb-8">
+                    <h3 className="text-xl font-bold mb-4">5. Use of Third-Party Services</h3>
+                    <p className="mb-4">This Service uses the following third-party services:</p>
+
+                    <div className="mb-4">
+                        <h4 className="text-lg font-bold mb-2">5.1 Google Cloud Platform</h4>
+                        <ul className="list-disc pl-6 space-y-1">
+                            <li><strong> Purpose </strong>: Data storage, image analysis, AI processing</li>
+                            <li><strong> Information Provided </strong>: Cosmetic images, user settings, suggestion history</li>
+                            <li><strong> Privacy Policy </strong>: <a href="https://policies.google.com/privacy" className="text-blue-600 hover:underline" target="_blank" rel="noopener noreferrer">https://policies.google.com/privacy</a></li>
+                        </ul>
+                    </div>
+
+                    <div className="mb-4">
+                        <h4 className="text-lg font-bold mb-2">5.2 Firebase</h4>
+                        <ul className="list-disc pl-6 space-y-1">
+                            <li><strong> Purpose </strong>: User authentication</li>
+                            <li><strong> Information Provided </strong>: Authentication information (email address, etc.)</li>
+                            <li><strong> Privacy Policy </strong>: <a href="https://firebase.google.com/support/privacy" className="text-blue-600 hover:underline" target="_blank" rel="noopener noreferrer">https://firebase.google.com/support/privacy</a></li>
+                        </ul>
+                    </div>
+
+                    <div className="mb-4">
+                        <h4 className="text-lg font-bold mb-2">5.3 Rakuten API / Shopee API</h4>
+                        <ul className="list-disc pl-6 space-y-1">
+                            <li><strong> Purpose </strong>: Search and display of recommended cosmetic products</li>
+                            <li><strong> Information Provided </strong>: Search keywords (cosmetic category, color, etc.)</li>
+                            <li><strong> Note </strong>: When clicking product links, the privacy policy of each e-commerce site applies</li>
+                        </ul>
+                    </div>
+
+                    <div className="mb-4">
+                        <h4 className="text-lg font-bold mb-2">5.4 Google Gemini API</h4>
+                        <ul className="list-disc pl-6 space-y-1">
+                            <li><strong> Purpose </strong>: Makeup suggestion generation, product recommendations</li>
+                            <li><strong> Information Provided </strong>: User mood input, appearance settings, owned cosmetic information</li>
+                            <li><strong> Privacy Policy </strong>: <a href="https://policies.google.com/privacy" className="text-blue-600 hover:underline" target="_blank" rel="noopener noreferrer">https://policies.google.com/privacy</a></li>
+                        </ul>
+                    </div>
+
+                    <div className="mb-4">
+                        <h4 className="text-lg font-bold mb-2">5.5 OpenAI API</h4>
+                        <ul className="list-disc pl-6 space-y-1">
+                            <li><strong> Purpose </strong>: Cosmetic matching processing (vector embedding generation)</li>
+                            <li><strong> Information Provided </strong>: Cosmetic descriptions</li>
+                            <li><strong> Privacy Policy </strong>: <a href="https://openai.com/policies/privacy-policy" className="text-blue-600 hover:underline" target="_blank" rel="noopener noreferrer">https://openai.com/policies/privacy-policy</a></li>
+                        </ul>
+                    </div>
+
+                    <div className="mb-4">
+                        <h4 className="text-lg font-bold mb-2">5.6 Google Cloud Vision API</h4>
+                        <ul className="list-disc pl-6 space-y-1">
+                            <li><strong> Purpose </strong>: Cosmetic image analysis and attribute extraction</li>
+                            <li><strong> Information Provided </strong>: Cosmetic images uploaded by users</li>
+                            <li><strong> Privacy Policy </strong>: <a href="https://policies.google.com/privacy" className="text-blue-600 hover:underline" target="_blank" rel="noopener noreferrer">https://policies.google.com/privacy</a></li>
+                        </ul>
+                    </div>
+
+                    <div className="mb-4">
+                        <h4 className="text-lg font-bold mb-2">5.7 Google Imagen API</h4>
+                        <ul className="list-disc pl-6 space-y-1">
+                            <li><strong> Purpose </strong>: Makeup image generation</li>
+                            <li><strong> Information Provided </strong>: User appearance settings, makeup suggestion descriptions</li>
+                            <li><strong> Privacy Policy </strong>: <a href="https://policies.google.com/privacy" className="text-blue-600 hover:underline" target="_blank" rel="noopener noreferrer">https://policies.google.com/privacy</a></li>
+                        </ul>
+                    </div>
+
+                    <div className="mb-4">
+                        <h4 className="text-lg font-bold mb-2">5.8 SendGrid</h4>
+                        <ul className="list-disc pl-6 space-y-1">
+                            <li><strong> Purpose </strong>: Contact email notifications</li>
+                            <li><strong> Information Provided </strong>: User ID, inquiry content, User-Agent</li>
+                            <li><strong> Privacy Policy </strong>: <a href="https://www.twilio.com/legal/privacy" className="text-blue-600 hover:underline" target="_blank" rel="noopener noreferrer">https://www.twilio.com/legal/privacy</a></li>
+                        </ul>
+                    </div>
+
+                    <div className="mb-4">
+                        <h4 className="text-lg font-bold mb-2">5.9 Google Custom Search API</h4>
+                        <ul className="list-disc pl-6 space-y-1">
+                            <li><strong> Purpose </strong>: Shopee product search (for Indonesian language users)</li>
+                            <li><strong> Information Provided </strong>: Search keywords</li>
+                            <li><strong> Privacy Policy </strong>: <a href="https://policies.google.com/privacy" className="text-blue-600 hover:underline" target="_blank" rel="noopener noreferrer">https://policies.google.com/privacy</a></li>
+                        </ul>
+                    </div>
+
+                    <div className="mb-4">
+                        <h4 className="text-lg font-bold mb-2">5.10 Stripe</h4>
+                        <ul className="list-disc pl-6 space-y-1">
+                            <li><strong> Purpose </strong>: Credit card payment processing</li>
+                            <li><strong> Information Provided </strong>: Credit card information (provided directly), email address</li>
+                            <li><strong> Privacy Policy </strong>: <a href="https://stripe.com/jp/privacy" className="text-blue-600 hover:underline" target="_blank" rel="noopener noreferrer">https://stripe.com/jp/privacy</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div className="mb-8">
+                    <h3 className="text-xl font-bold mb-4">6. Information Sharing and Disclosure</h3>
+                    <p className="mb-4">The Service does not disclose users' personal information to third parties except in the following cases:</p>
+                    <ul className="list-disc pl-6 space-y-1">
+                        <li>With user consent</li>
+                        <li>When disclosure is required by law</li>
+                        <li>When necessary to protect life, body, or property</li>
+                        <li>When disclosing to business contractors within the scope necessary for service provision (including the above third-party services)</li>
+                    </ul>
+                </div>
+
+                <div className="mb-8">
+                    <h3 className="text-xl font-bold mb-4">7. Security</h3>
+                    <p className="mb-4">The Service implements the following measures to protect user information:</p>
+                    <ul className="list-disc pl-6 space-y-1">
+                        <li>Authentication through Firebase Authentication</li>
+                        <li>Utilization of Google Cloud Platform security features</li>
+                        <li>Access restrictions (users can only access their own data)</li>
+                        <li>Communication encryption (HTTPS / TLS)</li>
+                    </ul>
+                </div>
+
+                <div className="mb-8">
+                    <h3 className="text-xl font-bold mb-4">8. User Rights</h3>
+                    <p className="mb-4">Users have the following rights:</p>
+                    <ul className="list-disc pl-6 space-y-1">
+                        <li><strong> Access Right </strong>: Can view registered information</li>
+                        <li><strong> Correction Right </strong>: Can modify appearance settings and cosmetic information from My Page</li>
+                        <li><strong> Deletion Right </strong>: Can request account deletion (data deletion) through the contact form</li>
+                        <li><strong> Data Portability </strong>: If you wish to export data, please contact us</li>
+                    </ul>
+                </div>
+
+                <div className="mb-8">
+                    <h3 className="text-xl font-bold mb-4">9. Cookies・Local Storage</h3>
+                    <p className="mb-4">The Service stores the following information in browser local storage:</p>
+                    <ul className="list-disc pl-6 space-y-1">
+                        <li>Language settings</li>
+                        <li>Makeup suggestions marked as favorites</li>
+                        <li>Session information</li>
+                    </ul>
+                    <p className="mt-4">This information is only stored in the user's browser and is used to improve the service experience.</p>
+                </div>
+
+                <div className="mb-8">
+                    <h3 className="text-xl font-bold mb-4">10. Children's Personal Information</h3>
+                    <p>The Service does not intentionally collect personal information from children under 13 years of age. If a child under 13 accidentally provides information, please contact us immediately.</p>
+                </div>
+
+                <div className="mb-8">
+                    <h3 className="text-xl font-bold mb-4">11. Privacy Policy Changes</h3>
+                    <p>This Privacy Policy may be changed without prior notice in accordance with legal changes or service improvements. If there are important changes, we will notify you through the service.</p>
+                </div>
+
+                <div className="mb-8">
+                    <h3 className="text-xl font-bold mb-4">12. Contact</h3>
+                    <p>For questions about privacy or data deletion requests, please contact us through the "Contact" form in the app.</p>
+                </div>
+            </section>
+
+            <hr className="my-8 border-gray-300" />
+
             <p className="font-bold">
                 Effective Date: December 3, 2025
             </p>
