@@ -42,7 +42,7 @@ const CTA: React.FC = () => {
           {t.cta.subtitle.split('\n').map((line, i) => (
             <React.Fragment key={i}>
               {line}
-              {i < t.cta.subtitle.split('\n').length - 1 && <br className="block md:hidden" />}
+              {i < t.cta.subtitle.split('\n').length - 1 && <br />}
             </React.Fragment>
           ))}
         </p>
