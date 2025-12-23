@@ -44,8 +44,8 @@ const Tokushoho = () => {
                     <h3 className="text-xl font-bold mb-4">■ 販売価格</h3>
                     <ul className="list-disc pl-6 space-y-2">
                         <li><strong>Freeプラン:</strong> 0円</li>
-                        <li><strong>Proプラン:</strong> 500円/月(税込) / IDR 35,000.00/月</li>
-                        <li><strong>Premiumプラン:</strong> 880円/月(税込) / IDR 65,000.00/月</li>
+                        <li><strong>Proプラン:</strong> 500円/月(税込) / IDR 35,000.00/月 / USD 3.00/月</li>
+                        <li><strong>Premiumプラン:</strong> 880円/月(税込) / IDR 65,000.00/月 / USD 5.50/月</li>
                     </ul>
                     <p className="text-sm text-gray-600 mt-2">※価格は税込表記です。</p>
                 </div>
@@ -137,8 +137,8 @@ const Tokushoho = () => {
                     <h3 className="text-xl font-bold mb-4">■ Harga Penjualan</h3>
                     <ul className="list-disc pl-6 space-y-2">
                         <li><strong>Paket Free:</strong> Gratis</li>
-                        <li><strong>Paket Pro:</strong> ¥880/bulan (termasuk pajak) / IDR 35,000.00/bulan</li>
-                        <li><strong>Paket Premium:</strong> ¥1,980/bulan (termasuk pajak) / IDR 65,000.00/bulan</li>
+                        <li><strong>Paket Pro:</strong> ¥880/bulan (termasuk pajak) / IDR 35,000.00/bulan / USD 3.00/bulan</li>
+                        <li><strong>Paket Premium:</strong> ¥1,980/bulan (termasuk pajak) / IDR 65,000.00/bulan / USD 5.50/bulan</li>
                     </ul>
                     <p className="text-sm text-gray-600 mt-2">※Harga sudah termasuk pajak.</p>
                 </div>
@@ -230,8 +230,8 @@ const Tokushoho = () => {
                     <h3 className="text-xl font-bold mb-4">■ Sales Price</h3>
                     <ul className="list-disc pl-6 space-y-2">
                         <li><strong>Free Plan:</strong> Free</li>
-                        <li><strong>Pro Plan:</strong> ¥500/month (tax included) / IDR 35,000.00/month</li>
-                        <li><strong>Premium Plan:</strong> ¥880/month (tax included) / IDR 65,000.00/month</li>
+                        <li><strong>Pro Plan:</strong> ¥500/month (tax included) / IDR 35,000.00/month / USD 3.00/month</li>
+                        <li><strong>Premium Plan:</strong> ¥880/month (tax included) / IDR 65,000.00/month / USD 5.50/month</li>
                     </ul>
                     <p className="text-sm text-gray-600 mt-2">※Prices are tax-inclusive.</p>
                 </div>
