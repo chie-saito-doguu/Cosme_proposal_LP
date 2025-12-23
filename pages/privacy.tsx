@@ -6,7 +6,7 @@ const Privacy = () => {
             <h1 className="text-3xl font-bold mb-4">プライバシーポリシー / Privacy Policy</h1>
 
             <p className="font-bold mb-8">
-                最終更新日: 2025年12月3日
+                最終更新日: 2025年12月22日
             </p>
 
             <hr className="my-8 border-gray-300" />
@@ -771,7 +771,7 @@ const Privacy = () => {
             <hr className="my-8 border-gray-300" />
 
             <p className="font-bold">
-                Effective Date: December 3, 2025
+                Effective Date: December 22, 2025
             </p>
         </div>
     );

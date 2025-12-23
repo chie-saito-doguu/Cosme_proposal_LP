@@ -6,7 +6,7 @@ const Tokushoho = () => {
             <h1 className="text-3xl font-bold mb-4">特定商取引法に基づく表記 / Ketentuan Berdasarkan Undang-Undang Transaksi Komersial Tertentu</h1>
 
             <p className="font-bold mb-8">
-                最終更新日: 2025年12月1日
+                最終更新日: 2025年12月22日
             </p>
 
             <hr className="my-8 border-gray-300" />
@@ -16,7 +16,7 @@ const Tokushoho = () => {
 
                 <div className="mb-8">
                     <h3 className="text-xl font-bold mb-4">■ 販売事業者</h3>
-                    <p>Cosme AI(屋号) / サイトウ チエ(個人事業主)</p>
+                    <p>JOMORA(屋号) / サイトウ チエ(個人事業主)</p>
                 </div>
 
                 <div className="mb-8">
@@ -109,7 +109,7 @@ const Tokushoho = () => {
 
                 <div className="mb-8">
                     <h3 className="text-xl font-bold mb-4">■ Penjual</h3>
-                    <p>Cosme AI (Nama Usaha) / Saito Chie (Pemilik Usaha Perorangan)</p>
+                    <p>JOMORA (Nama Usaha) / Saito Chie (Pemilik Usaha Perorangan)</p>
                 </div>
 
                 <div className="mb-8">
@@ -202,7 +202,7 @@ const Tokushoho = () => {
 
                 <div className="mb-8">
                     <h3 className="text-xl font-bold mb-4">■ Seller</h3>
-                    <p>Cosme AI (Trade Name) / Saito Chie (Individual Business Owner)</p>
+                    <p>JOMORA (Trade Name) / Saito Chie (Individual Business Owner)</p>
                 </div>
 
                 <div className="mb-8">
@@ -291,7 +291,7 @@ const Tokushoho = () => {
             <hr className="my-8 border-gray-300" />
 
             <p className="font-bold">
-                Effective Date: December 1, 2025
+                Effective Date: December 22, 2025
             </p>
         </div>
     );
