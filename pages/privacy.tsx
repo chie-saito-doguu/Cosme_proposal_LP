@@ -6,7 +6,7 @@ const Privacy = () => {
             <h1 className="text-3xl font-bold mb-4">プライバシーポリシー / Privacy Policy</h1>
 
             <p className="font-bold mb-8">
-                最終更新日: 2025年12月22日
+                最終更新日: 2026年1月6日
             </p>
 
             <hr className="my-8 border-gray-300" />
@@ -46,8 +46,8 @@ const Privacy = () => {
                         <ul className="list-disc pl-6 space-y-1">
                             <li>メイク提案の履歴(気分入力、提案内容、マッチングスコア)</li>
                             <li>お気に入り登録したメイク提案</li>
-                            <li>サービス利用回数(1日3回までの制限管理)</li>
-                            <li>コスメ登録回数(月3回までの制限管理)</li>
+                            <li>サービス利用回数(プランに応じた制限管理)</li>
+                            <li>コスメ登録回数(プランに応じた制限管理)</li>
                             <li>コスメ画像解析結果(Google Cloud Vision APIによる属性抽出結果)</li>
                             <li>メイク画像生成履歴</li>
                         </ul>
@@ -299,8 +299,8 @@ const Privacy = () => {
                         <ul className="list-disc pl-6 space-y-1">
                             <li>Riwayat saran makeup(input mood, konten saran, skor kecocokan)</li>
                             <li>Saran makeup yang ditandai sebagai favorit</li>
-                            <li>Jumlah penggunaan layanan(manajemen batas 3 kali per hari)</li>
-                            <li>Jumlah pendaftaran kosmetik(manajemen batas 3 kali per bulan)</li>
+                            <li>Jumlah penggunaan layanan(manajemen batas sesuai paket)</li>
+                            <li>Jumlah pendaftaran kosmetik(manajemen batas sesuai paket)</li>
                             <li>Hasil analisis gambar kosmetik(hasil ekstraksi atribut oleh Google Cloud Vision API)</li>
                             <li>Riwayat pembuatan gambar makeup</li>
                         </ul>
@@ -552,8 +552,8 @@ const Privacy = () => {
                         <ul className="list-disc pl-6 space-y-1">
                             <li>Makeup suggestion history (mood input, suggestion content, matching score)</li>
                             <li>Makeup suggestions marked as favorites</li>
-                            <li>Service usage count (management of limit of 3 times per day)</li>
-                            <li>Cosmetic registration count (management of limit of 3 times per month)</li>
+                            <li>Service usage count (management of limit according to plan)</li>
+                            <li>Cosmetic registration count (management of limit according to plan)</li>
                             <li>Cosmetic image analysis results (attribute extraction results from Google Cloud Vision API)</li>
                             <li>Makeup image generation history</li>
                         </ul>
@@ -771,7 +771,7 @@ const Privacy = () => {
             <hr className="my-8 border-gray-300" />
 
             <p className="font-bold">
-                Effective Date: December 22, 2025
+                Effective Date: January 6, 2026
             </p>
         </div>
     );

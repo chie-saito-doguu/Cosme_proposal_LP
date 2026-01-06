@@ -6,7 +6,7 @@ const Terms = () => {
             <h1 className="text-3xl font-bold mb-4">利用規約 / Terms of Service</h1>
 
             <p className="font-bold mb-8">
-                最終更新日: 2025年12月22日
+                最終更新日: 2026年1月6日
             </p>
 
             <hr className="my-8 border-gray-300" />
@@ -54,25 +54,25 @@ const Terms = () => {
                         <ul className="list-disc pl-6 space-y-1">
                             <li>メイク画像生成: 月2回まで</li>
                             <li>おすすめ提案: 月10回まで</li>
-                            <li>コスメ登録: 月3回まで</li>
+                            <li>コスメ登録: 月2回まで</li>
                         </ul>
                     </div>
 
                     <div className="mb-4">
                         <h4 className="font-bold mb-2">2. Pro Plan</h4>
                         <ul className="list-disc pl-6 space-y-1">
-                            <li>メイク画像生成: 月30回まで</li>
+                            <li>メイク画像生成: 月10回まで</li>
                             <li>おすすめ提案: 無制限</li>
-                            <li>コスメ登録: 無制限</li>
+                            <li>コスメ登録: 10回まで</li>
                         </ul>
                     </div>
 
                     <div className="mb-4">
                         <h4 className="font-bold mb-2">3. Premium Plan</h4>
                         <ul className="list-disc pl-6 space-y-1">
-                            <li>メイク画像生成: 月50回まで</li>
+                            <li>メイク画像生成: 月15回まで</li>
                             <li>おすすめ提案: 無制限</li>
-                            <li>コスメ登録: 無制限</li>
+                            <li>コスメ登録: 月15回まで</li>
                         </ul>
                     </div>
                     <p className="mt-4">これらの制限は、サービスの公平な利用と品質維持のために設けられています。</p>
@@ -274,25 +274,25 @@ const Terms = () => {
                         <ul className="list-disc pl-6 space-y-1">
                             <li>Pembuatan gambar makeup: Hingga 2 kali per bulan</li>
                             <li>Saran rekomendasi: Hingga 10 kali per bulan</li>
-                            <li>Pendaftaran kosmetik: Hingga 3 kali per bulan</li>
+                            <li>Pendaftaran kosmetik: Hingga 2 kali per bulan</li>
                         </ul>
                     </div>
 
                     <div className="mb-4">
                         <h4 className="font-bold mb-2">2. Paket Pro</h4>
                         <ul className="list-disc pl-6 space-y-1">
-                            <li>Pembuatan gambar makeup: Hingga 30 kali per bulan</li>
+                            <li>Pembuatan gambar makeup: Hingga 10 kali per bulan</li>
                             <li>Saran rekomendasi: Tanpa batas</li>
-                            <li>Pendaftaran kosmetik: Tanpa batas</li>
+                            <li>Pendaftaran kosmetik: Hingga 10 kali</li>
                         </ul>
                     </div>
 
                     <div className="mb-4">
                         <h4 className="font-bold mb-2">3. Paket Premium</h4>
                         <ul className="list-disc pl-6 space-y-1">
-                            <li>Pembuatan gambar makeup: Hingga 50 kali per bulan</li>
+                            <li>Pembuatan gambar makeup: Hingga 15 kali per bulan</li>
                             <li>Saran rekomendasi: Tanpa batas</li>
-                            <li>Pendaftaran kosmetik: Tanpa batas</li>
+                            <li>Pendaftaran kosmetik: Hingga 15 kali per bulan</li>
                         </ul>
                     </div>
                     <p className="mt-4">Batasan ini ditetapkan untuk penggunaan layanan yang adil dan pemeliharaan kualitas.</p>
@@ -493,25 +493,25 @@ const Terms = () => {
                         <ul className="list-disc pl-6 space-y-1">
                             <li>Makeup image generation: Up to 2 times per month</li>
                             <li>Recommendation suggestions: Up to 10 times per month</li>
-                            <li>Cosmetic registration: Up to 3 times per month</li>
+                            <li>Cosmetic registration: Up to 2 times per month</li>
                         </ul>
                     </div>
 
                     <div className="mb-4">
                         <h4 className="font-bold mb-2">2. Pro Plan</h4>
                         <ul className="list-disc pl-6 space-y-1">
-                            <li>Makeup image generation: Up to 30 times per month</li>
+                            <li>Makeup image generation: Up to 10 times per month</li>
                             <li>Recommendation suggestions: Unlimited</li>
-                            <li>Cosmetic registration: Unlimited</li>
+                            <li>Cosmetic registration: Up to 10 times</li>
                         </ul>
                     </div>
 
                     <div className="mb-4">
                         <h4 className="font-bold mb-2">3. Premium Plan</h4>
                         <ul className="list-disc pl-6 space-y-1">
-                            <li>Makeup image generation: Up to 50 times per month</li>
+                            <li>Makeup image generation: Up to 15 times per month</li>
                             <li>Recommendation suggestions: Unlimited</li>
-                            <li>Cosmetic registration: Unlimited</li>
+                            <li>Cosmetic registration: Up to 15 times per month</li>
                         </ul>
                     </div>
                     <p className="mt-4">These restrictions are set for fair use of the service and quality maintenance.</p>
@@ -671,7 +671,7 @@ const Terms = () => {
             <hr className="my-8 border-gray-300" />
 
             <p className="font-bold">
-                Effective Date: December 22, 2025
+                Effective Date: January 6, 2026
             </p>
         </div>
     );
