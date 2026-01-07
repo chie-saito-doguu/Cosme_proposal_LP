@@ -16,7 +16,7 @@ const Hero: React.FC = () => {
   useEffect(() => {
     const interval = setInterval(() => {
       setCurrentIndex((prev) => (prev + 1) % images.length);
-    }, 3000); // 約3秒ごとに切り替え
+    }, 5000); // 約3秒ごとに切り替え
 
     return () => clearInterval(interval);
   }, [images.length]);
