@@ -1,9 +1,25 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import { Sparkles } from 'lucide-react';
 import { useLanguage } from '../LanguageContext';
 
 const Hero: React.FC = () => {
   const { t } = useLanguage();
+  const images = [
+    '/hero-image_1.jpg',
+    '/hero-image_2.jpg',
+    '/hero-image_3.jpg',
+    '/hero-image_4.jpg',
+  ];
+
+  const [currentIndex, setCurrentIndex] = useState(0);
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setCurrentIndex((prev) => (prev + 1) % images.length);
+    }, 3000); // 約3秒ごとに切り替え
+
+    return () => clearInterval(interval);
+  }, [images.length]);
 
   return (
     <section className="relative w-full pt-12 pb-20 md:pt-24 md:pb-32 bg-primary text-white overflow-hidden font-black">
@@ -34,13 +50,18 @@ const Hero: React.FC = () => {
 
           <div className="bg-white rounded-[2.5rem] p-3 md:p-4 shadow-2xl rotate-1 md:rotate-0 transition-transform hover:rotate-0">
             <div className="bg-gray-50 rounded-[2rem] overflow-hidden border border-gray-100 flex flex-col md:flex-row">
-              {/* Image */}
-              <div className="w-full md:w-1/2 aspect-square relative">
-                <img
-                  src="/hero-image.png"
-                  alt="Makeup Model"
-                  className="w-full h-full object-cover"
-                />
+              {/* Image (fade slideshow) */}
+              <div className="w-full md:w-1/2 aspect-square relative overflow-hidden">
+                {images.map((src, index) => (
+                  <img
+                    key={src}
+                    src={src}
+                    alt="Makeup Model"
+                    className={`absolute inset-0 w-full h-full object-cover transition-opacity duration-700 ${
+                      index === currentIndex ? 'opacity-100' : 'opacity-0'
+                    }`}
+                  />
+                ))}
                 <div className="absolute top-4 left-4 bg-white text-primary px-4 py-2 rounded-full text-sm font-black shadow-sm">
                   {t.hero.match}
                 </div>
