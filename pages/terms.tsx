@@ -56,6 +56,7 @@ const Terms = () => {
                             <li>おすすめ提案: 月10回まで</li>
                             <li>コスメ登録: 月2回まで</li>
                         </ul>
+                        <p className="mt-2 text-sm text-gray-600">※使用回数のリセットはカレンダー月ベース（毎月1日にリセット）です。</p>
                     </div>
 
                     <div className="mb-4">
@@ -65,6 +66,7 @@ const Terms = () => {
                             <li>おすすめ提案: 無制限</li>
                             <li>コスメ登録: 10回まで</li>
                         </ul>
+                        <p className="mt-2 text-sm text-gray-600">※使用回数のリセットは入会日ベースです。</p>
                     </div>
 
                     <div className="mb-4">
@@ -74,6 +76,7 @@ const Terms = () => {
                             <li>おすすめ提案: 無制限</li>
                             <li>コスメ登録: 月15回まで</li>
                         </ul>
+                        <p className="mt-2 text-sm text-gray-600">※使用回数のリセットは入会日ベースです。</p>
                     </div>
                     <p className="mt-4">これらの制限は、サービスの公平な利用と品質維持のために設けられています。</p>
                 </div>
@@ -85,7 +88,7 @@ const Terms = () => {
                         <li><strong>利用料金</strong>: 利用料金は、別途定める料金表(特定商取引法に基づく表記)に従います。</li>
                         <li><strong>支払方法</strong>: Stripeを通じたクレジットカード決済のみ受け付けます。</li>
                         <li><strong>自動更新</strong>: 有料プランは1ヶ月ごとの自動更新となります。解約手続きが行われない限り、自動的に課金されます。</li>
-                        <li><strong>解約</strong>: ユーザーはマイページからいつでも解約手続きを行うことができます。解約した場合、即時にFreeプランへ移行します。</li>
+                        <li><strong>解約</strong>: ユーザーはマイページからいつでも解約手続きを行うことができます。Pro PlanおよびPremium Planを解約した場合、解約後も1か月間満了までプランを使用可能です。期間満了後、Freeプランへ移行します。</li>
                         <li><strong>返金</strong>: 既にお支払いいただいた利用料金の返金には応じられません。</li>
                     </ol>
                 </div>
@@ -276,6 +279,7 @@ const Terms = () => {
                             <li>Saran rekomendasi: Hingga 10 kali per bulan</li>
                             <li>Pendaftaran kosmetik: Hingga 2 kali per bulan</li>
                         </ul>
+                        <p className="mt-2 text-sm text-gray-600">※Reset jumlah penggunaan berdasarkan kalender bulanan (reset setiap tanggal 1).</p>
                     </div>
 
                     <div className="mb-4">
@@ -285,6 +289,7 @@ const Terms = () => {
                             <li>Saran rekomendasi: Tanpa batas</li>
                             <li>Pendaftaran kosmetik: Hingga 10 kali</li>
                         </ul>
+                        <p className="mt-2 text-sm text-gray-600">※Reset jumlah penggunaan berdasarkan tanggal pendaftaran.</p>
                     </div>
 
                     <div className="mb-4">
@@ -294,6 +299,7 @@ const Terms = () => {
                             <li>Saran rekomendasi: Tanpa batas</li>
                             <li>Pendaftaran kosmetik: Hingga 15 kali per bulan</li>
                         </ul>
+                        <p className="mt-2 text-sm text-gray-600">※Reset jumlah penggunaan berdasarkan tanggal pendaftaran.</p>
                     </div>
                     <p className="mt-4">Batasan ini ditetapkan untuk penggunaan layanan yang adil dan pemeliharaan kualitas.</p>
                 </div>
@@ -305,7 +311,7 @@ const Terms = () => {
                         <li><strong>Biaya Penggunaan</strong>: Biaya penggunaan mengikuti tabel harga yang ditetapkan secara terpisah (ketentuan berdasarkan Undang-Undang Transaksi Komersial Tertentu).</li>
                         <li><strong>Metode Pembayaran</strong>: Hanya menerima pembayaran kartu kredit melalui Stripe.</li>
                         <li><strong>Perpanjangan Otomatis</strong>: Paket berbayar akan diperpanjang secara otomatis setiap bulan. Kecuali prosedur pembatalan dilakukan, pembayaran akan dilakukan secara otomatis.</li>
-                        <li><strong>Pembatalan</strong>: Pengguna dapat melakukan prosedur pembatalan kapan saja dari halaman My Page. Jika dibatalkan, akan segera beralih ke Paket Free.</li>
+                        <li><strong>Pembatalan</strong>: Pengguna dapat melakukan prosedur pembatalan kapan saja dari halaman My Page. Jika Paket Pro atau Paket Premium dibatalkan, paket tersebut masih dapat digunakan hingga 1 bulan setelah pembatalan. Setelah periode berakhir, akan beralih ke Paket Free.</li>
                         <li><strong>Pengembalian Dana</strong>: Kami tidak dapat memberikan pengembalian dana untuk biaya penggunaan yang telah dibayarkan.</li>
                     </ol>
                 </div>
@@ -495,6 +501,7 @@ const Terms = () => {
                             <li>Recommendation suggestions: Up to 10 times per month</li>
                             <li>Cosmetic registration: Up to 2 times per month</li>
                         </ul>
+                        <p className="mt-2 text-sm text-gray-600">※Usage count resets are based on calendar month (resets on the 1st of each month).</p>
                     </div>
 
                     <div className="mb-4">
@@ -504,6 +511,7 @@ const Terms = () => {
                             <li>Recommendation suggestions: Unlimited</li>
                             <li>Cosmetic registration: Up to 10 times</li>
                         </ul>
+                        <p className="mt-2 text-sm text-gray-600">※Usage count resets are based on subscription start date.</p>
                     </div>
 
                     <div className="mb-4">
@@ -513,6 +521,7 @@ const Terms = () => {
                             <li>Recommendation suggestions: Unlimited</li>
                             <li>Cosmetic registration: Up to 15 times per month</li>
                         </ul>
+                        <p className="mt-2 text-sm text-gray-600">※Usage count resets are based on subscription start date.</p>
                     </div>
                     <p className="mt-4">These restrictions are set for fair use of the service and quality maintenance.</p>
                 </div>
@@ -524,7 +533,7 @@ const Terms = () => {
                         <li><strong>Usage Fees</strong>: Usage fees follow the separately specified fee table (Commercial Transaction Terms).</li>
                         <li><strong>Payment Method</strong>: Only credit card payments through Stripe are accepted.</li>
                         <li><strong>Auto-Renewal</strong>: Paid plans will automatically renew monthly. Unless cancellation procedures are performed, billing will occur automatically.</li>
-                        <li><strong>Cancellation</strong>: Users can perform cancellation procedures at any time from My Page. If cancelled, will immediately switch to Free plan.</li>
+                        <li><strong>Cancellation</strong>: Users can perform cancellation procedures at any time from My Page. If Pro Plan or Premium Plan is cancelled, the plan can still be used for 1 month after cancellation until the period expires. After the period ends, it will switch to Free plan.</li>
                         <li><strong>Refunds</strong>: We cannot provide refunds for usage fees already paid.</li>
                     </ol>
                 </div>

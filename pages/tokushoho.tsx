@@ -74,7 +74,7 @@ const Tokushoho = () => {
                 <div className="mb-8">
                     <h3 className="text-xl font-bold mb-4">■ サービス提供期間</h3>
                     <p>契約成立日から解約日まで。</p>
-                    <p className="mt-2">解約直後からFreeプランが適用されます。</p>
+                    <p className="mt-2">Pro PlanおよびPremium Planを解約した場合、解約後も1か月間満了までプランを使用可能です。期間満了後、Freeプランへ移行します。</p>
                 </div>
 
                 <div className="mb-8">
@@ -167,7 +167,7 @@ const Tokushoho = () => {
                 <div className="mb-8">
                     <h3 className="text-xl font-bold mb-4">■ Periode Penyediaan Layanan</h3>
                     <p>Dari tanggal kontrak hingga tanggal pembatalan.</p>
-                    <p className="mt-2">Paket Free akan diterapkan segera setelah pembatalan.</p>
+                    <p className="mt-2">Jika Paket Pro atau Paket Premium dibatalkan, paket tersebut masih dapat digunakan hingga 1 bulan setelah pembatalan. Setelah periode berakhir, akan beralih ke Paket Free.</p>
                 </div>
 
                 <div className="mb-8">
@@ -260,7 +260,7 @@ const Tokushoho = () => {
                 <div className="mb-8">
                     <h3 className="text-xl font-bold mb-4">■ Service Provision Period</h3>
                     <p>From the contract date until the cancellation date.</p>
-                    <p className="mt-2">Free plan will be applied immediately after cancellation.</p>
+                    <p className="mt-2">If Pro Plan or Premium Plan is cancelled, the plan can still be used for 1 month after cancellation until the period expires. After the period ends, it will switch to Free plan.</p>
                 </div>
 
                 <div className="mb-8">
