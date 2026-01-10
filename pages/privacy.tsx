@@ -200,6 +200,16 @@ const Privacy = () => {
                             <li><strong> プライバシーポリシー </strong>: <a href="https://stripe.com/jp/privacy" className="text-blue-600 hover:underline" target="_blank" rel="noopener noreferrer">https://stripe.com/jp/privacy</a></li>
                         </ul>
                     </div>
+
+                    <div className="mb-4">
+                        <h4 className="text-lg font-bold mb-2">5.11 Sentry</h4>
+                        <ul className="list-disc pl-6 space-y-1">
+                            <li><strong> 用途 </strong>: アクセス解析・エラーログの収集</li>
+                            <li><strong> 提供情報 </strong>: 利用端末の種類、OS、ブラウザ情報、アクセスしたページURL、発生したエラー内容、スタックトレース、IPアドレス（短縮または匿名化される場合があります）</li>
+                            <li><strong> 注意 </strong>: これらの情報には、氏名・メールアドレス等の個人を直接特定する情報は含まれません</li>
+                            <li><strong> プライバシーポリシー </strong>: <a href="https://sentry.io/privacy/" className="text-blue-600 hover:underline" target="_blank" rel="noopener noreferrer">https://sentry.io/privacy/</a></li>
+                        </ul>
+                    </div>
                 </div>
 
                 <div className="mb-8">
@@ -453,6 +463,16 @@ const Privacy = () => {
                             <li><strong> Kebijakan Privasi </strong>: <a href="https://stripe.com/jp/privacy" className="text-blue-600 hover:underline" target="_blank" rel="noopener noreferrer">https://stripe.com/jp/privacy</a></li>
                         </ul>
                     </div>
+
+                    <div className="mb-4">
+                        <h4 className="text-lg font-bold mb-2">5.11 Sentry</h4>
+                        <ul className="list-disc pl-6 space-y-1">
+                            <li><strong> Tujuan </strong>: Pengumpulan log analitik akses dan kesalahan</li>
+                            <li><strong> Informasi yang diberikan </strong>: Jenis perangkat yang digunakan, OS, informasi browser, URL halaman yang diakses, konten kesalahan yang terjadi, stack trace, alamat IP (dapat dipendekkan atau dianonimkan)</li>
+                            <li><strong> Catatan </strong>: Informasi ini tidak mengandung informasi yang secara langsung mengidentifikasi individu seperti nama atau alamat email</li>
+                            <li><strong> Kebijakan Privasi </strong>: <a href="https://sentry.io/privacy/" className="text-blue-600 hover:underline" target="_blank" rel="noopener noreferrer">https://sentry.io/privacy/</a></li>
+                        </ul>
+                    </div>
                 </div>
 
                 <div className="mb-8">
@@ -704,6 +724,16 @@ const Privacy = () => {
                             <li><strong> Purpose </strong>: Credit card payment processing</li>
                             <li><strong> Information Provided </strong>: Credit card information (provided directly), email address</li>
                             <li><strong> Privacy Policy </strong>: <a href="https://stripe.com/jp/privacy" className="text-blue-600 hover:underline" target="_blank" rel="noopener noreferrer">https://stripe.com/jp/privacy</a></li>
+                        </ul>
+                    </div>
+
+                    <div className="mb-4">
+                        <h4 className="text-lg font-bold mb-2">5.11 Sentry</h4>
+                        <ul className="list-disc pl-6 space-y-1">
+                            <li><strong> Purpose </strong>: Access analytics and error log collection</li>
+                            <li><strong> Information Provided </strong>: Device type, OS, browser information, accessed page URLs, error content, stack traces, IP addresses (may be shortened or anonymized)</li>
+                            <li><strong> Note </strong>: This information does not include personally identifiable information such as names or email addresses</li>
+                            <li><strong> Privacy Policy </strong>: <a href="https://sentry.io/privacy/" className="text-blue-600 hover:underline" target="_blank" rel="noopener noreferrer">https://sentry.io/privacy/</a></li>
                         </ul>
                     </div>
                 </div>
