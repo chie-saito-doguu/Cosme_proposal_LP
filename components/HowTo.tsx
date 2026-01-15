@@ -2,7 +2,17 @@ import React from 'react';
 import { useLanguage } from '../LanguageContext';
 
 const HowTo: React.FC = () => {
-  const { t } = useLanguage();
+  const { t, language } = useLanguage();
+
+  // 言語コードを画像プレフィックスに変換 (ja→jp, id→id, en→en)
+  const getImagePrefix = () => {
+    const prefixMap: Record<string, string> = {
+      ja: 'jp',
+      id: 'id',
+      en: 'en'
+    };
+    return prefixMap[language] || 'jp';
+  };
 
   return (
     <section className="py-32 bg-gray-50 border-t border-gray-100 font-black">
@@ -21,7 +31,7 @@ const HowTo: React.FC = () => {
           {/* Step 1 */}
           <div className="bg-white rounded-[2.5rem] p-8 md:p-10 relative overflow-hidden group shadow-xl hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2 flex flex-col">
             <div className="absolute -right-4 -top-4 w-40 h-40 bg-primary rounded-full opacity-10 group-hover:scale-150 transition-transform duration-500"></div>
-            <div className="relative z-10 text-center md:text-left mb-8">
+            <div className="relative z-10 text-center md:text-left mb-2">
               <span className="block text-8xl font-black text-primary mb-6 leading-none">01</span>
               <h4 className="text-3xl md:text-4xl font-black text-black mb-6">{t.howto.step1_title}</h4>
               <p className="text-gray-600 font-black text-lg md:text-xl leading-relaxed">
@@ -36,7 +46,7 @@ const HowTo: React.FC = () => {
             {/* Mobile Screen Placeholder - Shortened height (approx 2/3) */}
             <div className="mt-auto relative w-full max-w-[320px] md:max-w-[360px] mx-auto aspect-[9/13] bg-gray-100 rounded-[2rem] border-8 border-gray-50 shadow-inner overflow-hidden">
               <img
-                src="/step1.png"
+                src={`/${getImagePrefix()}1.png`}
                 alt="コスメ登録画面"
                 className="w-full h-full object-cover"
               />
@@ -46,7 +56,7 @@ const HowTo: React.FC = () => {
           {/* Step 2 */}
           <div className="bg-white rounded-[2.5rem] p-8 md:p-10 relative overflow-hidden group shadow-xl hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2 flex flex-col">
             <div className="absolute -right-4 -top-4 w-40 h-40 bg-primary rounded-full opacity-10 group-hover:scale-150 transition-transform duration-500"></div>
-            <div className="relative z-10 text-center md:text-left mb-8">
+            <div className="relative z-10 text-center md:text-left mb-2">
               <span className="block text-8xl font-black text-primary mb-6 leading-none">02</span>
               <h4 className="text-3xl md:text-4xl font-black text-black mb-6">{t.howto.step2_title}</h4>
               <p className="text-gray-600 font-black text-lg md:text-xl leading-relaxed">
@@ -61,7 +71,7 @@ const HowTo: React.FC = () => {
             {/* Mobile Screen Placeholder - Shortened height (approx 2/3) */}
             <div className="mt-auto relative w-full max-w-[320px] md:max-w-[360px] mx-auto aspect-[9/13] bg-gray-100 rounded-[2rem] border-8 border-gray-50 shadow-inner overflow-hidden">
               <img
-                src="/step2.png"
+                src={`/${getImagePrefix()}2.png`}
                 alt="気分入力画面"
                 className="w-full h-full object-cover"
               />
@@ -71,7 +81,7 @@ const HowTo: React.FC = () => {
           {/* Step 3 */}
           <div className="bg-white rounded-[2.5rem] p-8 md:p-10 relative overflow-hidden group shadow-xl hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2 flex flex-col">
             <div className="absolute -right-4 -top-4 w-40 h-40 bg-primary rounded-full opacity-10 group-hover:scale-150 transition-transform duration-500"></div>
-            <div className="relative z-10 text-center md:text-left mb-8">
+            <div className="relative z-10 text-center md:text-left mb-2">
               <span className="block text-8xl font-black text-primary mb-6 leading-none">03</span>
               <h4 className="text-3xl md:text-4xl font-black text-black mb-6">{t.howto.step3_title}</h4>
               <p className="text-gray-600 font-black text-lg md:text-xl leading-relaxed">
@@ -86,7 +96,7 @@ const HowTo: React.FC = () => {
             {/* Mobile Screen Placeholder - Shortened height (approx 2/3) */}
             <div className="mt-auto relative w-full max-w-[320px] md:max-w-[360px] mx-auto aspect-[9/13] bg-gray-100 rounded-[2rem] border-8 border-gray-50 shadow-inner overflow-hidden">
               <img
-                src="/step3.png"
+                src={`/${getImagePrefix()}3.png`}
                 alt="メイク提案画面"
                 className="w-full h-full object-cover"
               />
