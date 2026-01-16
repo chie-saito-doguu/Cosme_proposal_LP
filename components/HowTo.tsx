@@ -147,6 +147,9 @@ const HowTo: React.FC = () => {
                   </React.Fragment>
                 ))}
               </p>
+              <p className="text-gray-400 text-xs font-black mt-2">
+                {t.howto.step3_note}
+              </p>
             </div>
             {/* Mobile Screen with Slideshow */}
             <div className="mt-auto relative w-full max-w-[320px] md:max-w-[360px] mx-auto">

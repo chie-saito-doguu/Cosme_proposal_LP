@@ -30,6 +30,7 @@ export const translations = {
             step2_desc: "今の気分や着る服を伝えます。",
             step3_title: "メイク提案",
             step3_desc: "使うコスメも、塗り方も。\nあなた専用レシピが届きます。",
+            step3_note: "※外見も設定できます",
         },
         cta: {
             title: "あなたのポーチに、\n革命を。",
@@ -72,6 +73,7 @@ export const translations = {
             step2_desc: "Sampaikan mood atau pakaian yang Anda kenakan saat ini.",
             step3_title: "Saran Makeup",
             step3_desc: "Kosmetik yang dipakai dan cara pakainya.\nResep khusus untukmu akan tiba.",
+            step3_note: "※Tampilan juga dapat diatur",
         },
         cta: {
             title: "Revolusi di\nPouch Makeup Anda.",
@@ -114,6 +116,7 @@ export const translations = {
             step2_desc: "Tell us your current mood or what you're wearing.",
             step3_title: "Makeup Suggestions",
             step3_desc: "Which cosmetics to use and how to apply them.\nYour personalized recipe will arrive.",
+            step3_note: "※Appearance can also be customized",
         },
         cta: {
             title: "Revolution in\nyour makeup pouch.",
