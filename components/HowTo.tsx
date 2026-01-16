@@ -1,5 +1,62 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import { useLanguage } from '../LanguageContext';
+
+// 画像切り替えカスタムフック
+const useImageSlideshow = (imageCount: number, interval: number = 3000) => {
+  const [currentIndex, setCurrentIndex] = useState(0);
+
+  useEffect(() => {
+    if (imageCount <= 1) return;
+
+    const timer = setInterval(() => {
+      setCurrentIndex((prev) => (prev + 1) % imageCount);
+    }, interval);
+
+    return () => clearInterval(timer);
+  }, [imageCount, interval]);
+
+  return currentIndex;
+};
+
+// 画像スライドショーコンポーネント
+const ImageSlideshow: React.FC<{ images: string[]; alt: string }> = ({ images, alt }) => {
+  const currentIndex = useImageSlideshow(images.length, 3000);
+
+  if (images.length === 0) return null;
+
+  return (
+    <div className="relative w-full">
+      {/* 画像コンテナ */}
+      <div className="relative w-full aspect-[9/13] bg-gray-100 rounded-[2rem] border-8 border-gray-50 shadow-inner overflow-hidden">
+        {images.map((src, index) => (
+          <img
+            key={src}
+            src={src}
+            alt={alt}
+            className={`absolute inset-0 w-full h-full object-cover transition-opacity duration-700 ${
+              index === currentIndex ? 'opacity-100' : 'opacity-0'
+            }`}
+          />
+        ))}
+      </div>
+      {/* インジケーター */}
+      {images.length > 1 && (
+        <div className="absolute -bottom-6 right-0 flex gap-1">
+          {images.map((_, index) => (
+            <span
+              key={index}
+              className={`text-xs font-black transition-colors ${
+                index === currentIndex ? 'text-gray-400' : 'text-gray-200'
+              }`}
+            >
+              {index + 1}
+            </span>
+          ))}
+        </div>
+      )}
+    </div>
+  );
+};
 
 const HowTo: React.FC = () => {
   const { t, language } = useLanguage();
@@ -13,6 +70,12 @@ const HowTo: React.FC = () => {
     };
     return prefixMap[language] || 'jp';
   };
+
+  // 各ステップの画像リストを生成
+  const prefix = getImagePrefix();
+  const step1Images = [`${prefix}1-1.png`, `${prefix}1-2.png`].map((img) => `/${img}`);
+  const step2Images = [`${prefix}2-1.png`].map((img) => `/${img}`);
+  const step3Images = [`${prefix}3-1.png`, `${prefix}3-2.png`, `${prefix}3-3.png`, `${prefix}3-4.png`].map((img) => `/${img}`);
 
   return (
     <section className="py-32 bg-gray-50 border-t border-gray-100 font-black">
@@ -43,13 +106,9 @@ const HowTo: React.FC = () => {
                 ))}
               </p>
             </div>
-            {/* Mobile Screen Placeholder - Shortened height (approx 2/3) */}
-            <div className="mt-auto relative w-full max-w-[320px] md:max-w-[360px] mx-auto aspect-[9/13] bg-gray-100 rounded-[2rem] border-8 border-gray-50 shadow-inner overflow-hidden">
-              <img
-                src={`/${getImagePrefix()}1.png`}
-                alt="コスメ登録画面"
-                className="w-full h-full object-cover"
-              />
+            {/* Mobile Screen with Slideshow */}
+            <div className="mt-auto relative w-full max-w-[320px] md:max-w-[360px] mx-auto">
+              <ImageSlideshow images={step1Images} alt="コスメ登録画面" />
             </div>
           </div>
 
@@ -68,13 +127,9 @@ const HowTo: React.FC = () => {
                 ))}
               </p>
             </div>
-            {/* Mobile Screen Placeholder - Shortened height (approx 2/3) */}
-            <div className="mt-auto relative w-full max-w-[320px] md:max-w-[360px] mx-auto aspect-[9/13] bg-gray-100 rounded-[2rem] border-8 border-gray-50 shadow-inner overflow-hidden">
-              <img
-                src={`/${getImagePrefix()}2.png`}
-                alt="気分入力画面"
-                className="w-full h-full object-cover"
-              />
+            {/* Mobile Screen with Slideshow */}
+            <div className="mt-auto relative w-full max-w-[320px] md:max-w-[360px] mx-auto">
+              <ImageSlideshow images={step2Images} alt="気分入力画面" />
             </div>
           </div>
 
@@ -93,13 +148,9 @@ const HowTo: React.FC = () => {
                 ))}
               </p>
             </div>
-            {/* Mobile Screen Placeholder - Shortened height (approx 2/3) */}
-            <div className="mt-auto relative w-full max-w-[320px] md:max-w-[360px] mx-auto aspect-[9/13] bg-gray-100 rounded-[2rem] border-8 border-gray-50 shadow-inner overflow-hidden">
-              <img
-                src={`/${getImagePrefix()}3.png`}
-                alt="メイク提案画面"
-                className="w-full h-full object-cover"
-              />
+            {/* Mobile Screen with Slideshow */}
+            <div className="mt-auto relative w-full max-w-[320px] md:max-w-[360px] mx-auto">
+              <ImageSlideshow images={step3Images} alt="メイク提案画面" />
             </div>
           </div>
 
