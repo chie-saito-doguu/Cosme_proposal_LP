@@ -3,6 +3,7 @@ import ReactDOM from 'react-dom/client';
 import App from './App';
 import { LanguageProvider } from './LanguageContext';
 import { BrowserRouter } from 'react-router-dom';
+import { Analytics } from '@vercel/analytics/react';
 
 const rootElement = document.getElementById('root');
 if (!rootElement) {
@@ -17,5 +18,6 @@ root.render(
         <App />
       </BrowserRouter>
     </LanguageProvider>
+    <Analytics />
   </React.StrictMode>
 );
