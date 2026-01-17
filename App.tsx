@@ -2,6 +2,7 @@ import React from 'react';
 import { Routes, Route, Link } from 'react-router-dom';
 import { Sparkles } from 'lucide-react';
 import LanguageSelector from './components/LanguageSelector';
+import LanguageModal from './components/LanguageModal';
 import { useLanguage } from './LanguageContext';
 import HomePage from './pages/HomePage';
 import Terms from './pages/terms';
@@ -9,10 +10,12 @@ import Privacy from './pages/privacy';
 import Tokushoho from './pages/tokushoho';
 
 const App: React.FC = () => {
-  const { t } = useLanguage();
+  const { t, hasSelectedLanguage } = useLanguage();
 
   return (
     <div className="min-h-screen flex flex-col font-sans bg-white text-text-main font-black">
+      {/* 言語選択モーダル（初回のみ） */}
+      {!hasSelectedLanguage && <LanguageModal />}
 
       <header className="fixed top-0 left-0 right-0 z-50 bg-primary border-b border-primary-dark/10">
         <div className="
