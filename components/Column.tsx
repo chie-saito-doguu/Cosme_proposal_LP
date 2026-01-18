@@ -23,7 +23,7 @@ const Column: React.FC = () => {
   const { t } = useLanguage();
   const [isOpen, setIsOpen] = useState(false);
 
-  const columnImages = ['/column1.jpg', '/column2.jpg'];
+  const columnImages = ['/column1.webp', '/column2.webp'];
   const currentIndex = useImageSlideshow(isOpen ? columnImages.length : 0, 4000);
 
   return (

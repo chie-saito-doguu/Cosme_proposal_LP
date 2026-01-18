@@ -5,10 +5,10 @@ import { useLanguage } from '../LanguageContext';
 const Hero: React.FC = () => {
   const { t } = useLanguage();
   const images = [
-    '/hero-image_1.jpg',
-    '/hero-image_2.jpg',
-    '/hero-image_3.jpg',
-    '/hero-image_4.jpg',
+    '/hero-image_1.webp',
+    '/hero-image_2.webp',
+    '/hero-image_3.webp',
+    '/hero-image_4.webp',
   ];
 
   const [currentIndex, setCurrentIndex] = useState(0);
