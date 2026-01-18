@@ -1,14 +1,15 @@
 import React, { useEffect, useState } from 'react';
 import { Sparkles } from 'lucide-react';
 import { useLanguage } from '../LanguageContext';
+import { getOptimizedImage } from '../utils/imageUtils';
 
 const Hero: React.FC = () => {
   const { t } = useLanguage();
   const images = [
-    '/hero-image_1.webp',
-    '/hero-image_2.webp',
-    '/hero-image_3.webp',
-    '/hero-image_4.webp',
+    getOptimizedImage('/hero-image_1.webp'),
+    getOptimizedImage('/hero-image_2.webp'),
+    getOptimizedImage('/hero-image_3.webp'),
+    getOptimizedImage('/hero-image_4.webp'),
   ];
 
   const [currentIndex, setCurrentIndex] = useState(0);

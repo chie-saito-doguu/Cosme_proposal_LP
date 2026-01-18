@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import { useLanguage } from '../LanguageContext';
 import { ChevronDown } from 'lucide-react';
+import { getOptimizedImage } from '../utils/imageUtils';
 
 // 画像切り替えカスタムフック
 const useImageSlideshow = (imageCount: number, interval: number = 4000) => {
@@ -23,7 +24,7 @@ const Column: React.FC = () => {
   const { t } = useLanguage();
   const [isOpen, setIsOpen] = useState(false);
 
-  const columnImages = ['/column1.webp', '/column2.webp'];
+  const columnImages = [getOptimizedImage('/column1.webp'), getOptimizedImage('/column2.webp')];
   const currentIndex = useImageSlideshow(isOpen ? columnImages.length : 0, 4000);
 
   return (
