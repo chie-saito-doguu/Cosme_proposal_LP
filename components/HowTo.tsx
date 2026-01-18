@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { useLanguage } from '../LanguageContext';
+import { getOptimizedImage } from '../utils/imageUtils';
 
 // 画像切り替えカスタムフック
 const useImageSlideshow = (imageCount: number, interval: number = 3000) => {
@@ -73,9 +74,9 @@ const HowTo: React.FC = () => {
 
   // 各ステップの画像リストを生成
   const prefix = getImagePrefix();
-  const step1Images = [`${prefix}1-1.png`, `${prefix}1-2.png`].map((img) => `/${img}`);
-  const step2Images = [`${prefix}2-1.png`].map((img) => `/${img}`);
-  const step3Images = [`${prefix}3-1.png`, `${prefix}3-2.png`, `${prefix}3-3.png`, `${prefix}3-4.png`].map((img) => `/${img}`);
+  const step1Images = [`${prefix}1-1.png`, `${prefix}1-2.png`].map((img) => getOptimizedImage(`/${img}`));
+  const step2Images = [`${prefix}2-1.png`].map((img) => getOptimizedImage(`/${img}`));
+  const step3Images = [`${prefix}3-1.png`, `${prefix}3-2.png`, `${prefix}3-3.png`, `${prefix}3-4.png`].map((img) => getOptimizedImage(`/${img}`));
 
   return (
     <section className="py-32 bg-gray-50 border-t border-gray-100 font-black">
