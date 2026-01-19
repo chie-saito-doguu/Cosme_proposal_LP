@@ -210,6 +210,16 @@ const Privacy = () => {
                             <li><strong> プライバシーポリシー </strong>: <a href="https://sentry.io/privacy/" className="text-blue-600 hover:underline" target="_blank" rel="noopener noreferrer">https://sentry.io/privacy/</a></li>
                         </ul>
                     </div>
+
+                    <div className="mb-4">
+                        <h4 className="text-lg font-bold mb-2">5.12 Google Analytics</h4>
+                        <ul className="list-disc pl-6 space-y-1">
+                            <li><strong> 用途 </strong>: アクセス解析</li>
+                            <li><strong> 提供情報 </strong>: アクセスしたページURL、ブラウザ情報、利用端末情報</li>
+                            <li><strong> 注意 </strong>: トラフィックデータの収集のためにクッキー（Cookie）を使用しています。このトラフィックデータは匿名で収集されており、個人を特定するものではありません。</li>
+                            <li><strong> プライバシーポリシー </strong>: <a href="https://policies.google.com/privacy" className="text-blue-600 hover:underline" target="_blank" rel="noopener noreferrer">https://policies.google.com/privacy</a></li>
+                        </ul>
+                    </div>
                 </div>
 
                 <div className="mb-8">
@@ -254,6 +264,12 @@ const Privacy = () => {
                         <li>セッション情報</li>
                     </ul>
                     <p className="mt-4">これらの情報は、ユーザーのブラウザ内にのみ保存され、サービス体験の向上のために使用されます。</p>
+
+                    <div className="mt-6 p-4 bg-gray-50 rounded">
+                        <h4 className="text-lg font-bold mb-2">アクセス解析ツールについて</h4>
+                        <p>当サイトでは、Googleによるアクセス解析ツール「Googleアナリティクス」を利用しています。このGoogleアナリティクスはトラフィックデータの収集のためにクッキー（Cookie）を使用しています。このトラフィックデータは匿名で収集されており、個人を特定するものではありません。</p>
+                        <p className="mt-2">この機能はクッキーを無効にすることで収集を拒否することが出来ますので、お使いのブラウザの設定をご確認ください。この規約に関して、詳しくは<a href="https://marketingplatform.google.com/about/analytics/terms/jp/" className="text-blue-600 hover:underline" target="_blank" rel="noopener noreferrer">Google アナリティクス利用規約</a>や<a href="https://policies.google.com/privacy?hl=ja" className="text-blue-600 hover:underline" target="_blank" rel="noopener noreferrer">Googleのサービスを使用するサイトやアプリから収集した情報のGoogleによる使用</a>をご覧ください。</p>
+                    </div>
                 </div>
 
                 <div className="mb-8">
@@ -473,6 +489,16 @@ const Privacy = () => {
                             <li><strong> Kebijakan Privasi </strong>: <a href="https://sentry.io/privacy/" className="text-blue-600 hover:underline" target="_blank" rel="noopener noreferrer">https://sentry.io/privacy/</a></li>
                         </ul>
                     </div>
+
+                    <div className="mb-4">
+                        <h4 className="text-lg font-bold mb-2">5.12 Google Analytics</h4>
+                        <ul className="list-disc pl-6 space-y-1">
+                            <li><strong> Tujuan </strong>: Analitik akses</li>
+                            <li><strong> Informasi yang diberikan </strong>: URL halaman yang diakses, informasi browser, informasi perangkat</li>
+                            <li><strong> Catatan </strong>: Untuk pengumpulan data lalu lintas, kami menggunakan Cookie. Data lalu lintas ini dikumpulkan secara anonim dan tidak mengidentifikasi individu.</li>
+                            <li><strong> Kebijakan Privasi </strong>: <a href="https://policies.google.com/privacy" className="text-blue-600 hover:underline" target="_blank" rel="noopener noreferrer">https://policies.google.com/privacy</a></li>
+                        </ul>
+                    </div>
                 </div>
 
                 <div className="mb-8">
@@ -517,6 +543,12 @@ const Privacy = () => {
                         <li>Informasi sesi</li>
                     </ul>
                     <p className="mt-4">Informasi ini hanya disimpan di browser pengguna dan digunakan untuk meningkatkan pengalaman layanan.</p>
+
+                    <div className="mt-6 p-4 bg-gray-50 rounded">
+                        <h4 className="text-lg font-bold mb-2">Tentang Alat Analitik Akses</h4>
+                        <p>Situs ini menggunakan alat analitik akses "Google Analytics" oleh Google. Google Analytics menggunakan Cookie untuk mengumpulkan data lalu lintas. Data lalu lintas ini dikumpulkan secara anonim dan tidak mengidentifikasi individu.</p>
+                        <p className="mt-2">Anda dapat menolak pengumpulan dengan menonaktifkan Cookie. Silakan periksa pengaturan browser Anda. Untuk informasi lebih lanjut tentang ketentuan ini, silakan lihat <a href="https://marketingplatform.google.com/about/analytics/terms/jp/" className="text-blue-600 hover:underline" target="_blank" rel="noopener noreferrer">Ketentuan Penggunaan Google Analytics</a> dan <a href="https://policies.google.com/privacy?hl=ja" className="text-blue-600 hover:underline" target="_blank" rel="noopener noreferrer">Penggunaan Informasi oleh Google dari Situs dan Aplikasi yang Menggunakan Layanan Google</a>.</p>
+                    </div>
                 </div>
 
                 <div className="mb-8">
@@ -736,6 +768,16 @@ const Privacy = () => {
                             <li><strong> Privacy Policy </strong>: <a href="https://sentry.io/privacy/" className="text-blue-600 hover:underline" target="_blank" rel="noopener noreferrer">https://sentry.io/privacy/</a></li>
                         </ul>
                     </div>
+
+                    <div className="mb-4">
+                        <h4 className="text-lg font-bold mb-2">5.12 Google Analytics</h4>
+                        <ul className="list-disc pl-6 space-y-1">
+                            <li><strong> Purpose </strong>: Access analytics</li>
+                            <li><strong> Information Provided </strong>: Accessed page URLs, browser information, device information</li>
+                            <li><strong> Note </strong>: For traffic data collection, we use Cookies. This traffic data is collected anonymously and does not identify individuals.</li>
+                            <li><strong> Privacy Policy </strong>: <a href="https://policies.google.com/privacy" className="text-blue-600 hover:underline" target="_blank" rel="noopener noreferrer">https://policies.google.com/privacy</a></li>
+                        </ul>
+                    </div>
                 </div>
 
                 <div className="mb-8">
@@ -780,6 +822,12 @@ const Privacy = () => {
                         <li>Session information</li>
                     </ul>
                     <p className="mt-4">This information is only stored in the user's browser and is used to improve the service experience.</p>
+
+                    <div className="mt-6 p-4 bg-gray-50 rounded">
+                        <h4 className="text-lg font-bold mb-2">About Access Analytics Tools</h4>
+                        <p>This site uses Google's access analytics tool "Google Analytics." Google Analytics uses Cookies to collect traffic data. This traffic data is collected anonymously and does not identify individuals.</p>
+                        <p className="mt-2">You can refuse collection by disabling Cookies. Please check your browser settings. For more information about these terms, please see the <a href="https://marketingplatform.google.com/about/analytics/terms/jp/" className="text-blue-600 hover:underline" target="_blank" rel="noopener noreferrer">Google Analytics Terms of Use</a> and <a href="https://policies.google.com/privacy?hl=ja" className="text-blue-600 hover:underline" target="_blank" rel="noopener noreferrer">Google's Use of Information from Sites and Apps That Use Google Services</a>.</p>
+                    </div>
                 </div>
 
                 <div className="mb-8">

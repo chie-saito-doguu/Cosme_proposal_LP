@@ -207,7 +207,7 @@ const Terms = () => {
                             <p className="mt-2">ユーザーは、本サービスの利用において、これらの第三者サービスによってデータが処理されることに同意するものとします。</p>
                         </li>
                         <li>
-                            サービス改善のための情報収集: 本サービスでは、安定した運営および品質向上のため、エラーログや利用状況に関する情報を収集する場合があります。これらの情報は、第三者ツール（Sentry等）を通じて収集・分析され、不具合の調査およびサービス改善の目的以外には使用されません。
+                            サービス改善のための情報収集: 本サービスでは、安定した運営および品質向上のため、エラーログや利用状況に関する情報を収集する場合があります。これらの情報は、第三者ツール（Sentry、Google Analytics等）を通じて収集・分析され、不具合の調査およびサービス改善の目的以外には使用されません。
                         </li>
                     </ol>
                 </div>
@@ -432,7 +432,7 @@ const Terms = () => {
                             <p className="mt-2">Pengguna setuju bahwa data akan diproses oleh layanan pihak ketiga ini dalam penggunaan Layanan.</p>
                         </li>
                         <li>
-                            Pengumpulan Informasi untuk Peningkatan Layanan: Layanan ini dapat mengumpulkan informasi terkait log kesalahan dan kondisi penggunaan untuk operasi yang stabil dan peningkatan kualitas. Informasi ini dikumpulkan dan dianalisis melalui alat pihak ketiga (Sentry, dll.) dan hanya digunakan untuk tujuan investigasi masalah dan peningkatan layanan.
+                            Pengumpulan Informasi untuk Peningkatan Layanan: Layanan ini dapat mengumpulkan informasi terkait log kesalahan dan kondisi penggunaan untuk operasi yang stabil dan peningkatan kualitas. Informasi ini dikumpulkan dan dianalisis melalui alat pihak ketiga (Sentry, Google Analytics, dll.) dan hanya digunakan untuk tujuan investigasi masalah dan peningkatan layanan.
                         </li>
                     </ol>
                 </div>
@@ -658,7 +658,7 @@ const Terms = () => {
                             <p className="mt-2">Users agree that data will be processed by these third-party services in using the Service.</p>
                         </li>
                         <li>
-                            Information Collection for Service Improvement: This Service may collect information regarding error logs and usage conditions for stable operation and quality improvement. This information is collected and analyzed through third-party tools (Sentry, etc.) and is used solely for the purpose of investigating issues and improving the service.
+                            Information Collection for Service Improvement: This Service may collect information regarding error logs and usage conditions for stable operation and quality improvement. This information is collected and analyzed through third-party tools (Sentry, Google Analytics, etc.) and is used solely for the purpose of investigating issues and improving the service.
                         </li>
                     </ol>
                 </div>
