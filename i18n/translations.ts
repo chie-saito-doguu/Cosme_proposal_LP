@@ -42,6 +42,9 @@ export const translations = {
             terms: "利用規約",
             tokushoho: "特定商取引法に基づく表記",
             copyright: "© 2025 Cosme AI. All rights reserved.",
+            announcement_label: "お知らせ",
+            announcement_date: "2025.01.20",
+            announcement: "ログインにエラーが発生しており、現在対応中です。今しばらくお待ちください。",
         },
         column: {
             title: "開発者のリアル体験記",
@@ -103,6 +106,9 @@ export const translations = {
             terms: "Syarat & Ketentuan",
             tokushoho: "Ketentuan Transaksi Komersial",
             copyright: "© 2025 Cosme AI. All rights reserved.",
+            announcement_label: "Pengumuman",
+            announcement_date: "2025.01.20",
+            announcement: "Terjadi kesalahan pada login dan sedang dalam penanganan. Mohon tunggu sebentar.",
         },
         column: {
             title: "Pengalaman Nyata Pengembang",
@@ -164,6 +170,9 @@ export const translations = {
             terms: "Terms of Service",
             tokushoho: "Commercial Transaction Terms",
             copyright: "© 2025 Cosme AI. All rights reserved.",
+            announcement_label: "Announcement",
+            announcement_date: "2025.01.20",
+            announcement: "There is an error with login and we are currently addressing it. Please wait a moment.",
         },
         column: {
             title: "Developer's Real Experience",
