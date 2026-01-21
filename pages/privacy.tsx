@@ -37,7 +37,7 @@ const Privacy = () => {
                         <ul className="list-disc pl-6 space-y-1">
                             <li>ユーザーが登録した手持ちコスメの画像</li>
                             <li>コスメのカテゴリ、色味、仕上がりなどの属性情報</li>
-                            <li>Google Cloud Vision APIによる画像解析結果</li>
+                            <li>Google Gemini APIによる画像解析結果</li>
                         </ul>
                     </div>
 
@@ -48,7 +48,7 @@ const Privacy = () => {
                             <li>お気に入り登録したメイク提案</li>
                             <li>サービス利用回数(プランに応じた制限管理)</li>
                             <li>コスメ登録回数(プランに応じた制限管理)</li>
-                            <li>コスメ画像解析結果(Google Cloud Vision APIによる属性抽出結果)</li>
+                            <li>コスメ画像解析結果(Google Gemini APIによる属性抽出結果)</li>
                             <li>メイク画像生成履歴</li>
                         </ul>
                     </div>
@@ -156,14 +156,6 @@ const Privacy = () => {
                         </ul>
                     </div>
 
-                    <div className="mb-4">
-                        <h4 className="text-lg font-bold mb-2">5.6 Google Cloud Vision API</h4>
-                        <ul className="list-disc pl-6 space-y-1">
-                            <li><strong> 用途 </strong>: コスメ画像の解析・属性抽出</li>
-                            <li><strong> 提供情報 </strong>: ユーザーがアップロードしたコスメ画像</li>
-                            <li><strong> プライバシーポリシー </strong>: <a href="https://policies.google.com/privacy" className="text-blue-600 hover:underline" target="_blank" rel="noopener noreferrer">https://policies.google.com/privacy</a></li>
-                        </ul>
-                    </div>
 
                     <div className="mb-4">
                         <h4 className="text-lg font-bold mb-2">5.7 Google Imagen API</h4>
@@ -320,7 +312,7 @@ const Privacy = () => {
                         <ul className="list-disc pl-6 space-y-1">
                             <li>Gambar kosmetik yang didaftarkan oleh pengguna</li>
                             <li>Informasi atribut kosmetik(kategori, warna, hasil akhir, dll.)</li>
-                            <li>Hasil analisis gambar oleh Google Cloud Vision API</li>
+                            <li>Hasil analisis gambar oleh Google Gemini API</li>
                         </ul>
                     </div>
 
@@ -331,7 +323,7 @@ const Privacy = () => {
                             <li>Saran makeup yang ditandai sebagai favorit</li>
                             <li>Jumlah penggunaan layanan(manajemen batas sesuai paket)</li>
                             <li>Jumlah pendaftaran kosmetik(manajemen batas sesuai paket)</li>
-                            <li>Hasil analisis gambar kosmetik(hasil ekstraksi atribut oleh Google Cloud Vision API)</li>
+                            <li>Hasil analisis gambar kosmetik(hasil ekstraksi atribut oleh Google Gemini API)</li>
                             <li>Riwayat pembuatan gambar makeup</li>
                         </ul>
                     </div>
@@ -439,14 +431,6 @@ const Privacy = () => {
                         </ul>
                     </div>
 
-                    <div className="mb-4">
-                        <h4 className="text-lg font-bold mb-2">5.6 Google Cloud Vision API</h4>
-                        <ul className="list-disc pl-6 space-y-1">
-                            <li><strong> Tujuan </strong>: Analisis gambar kosmetik dan ekstraksi atribut</li>
-                            <li><strong> Informasi yang diberikan </strong>: Gambar kosmetik yang diunggah pengguna</li>
-                            <li><strong> Kebijakan Privasi </strong>: <a href="https://policies.google.com/privacy" className="text-blue-600 hover:underline" target="_blank" rel="noopener noreferrer">https://policies.google.com/privacy</a></li>
-                        </ul>
-                    </div>
 
                     <div className="mb-4">
                         <h4 className="text-lg font-bold mb-2">5.7 Google Imagen API</h4>
@@ -603,7 +587,7 @@ const Privacy = () => {
                         <ul className="list-disc pl-6 space-y-1">
                             <li>Images of cosmetics registered by users</li>
                             <li>Cosmetic attribute information (category, color, finish, etc.)</li>
-                            <li>Image analysis results from Google Cloud Vision API</li>
+                            <li>Image analysis results from Google Gemini API</li>
                         </ul>
                     </div>
 
@@ -614,7 +598,7 @@ const Privacy = () => {
                             <li>Makeup suggestions marked as favorites</li>
                             <li>Service usage count (management of limit according to plan)</li>
                             <li>Cosmetic registration count (management of limit according to plan)</li>
-                            <li>Cosmetic image analysis results (attribute extraction results from Google Cloud Vision API)</li>
+                            <li>Cosmetic image analysis results (attribute extraction results from Google Gemini API)</li>
                             <li>Makeup image generation history</li>
                         </ul>
                     </div>
@@ -722,14 +706,6 @@ const Privacy = () => {
                         </ul>
                     </div>
 
-                    <div className="mb-4">
-                        <h4 className="text-lg font-bold mb-2">5.6 Google Cloud Vision API</h4>
-                        <ul className="list-disc pl-6 space-y-1">
-                            <li><strong> Purpose </strong>: Cosmetic image analysis and attribute extraction</li>
-                            <li><strong> Information Provided </strong>: Cosmetic images uploaded by users</li>
-                            <li><strong> Privacy Policy </strong>: <a href="https://policies.google.com/privacy" className="text-blue-600 hover:underline" target="_blank" rel="noopener noreferrer">https://policies.google.com/privacy</a></li>
-                        </ul>
-                    </div>
 
                     <div className="mb-4">
                         <h4 className="text-lg font-bold mb-2">5.7 Google Imagen API</h4>

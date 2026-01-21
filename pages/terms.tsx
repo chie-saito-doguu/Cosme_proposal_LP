@@ -28,7 +28,7 @@ const Terms = () => {
                     <p className="mb-4">本サービスは、以下の機能を提供します:</p>
                     <ol className="list-decimal pl-6 space-y-2">
                         <li><strong> AIメイク提案機能 </strong>: ユーザーの気分入力に基づき、AI(Google Gemini等)がパーソナライズされたメイク提案を生成</li>
-                        <li><strong> コスメ登録機能 </strong>: 手持ちコスメの写真を撮影・登録し、AI(Google Cloud Vision等)が自動で分析</li>
+                        <li><strong> コスメ登録機能 </strong>: 手持ちコスメの写真を撮影・登録し、AI(Google Gemini等)が自動で分析</li>
                         <li><strong> マッチング機能 </strong>: 提案されたメイクと手持ちコスメの適合性を分析</li>
                         <li><strong> レコメンデーション機能 </strong>: 不足しているコスメに対して、AIが代替商品を提案(楽天 / Shopeeのアフィリエイトリンクを含む)ユーザーがリンク先で購入した商品に応じて、運営者が手数料を受け取る場合があります。</li>
                         <li><strong> 外見カスタマイズ機能 </strong>: 肌の色、目の色、髪の色などを設定し、よりパーソナライズされた提案を受ける(画像生成にはGoogle Imagen 3等を使用)</li>
@@ -199,7 +199,7 @@ const Terms = () => {
                         <li>
                             本サービスは、データ処理およびサービス提供のために以下の第三者サービスを利用します:
                             <ul className="list-disc pl-6 mt-2 space-y-1">
-                                <li>Google Cloud Platform(Gemini, Imagen, Vision API等): AI処理、画像解析、データ保存</li>
+                                <li>Google Cloud Platform(Gemini, Imagen): AI処理、画像解析、データ保存</li>
                                 <li>Firebase: 認証、データベース</li>
                                 <li>SendGrid: メール送信</li>
                                 <li>Stripe: クレジットカード決済</li>
@@ -254,7 +254,7 @@ const Terms = () => {
                     <p className="mb-4">Layanan menyediakan fungsi - fungsi berikut:</p>
                     <ol className="list-decimal pl-6 space-y-2">
                         <li><strong> Fungsi Saran Makeup AI </strong>: AI(Google Gemini, dll.) menghasilkan saran makeup yang dipersonalisasi berdasarkan input mood pengguna</li>
-                        <li><strong> Fungsi Pendaftaran Kosmetik </strong>: Mengambil foto dan mendaftarkan kosmetik yang dimiliki, AI(Google Cloud Vision, dll.) secara otomatis menganalisis</li>
+                        <li><strong> Fungsi Pendaftaran Kosmetik </strong>: Mengambil foto dan mendaftarkan kosmetik yang dimiliki, AI(Google Gemini, dll.) secara otomatis menganalisis</li>
                         <li><strong> Fungsi Pencocokan </strong>: Menganalisis kesesuaian antara makeup yang disarankan dan kosmetik yang dimiliki</li>
                         <li><strong> Fungsi Rekomendasi </strong>: AI menyarankan produk alternatif untuk kosmetik yang kurang(termasuk tautan afiliasi Rakuten / Shopee)</li>
                         <li><strong> Fungsi Kustomisasi Penampilan </strong>: Mengatur warna kulit, warna mata, warna rambut, dll.untuk mendapatkan saran yang lebih personal(Menggunakan Google Imagen 3, dll.untuk pembuatan gambar)</li>
@@ -424,7 +424,7 @@ const Terms = () => {
                         <li>
                             Layanan ini menggunakan layanan pihak ketiga berikut untuk pemrosesan data dan penyediaan layanan:
                             <ul className="list-disc pl-6 mt-2 space-y-1">
-                                <li>Google Cloud Platform(Gemini, Imagen, Vision API, dll.): Pemrosesan AI, analisis gambar, penyimpanan data</li>
+                                <li>Google Cloud Platform(Gemini, Imagen): Pemrosesan AI, analisis gambar, penyimpanan data</li>
                                 <li>Firebase: Autentikasi, basis data</li>
                                 <li>SendGrid: Pengiriman email</li>
                                 <li>Stripe: Pembayaran kartu kredit</li>
@@ -479,7 +479,7 @@ const Terms = () => {
                     <p className="mb-4">The Service provides the following functions:</p>
                     <ol className="list-decimal pl-6 space-y-2">
                         <li><strong> AI Makeup Suggestion Function </strong>: AI (Google Gemini, etc.) generates personalized makeup suggestions based on user mood input</li>
-                        <li><strong> Cosmetic Registration Function </strong>: Take photos and register owned cosmetics, AI (Google Cloud Vision, etc.) automatically analyzes</li>
+                        <li><strong> Cosmetic Registration Function </strong>: Take photos and register owned cosmetics, AI (Google Gemini, etc.) automatically analyzes</li>
                         <li><strong> Matching Function </strong>: Analyzes compatibility between suggested makeup and owned cosmetics</li>
                         <li><strong> Recommendation Function </strong>: AI suggests alternative products for missing cosmetics (including Rakuten / Shopee affiliate links). The operator may receive fees when users purchase products through the links.</li>
                         <li><strong> Appearance Customization Function </strong>: Set skin color, eye color, hair color, etc. to receive more personalized suggestions (uses Google Imagen 3, etc. for image generation)</li>
@@ -650,7 +650,7 @@ const Terms = () => {
                         <li>
                             This Service uses the following third-party services for data processing and service provision:
                             <ul className="list-disc pl-6 mt-2 space-y-1">
-                                <li>Google Cloud Platform (Gemini, Imagen, Vision API, etc.): AI processing, image analysis, data storage</li>
+                                <li>Google Cloud Platform (Gemini, Imagen): AI processing, image analysis, data storage</li>
                                 <li>Firebase: Authentication, database</li>
                                 <li>SendGrid: Email sending</li>
                                 <li>Stripe: Credit card payment</li>
