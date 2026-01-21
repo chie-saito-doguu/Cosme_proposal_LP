@@ -158,6 +158,15 @@ const Privacy = () => {
 
 
                     <div className="mb-4">
+                        <h4 className="text-lg font-bold mb-2">5.6 Google Gemini API (画像解析)</h4>
+                        <ul className="list-disc pl-6 space-y-1">
+                            <li><strong> 用途 </strong>: コスメ画像の解析・属性抽出</li>
+                            <li><strong> 提供情報 </strong>: ユーザーがアップロードしたコスメ画像</li>
+                            <li><strong> プライバシーポリシー </strong>: <a href="https://policies.google.com/privacy" className="text-blue-600 hover:underline" target="_blank" rel="noopener noreferrer">https://policies.google.com/privacy</a></li>
+                        </ul>
+                    </div>
+
+                    <div className="mb-4">
                         <h4 className="text-lg font-bold mb-2">5.7 Google Imagen API</h4>
                         <ul className="list-disc pl-6 space-y-1">
                             <li><strong> 用途 </strong>: メイク画像の生成</li>
@@ -433,6 +442,15 @@ const Privacy = () => {
 
 
                     <div className="mb-4">
+                        <h4 className="text-lg font-bold mb-2">5.6 Google Gemini API (Analisis Gambar)</h4>
+                        <ul className="list-disc pl-6 space-y-1">
+                            <li><strong> Tujuan </strong>: Analisis gambar kosmetik dan ekstraksi atribut</li>
+                            <li><strong> Informasi yang diberikan </strong>: Gambar kosmetik yang diunggah pengguna</li>
+                            <li><strong> Kebijakan Privasi </strong>: <a href="https://policies.google.com/privacy" className="text-blue-600 hover:underline" target="_blank" rel="noopener noreferrer">https://policies.google.com/privacy</a></li>
+                        </ul>
+                    </div>
+
+                    <div className="mb-4">
                         <h4 className="text-lg font-bold mb-2">5.7 Google Imagen API</h4>
                         <ul className="list-disc pl-6 space-y-1">
                             <li><strong> Tujuan </strong>: Pembuatan gambar makeup</li>
@@ -706,6 +724,15 @@ const Privacy = () => {
                         </ul>
                     </div>
 
+
+                    <div className="mb-4">
+                        <h4 className="text-lg font-bold mb-2">5.6 Google Gemini API (Image Analysis)</h4>
+                        <ul className="list-disc pl-6 space-y-1">
+                            <li><strong> Purpose </strong>: Cosmetic image analysis and attribute extraction</li>
+                            <li><strong> Information Provided </strong>: Cosmetic images uploaded by users</li>
+                            <li><strong> Privacy Policy </strong>: <a href="https://policies.google.com/privacy" className="text-blue-600 hover:underline" target="_blank" rel="noopener noreferrer">https://policies.google.com/privacy</a></li>
+                        </ul>
+                    </div>
 
                     <div className="mb-4">
                         <h4 className="text-lg font-bold mb-2">5.7 Google Imagen API</h4>
