@@ -6,30 +6,57 @@ export default async function handler(req, res) {
   }
 
   try {
-    // Meta CAPI Gateway Setup Assistantが期待するレスポンス
+    // リクエストヘッダーからMetaのトークンを取得
+    const metaToken = req.query.token || req.headers['x-meta-token'];
+
+    // MetaのCAPI Gateway Setup Assistantが期待するレスポンス
     const response = {
-      status: 'ok',
-      version: '1.0',
-      gateway: {
-        name: 'Cosme AI CAPI Gateway',
-        platform: 'vercel',
-        capabilities: [
-          'page_view',
-          'purchase',
-          'lead',
-          'complete_registration',
-          'add_to_cart',
-          'initiate_checkout'
-        ]
-      },
+      success: true,
       pixel_id: '2203423416850955',
-      endpoint: `${req.headers['x-forwarded-proto'] || 'https'}://${req.headers['host']}/api/conversion`
+      gateway: {
+        id: 'cosme-ai-capi-gateway',
+        name: 'Cosme AI CAPI Gateway',
+        version: '1.0.0',
+        platform: 'vercel',
+        endpoint: `${req.headers['x-forwarded-proto'] || 'https'}://${req.headers['host']}/api/conversion`,
+        status: 'active',
+        capabilities: {
+          events: [
+            'PageView',
+            'Purchase',
+            'Lead',
+            'CompleteRegistration',
+            'AddToCart',
+            'InitiateCheckout',
+            'CustomEvent'
+          ],
+          features: [
+            'server_side_tracking',
+            'batch_events',
+            'event_deduplication'
+          ]
+        },
+        config: {
+          access_token_configured: true,
+          test_event_code: req.query.test_event_code || null
+        }
+      },
+      timestamp: new Date().toISOString()
     };
+
+    // CORSヘッダーを追加
+    res.setHeader('Access-Control-Allow-Origin', '*');
+    res.setHeader('Access-Control-Allow-Methods', 'GET, POST, OPTIONS');
+    res.setHeader('Access-Control-Allow-Headers', 'Content-Type, Authorization');
 
     return res.status(200).json(response);
 
   } catch (error) {
     console.error('CAPI Gateway autoconfig error:', error);
-    return res.status(500).json({ error: 'Configuration failed' });
+    return res.status(500).json({
+      success: false,
+      error: 'Configuration failed',
+      message: error.message
+    });
   }
 }
