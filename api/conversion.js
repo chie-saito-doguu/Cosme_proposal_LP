@@ -1,29 +1,28 @@
-// Vercel Edge Function for Vite
-export default async function handler(req: Request) {
+// Vercel Serverless Function
+export default async function handler(req, res) {
   // POSTのみ許可
   if (req.method !== 'POST') {
-    return new Response('Method not allowed', { status: 405 });
+    return res.status(405).json({ error: 'Method not allowed' });
   }
 
   try {
-    const body = await req.json();
-    const { eventName, eventData = {} } = body;
+    const { eventName, eventData = {} } = req.body;
 
-    // 環境変数から取得（Vercelの場合）
+    // 環境変数から取得
     const pixelId = '2203423416850955';
     const accessToken = 'EAAR5W3B2U1oBQkuUgWjKYastY5Pr6elRNc3QNipMpbiP4mDvr8cDx4ljDLgohuJUdAjtChnO2JFpS4McTie7xrtSJhtZChCtYzHqPwiXOyCTzE64DnCNin5ZBp6df20ZAh4SAJEQnUDFLtnfTmY5AZCGycPO3c89hAT502qKlEMxkUXvV4hqHIjK6sQMmyv79gZDZD';
 
     if (!pixelId || !accessToken) {
-      return new Response('Missing credentials', { status: 500 });
+      return res.status(500).json({ error: 'Missing credentials' });
     }
 
     // Meta Conversion API エンドポイント
     const url = `https://graph.facebook.com/v19.0/${pixelId}/events`;
 
     // クライアント情報を取得
-    const ip = req.headers.get('x-forwarded-for') || req.headers.get('x-real-ip') || undefined;
-    const userAgent = req.headers.get('user-agent') || undefined;
-    const referer = req.headers.get('referer') || 'https://cosme-proposal.com';
+    const ip = req.headers['x-forwarded-for'] || req.headers['x-real-ip'] || undefined;
+    const userAgent = req.headers['user-agent'] || undefined;
+    const referer = req.headers['referer'] || req.headers['referer'] || 'https://cosme-proposal.com';
 
     // イベントデータの構築
     const payload = {
@@ -57,26 +56,13 @@ export default async function handler(req: Request) {
 
     if (!response.ok) {
       console.error('Meta Conversion API error:', result);
-      return new Response(JSON.stringify({ error: result }), {
-        status: response.status,
-        headers: { 'Content-Type': 'application/json' }
-      });
+      return res.status(response.status).json({ error: result });
     }
 
-    return new Response(JSON.stringify({ success: true, result }), {
-      status: 200,
-      headers: { 'Content-Type': 'application/json' }
-    });
+    return res.status(200).json({ success: true, result });
 
   } catch (error) {
     console.error('Conversion API error:', error);
-    return new Response(JSON.stringify({ error: 'Internal server error' }), {
-      status: 500,
-      headers: { 'Content-Type': 'application/json' }
-    });
+    return res.status(500).json({ error: 'Internal server error' });
   }
 }
-
-export const config = {
-  runtime: 'edge',
-};
