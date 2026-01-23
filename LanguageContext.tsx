@@ -16,26 +16,43 @@ const isValidLanguage = (lang: string): lang is Language => {
 
 const LANGUAGE_SELECTED_KEY = 'cosmeai_language_selected';
 
+// ブラウザの言語設定を検出
+const detectBrowserLanguage = (): Language => {
+    const browserLang = navigator.language || navigator.languages?.[0];
+
+    if (!browserLang) return 'ja';
+
+    // インドネシア語（id）のチェック
+    if (browserLang.startsWith('id')) {
+        return 'id';
+    }
+
+    // 英語（en）のチェック
+    if (browserLang.startsWith('en')) {
+        return 'en';
+    }
+
+    // 日本語（ja）のチェック - デフォルト
+    return 'ja';
+};
+
 const LanguageContext = createContext<LanguageContextType | undefined>(undefined);
 
 export const LanguageProvider: React.FC<{ children: ReactNode }> = ({ children }) => {
-    const [language, setLanguage] = useState<Language>('ja');
-    const [hasSelectedLanguage, setHasSelectedLanguage] = useState<boolean>(false);
+    const [language, setLanguage] = useState<Language>(() => detectBrowserLanguage());
+    const [hasSelectedLanguage, setHasSelectedLanguage] = useState<boolean>(true); // 常にtrueでモーダルを表示しない
 
     // Check if user has already selected language
     useEffect(() => {
         const hasSelected = localStorage.getItem(LANGUAGE_SELECTED_KEY) === 'true';
-        setHasSelectedLanguage(hasSelected);
+        setHasSelectedLanguage(true); // 常にtrue
     }, []);
 
     const handleSetLanguage = (lang: Language) => {
         if (isValidLanguage(lang)) {
             setLanguage(lang);
-            // Only mark as selected if it's not the default 'ja' or user explicitly chose
-            if (lang !== 'ja' || hasSelectedLanguage) {
-                localStorage.setItem(LANGUAGE_SELECTED_KEY, 'true');
-                setHasSelectedLanguage(true);
-            }
+            localStorage.setItem(LANGUAGE_SELECTED_KEY, 'true');
+            setHasSelectedLanguage(true);
         }
     };
 
