@@ -54,10 +54,16 @@ const App: React.FC = () => {
               href="https://cosme-proposal.com/"
               target="_blank"
               rel="noopener noreferrer"
-              className="bg-white text-primary hover:bg-gray-100 
-                        px-5 py-2.5 rounded-full 
-                        text-xs sm:text-sm md:text-base 
-                        font-black transition-colors shadow-md 
+              onClick={() => {
+                // Meta Pixel Leadイベント
+                if (typeof window !== 'undefined' && (window as any).fbq) {
+                  (window as any).fbq('track', 'Lead');
+                }
+              }}
+              className="bg-white text-primary hover:bg-gray-100
+                        px-5 py-2.5 rounded-full
+                        text-xs sm:text-sm md:text-base
+                        font-black transition-colors shadow-md
                         flex items-center gap-2 whitespace-nowrap"
             >
               <Sparkles className="w-4 h-4 fill-primary" />

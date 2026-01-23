@@ -54,6 +54,12 @@ const CTA: React.FC = () => {
             href="https://cosme-proposal.com/"
             target="_blank"
             rel="noopener noreferrer"
+            onClick={() => {
+              // Meta Pixel Leadイベント
+              if (typeof window !== 'undefined' && (window as any).fbq) {
+                (window as any).fbq('track', 'Lead');
+              }
+            }}
             className="group relative min-w-[240px] md:min-w-[300px] py-4 px-8 md:py-6 md:px-12 bg-white text-primary rounded-full font-black text-2xl md:text-4xl shadow-2xl hover:shadow-white/30 transition-all transform hover:-translate-y-1 active:scale-95 flex items-center justify-center overflow-visible cursor-pointer"
           >
             {/* --- Hearts floating (ポワポワ白ハート) --- */}
