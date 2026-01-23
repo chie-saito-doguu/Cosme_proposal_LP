@@ -3,6 +3,7 @@ import { Routes, Route, Link } from 'react-router-dom';
 import { Sparkles } from 'lucide-react';
 import LanguageSelector from './components/LanguageSelector';
 import LanguageModal from './components/LanguageModal';
+import ScrollTracking from './components/ScrollTracking';
 import { useLanguage } from './LanguageContext';
 import HomePage from './pages/HomePage';
 import Terms from './pages/terms';
@@ -14,6 +15,9 @@ const App: React.FC = () => {
 
   return (
     <div className="min-h-screen flex flex-col font-sans bg-white text-text-main font-black">
+      {/* スクロール追跡（32段階） */}
+      <ScrollTracking />
+
       {/* 言語選択モーダル（初回のみ） */}
       {!hasSelectedLanguage && <LanguageModal />}
 
