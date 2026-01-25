@@ -3,7 +3,7 @@ export type Language = 'ja' | 'id' | 'en';
 export const translations = {
     ja: {
         header: {
-            start: "やってみる",
+            start: "試してみる",
         },
         hero: {
             badge: "AI MAKEUP ADVISOR",
@@ -35,7 +35,7 @@ export const translations = {
         cta: {
             title: "あなたのポーチに、\n革命を。",
             subtitle: "買い足さずに、新しい自分へ。\n30秒で始められます。",
-            button: "やってみる",
+            button: "試してみる",
         },
         footer: {
             privacy: "プライバシーポリシー",
