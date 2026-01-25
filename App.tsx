@@ -87,21 +87,23 @@ const App: React.FC = () => {
         <div className="container mx-auto px-6 text-center">
 
           {/* お知らせ欄 */}
-          <div className="max-w-2xl mx-auto mb-8">
-            <div className="bg-yellow-500/20 border border-yellow-500/50 rounded-lg p-4 mb-4 text-left">
-              <div className="flex items-center gap-2 mb-2">
-                <span className="bg-yellow-500/30 text-yellow-100 text-[10px] sm:text-xs font-bold px-2 py-0.5 rounded">
-                  {t.footer.announcement_label}
-                </span>
-                <span className="text-yellow-200/70 text-[10px] sm:text-xs">
-                  {t.footer.announcement_date}
-                </span>
+          {t.footer.announcement && (
+            <div className="max-w-2xl mx-auto mb-8">
+              <div className="bg-yellow-500/20 border border-yellow-500/50 rounded-lg p-4 mb-4 text-left">
+                <div className="flex items-center gap-2 mb-2">
+                  <span className="bg-yellow-500/30 text-yellow-100 text-[10px] sm:text-xs font-bold px-2 py-0.5 rounded">
+                    {t.footer.announcement_label}
+                  </span>
+                  <span className="text-yellow-200/70 text-[10px] sm:text-xs">
+                    {t.footer.announcement_date}
+                  </span>
+                </div>
+                <p className="text-yellow-100 text-xs sm:text-sm font-bold">
+                  {t.footer.announcement}
+                </p>
               </div>
-              <p className="text-yellow-100 text-xs sm:text-sm font-bold">
-                {t.footer.announcement}
-              </p>
             </div>
-          </div>
+          )}
 
           <div className="text-2xl font-black mb-6">Cosme AI</div>
           <p className="text-gray-400 text-sm font-black mb-10">

@@ -17,7 +17,7 @@ const ScrollTracking = () => {
         };
 
         // スクロールイベントハンドラー（throttle付き）
-        let timeoutId: NodeJS.Timeout | null = null;
+        let timeoutId: number | null = null;
         const handleScroll = () => {
             if (timeoutId) return;
 
