@@ -3,7 +3,7 @@ export type Language = 'ja' | 'id' | 'en';
 export const translations = {
     ja: {
         header: {
-            start: "はじめる",
+            start: "やってみる",
         },
         hero: {
             badge: "AI MAKEUP ADVISOR",
@@ -35,7 +35,7 @@ export const translations = {
         cta: {
             title: "あなたのポーチに、\n革命を。",
             subtitle: "買い足さずに、新しい自分へ。\n30秒で始められます。",
-            button: "はじめる",
+            button: "やってみる",
         },
         footer: {
             privacy: "プライバシーポリシー",
@@ -49,7 +49,7 @@ export const translations = {
     },
     id: {
         header: {
-            start: "Mulai",
+            start: "Coba",
         },
         hero: {
             badge: "AI MAKEUP ADVISOR",
@@ -81,7 +81,7 @@ export const translations = {
         cta: {
             title: "Revolusi di\nPouch Makeup Anda.",
             subtitle: "Menuju diri yang baru tanpa membeli lagi.\nBisa dimulai dalam 30 detik.",
-            button: "Mulai",
+            button: "Coba",
         },
         footer: {
             privacy: "Kebijakan Privasi",
@@ -95,7 +95,7 @@ export const translations = {
     },
     en: {
         header: {
-            start: "Get Started",
+            start: "Try it",
         },
         hero: {
             badge: "AI MAKEUP ADVISOR",
@@ -127,7 +127,7 @@ export const translations = {
         cta: {
             title: "Revolution in\nyour makeup pouch.",
             subtitle: "Transform yourself without buying more.\nYou can start in 30 seconds.",
-            button: "Get Started",
+            button: "Try it",
         },
         footer: {
             privacy: "Privacy Policy",
