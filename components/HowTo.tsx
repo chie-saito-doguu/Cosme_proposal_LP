@@ -64,8 +64,8 @@ const HowTo: React.FC = () => {
 
   const prefix = getImagePrefix();
 
-  // Step 1の画像: コスメ登録（all1-1.pngは言語共通）
-  const step1Images = [getOptimizedImage('/all1-1.png')];
+  // Step 1の画像: コスメ登録（all1-1.pngは言語共通、ローカルでは直接読み込み）
+  const step1Images = ['/all1-1.png'];
 
   // Step 2の画像: 気分入力→提案（2-1, 3-1, 3-4）
   const step2Images = [
