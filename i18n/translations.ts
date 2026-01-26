@@ -29,7 +29,7 @@ export const translations = {
         },
         cta: {
             title: "あなたのメイクに、\n革命を。",
-            subtitle: "ログインのみで\nすぐにご利用いただけます。",
+            subtitle: "ログインのみで\nすぐにご利用いただけます",
             button: "試してみる",
         },
         footer: {
@@ -91,7 +91,7 @@ export const translations = {
             badge: "",
             title: "",
             subtitle: "Daily makeup suggestions\nwith your cosmetics",
-            description: "Your personal makeup advisor that adapts\nto your mood and outfit.\nLove your daily makeup routine!",
+            description: "Your personal makeup advisor that adapts to your mood and outfit.\nLove your daily makeup routine!",
             match: "MATCH 98%",
             advisor_label: "",
             advisor_text: "Introducing\ntrendy makeup!",
