@@ -57,14 +57,14 @@ export const translations = {
         },
         problem: {
             label: "MASALAH",
-            title: "Apakah Anda punya\nmasalah ini?",
+            title: "Pernah ngerasa gini?",
             item1: "Ingin mencoba\nmakeup baru\ntapi tidak tahu\ncara kombinasinya",
             item2: "Banyak kosmetik yang\ndibeli tapi\ntidak terpakai",
             item3: "Malas berpikir sendiri,\njadi wajah\nselalu sama",
         },
         howto: {
             label: "CARA PENGGUNAAN",
-            title: "2 Langkah Mudah untuk Memulai",
+            title: "Cuma 2 Langkah!",
             desc1: "Cukup sekali di awal,\nsemua kosmetik dalam satu foto.\nSisanya tak perlu apa-apa!",
             desc2: "Tiap pagi,\nKasih tahu mood atau outfit\nresep khusus buatmu! 💡",
         },
