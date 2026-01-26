@@ -38,14 +38,6 @@ const CTA: React.FC = () => {
           ))}
         </h2>
 
-        <p className="text-lg sm:text-xl md:text-3xl font-black mb-10 md:mb-16 text-white/90 leading-relaxed">
-          {t.cta.subtitle.split('\n').map((line, i) => (
-            <React.Fragment key={i}>
-              {line}
-              {i < t.cta.subtitle.split('\n').length - 1 && <br />}
-            </React.Fragment>
-          ))}
-        </p>
 
         <div className="flex flex-col items-center justify-center">
 

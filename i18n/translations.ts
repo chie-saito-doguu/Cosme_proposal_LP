@@ -29,7 +29,6 @@ export const translations = {
         },
         cta: {
             title: "あなたのメイクに、\n革命を。",
-            subtitle: "ログインのみで\nすぐにご利用いただけます",
             button: "試してみる",
         },
         footer: {
@@ -70,7 +69,6 @@ export const translations = {
         },
         cta: {
             title: "Revolusi pada\nMakeup Anda.",
-            subtitle: "Cukup login, langsung bisa digunakan!",
             button: "Coba",
         },
         footer: {
@@ -111,7 +109,6 @@ export const translations = {
         },
         cta: {
             title: "Revolution in\nyour makeup.",
-            subtitle: "Just log in, start using instantly!",
             button: "Try it",
         },
         footer: {
