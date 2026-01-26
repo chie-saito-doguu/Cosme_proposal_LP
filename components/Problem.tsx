@@ -19,7 +19,7 @@ const Problem: React.FC = () => {
           <h2 className="text-primary font-black text-2xl tracking-widest mb-4 uppercase">
             {t.problem.label}
           </h2>
-          <h3 className="text-5xl md:text-7xl font-black text-black leading-tight tracking-tight">
+          <h3 className="text-5xl md:text-6xl font-black text-black leading-tight tracking-tight">
             {t.problem.title.split('\n').map((line, i) => (
               <React.Fragment key={i}>
                 {line}

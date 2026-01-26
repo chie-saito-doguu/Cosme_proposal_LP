@@ -27,8 +27,7 @@ const ImageSlideshow: React.FC<{ images: string[]; alt: string }> = ({ images, a
 
   return (
     <div className="relative w-full">
-      {/* 画像コンテナ */}
-      <div className="relative w-full aspect-[9/13] bg-gray-100 rounded-[2rem] border-8 border-gray-50 shadow-inner overflow-hidden">
+      <div className="relative w-full aspect-[9/13] bg-gray-100 rounded-xl overflow-hidden">
         {images.map((src, index) => (
           <img
             key={src}
@@ -39,22 +38,13 @@ const ImageSlideshow: React.FC<{ images: string[]; alt: string }> = ({ images, a
             }`}
           />
         ))}
+        {/* 画像番号表示（複数枚の場合のみ） */}
+        {images.length > 1 && (
+          <div className="absolute bottom-1.5 right-1.5 bg-black/40 text-white px-1.5 py-0.5 rounded-full text-[10px] font-bold">
+            {currentIndex + 1} / {images.length}
+          </div>
+        )}
       </div>
-      {/* インジケーター */}
-      {images.length > 1 && (
-        <div className="absolute -bottom-6 right-0 flex gap-1">
-          {images.map((_, index) => (
-            <span
-              key={index}
-              className={`text-xs font-black transition-colors ${
-                index === currentIndex ? 'text-gray-400' : 'text-gray-200'
-              }`}
-            >
-              {index + 1}
-            </span>
-          ))}
-        </div>
-      )}
     </div>
   );
 };
@@ -72,92 +62,88 @@ const HowTo: React.FC = () => {
     return prefixMap[language] || 'jp';
   };
 
-  // 各ステップの画像リストを生成
   const prefix = getImagePrefix();
-  const step1Images = [`${prefix}1-1.png`, `${prefix}1-2.png`].map((img) => getOptimizedImage(`/${img}`));
-  const step2Images = [`${prefix}2-1.png`].map((img) => getOptimizedImage(`/${img}`));
-  const step3Images = [`${prefix}3-1.png`, `${prefix}3-2.png`, `${prefix}3-3.png`, `${prefix}3-4.png`].map((img) => getOptimizedImage(`/${img}`));
+
+  // Step 1の画像: コスメ登録（all1-1.pngは言語共通）
+  const step1Images = [getOptimizedImage('/all1-1.png')];
+
+  // Step 2の画像: 気分入力→提案（2-1, 3-1, 3-4）
+  const step2Images = [
+    getOptimizedImage(`/${prefix}2-1.png`),
+    getOptimizedImage(`/${prefix}3-1.png`),
+    getOptimizedImage(`/${prefix}3-4.png`),
+  ];
 
   return (
-    <section className="py-32 bg-gray-50 border-t border-gray-100 font-black">
-      <div className="container mx-auto px-6">
-        <div className="text-center mb-24">
-          <h2 className="text-primary font-black tracking-widest uppercase text-2xl mb-4">
+    <section className="py-12 md:py-16 bg-gray-50">
+      <div className="container mx-auto px-4 md:px-6">
+        {/* ヘッダー */}
+        <div className="text-center mb-8 md:mb-10">
+          <span className="text-sm md:text-base font-bold text-primary tracking-widest">
             {t.howto.label}
-          </h2>
-          <h3 className="text-5xl md:text-7xl font-black text-black">
+          </span>
+          <h2 className="text-3xl md:text-4xl font-black text-gray-900 mt-2">
             {t.howto.title}
-          </h3>
+          </h2>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-6xl mx-auto">
-
+        {/* ステップ */}
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-6 max-w-4xl mx-auto items-center">
           {/* Step 1 */}
-          <div className="bg-white rounded-[2.5rem] p-8 md:p-10 relative overflow-hidden group shadow-xl hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2 flex flex-col">
-            <div className="absolute -right-4 -top-4 w-40 h-40 bg-primary rounded-full opacity-10 group-hover:scale-150 transition-transform duration-500"></div>
-            <div className="relative z-10 text-center md:text-left mb-2">
-              <span className="block text-8xl font-black text-primary mb-6 leading-none">01</span>
-              <h4 className="text-3xl md:text-4xl font-black text-black mb-6">{t.howto.step1_title}</h4>
-              <p className="text-gray-600 font-black text-lg md:text-xl leading-relaxed">
-                {t.howto.step1_desc.split('\n').map((line, i) => (
-                  <React.Fragment key={i}>
-                    {line}
-                    {i < t.howto.step1_desc.split('\n').length - 1 && <br />}
-                  </React.Fragment>
-                ))}
-              </p>
+          <div className="bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-md transition-shadow w-[90%] mx-auto">
+            <div className="p-5 md:p-6">
+              <div className="flex gap-4 items-start">
+                <div className="flex-shrink-0">
+                  <div className="w-12 h-12 bg-primary rounded-xl flex items-center justify-center">
+                    <span className="text-white font-black text-xl">1</span>
+                  </div>
+                </div>
+                <div className="flex-1">
+                  <p className="text-gray-800 font-bold text-sm md:text-base leading-relaxed">
+                    {t.howto.desc1.split('\n').map((line, i) => (
+                      <React.Fragment key={i}>
+                        {line}
+                        {i < t.howto.desc1.split('\n').length - 1 && <br />}
+                      </React.Fragment>
+                    ))}
+                  </p>
+                </div>
+              </div>
             </div>
-            {/* Mobile Screen with Slideshow */}
-            <div className="mt-auto relative w-full max-w-[320px] md:max-w-[360px] mx-auto">
-              <ImageSlideshow images={step1Images} alt="コスメ登録画面" />
+            <div className="px-5 pb-5 md:px-6 md:pb-6 flex justify-center">
+              <div className="relative w-[80%]">
+                <ImageSlideshow images={step1Images} alt="ステップ1" />
+              </div>
             </div>
           </div>
 
           {/* Step 2 */}
-          <div className="bg-white rounded-[2.5rem] p-8 md:p-10 relative overflow-hidden group shadow-xl hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2 flex flex-col">
-            <div className="absolute -right-4 -top-4 w-40 h-40 bg-primary rounded-full opacity-10 group-hover:scale-150 transition-transform duration-500"></div>
-            <div className="relative z-10 text-center md:text-left mb-2">
-              <span className="block text-8xl font-black text-primary mb-6 leading-none">02</span>
-              <h4 className="text-3xl md:text-4xl font-black text-black mb-6">{t.howto.step2_title}</h4>
-              <p className="text-gray-600 font-black text-lg md:text-xl leading-relaxed">
-                {t.howto.step2_desc.split('\n').map((line, i) => (
-                  <React.Fragment key={i}>
-                    {line}
-                    {i < t.howto.step2_desc.split('\n').length - 1 && <br />}
-                  </React.Fragment>
-                ))}
-              </p>
+          <div className="bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-md transition-shadow w-[90%] mx-auto">
+            <div className="p-5 md:p-6">
+              <div className="flex gap-4 items-start">
+                <div className="flex-shrink-0">
+                  <div className="w-12 h-12 bg-primary rounded-xl flex items-center justify-center">
+                    <span className="text-white font-black text-xl">2</span>
+                  </div>
+                </div>
+                <div className="flex-1">
+                  <p className="text-gray-800 font-bold text-sm md:text-base leading-relaxed">
+                    {t.howto.desc2.split('\n').map((line, i) => (
+                      <React.Fragment key={i}>
+                        {line}
+                        {i < t.howto.desc2.split('\n').length - 1 && <br />}
+                      </React.Fragment>
+                    ))}
+                  </p>
+                </div>
+              </div>
             </div>
-            {/* Mobile Screen with Slideshow */}
-            <div className="mt-auto relative w-full max-w-[320px] md:max-w-[360px] mx-auto">
-              <ImageSlideshow images={step2Images} alt="気分入力画面" />
-            </div>
-          </div>
-
-          {/* Step 3 */}
-          <div className="bg-white rounded-[2.5rem] p-8 md:p-10 relative overflow-hidden group shadow-xl hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2 flex flex-col">
-            <div className="absolute -right-4 -top-4 w-40 h-40 bg-primary rounded-full opacity-10 group-hover:scale-150 transition-transform duration-500"></div>
-            <div className="relative z-10 text-center md:text-left mb-2">
-              <span className="block text-8xl font-black text-primary mb-6 leading-none">03</span>
-              <h4 className="text-3xl md:text-4xl font-black text-black mb-6">{t.howto.step3_title}</h4>
-              <p className="text-gray-600 font-black text-lg md:text-xl leading-relaxed">
-                {t.howto.step3_desc.split('\n').map((line, i) => (
-                  <React.Fragment key={i}>
-                    {line}
-                    {i < t.howto.step3_desc.split('\n').length - 1 && <br />}
-                  </React.Fragment>
-                ))}
-              </p>
-              <p className="text-gray-400 text-xs font-black mt-2">
-                {t.howto.step3_note}
-              </p>
-            </div>
-            {/* Mobile Screen with Slideshow */}
-            <div className="mt-auto relative w-full max-w-[320px] md:max-w-[360px] mx-auto">
-              <ImageSlideshow images={step3Images} alt="メイク提案画面" />
+            <div className="px-5 pb-5 md:px-6 md:pb-6 flex justify-center">
+              <div className="relative w-[80%]">
+                <ImageSlideshow images={step2Images} alt="ステップ2" />
+              </div>
             </div>
           </div>
-
         </div>
       </div>
     </section>

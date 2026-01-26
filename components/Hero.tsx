@@ -23,33 +23,37 @@ const Hero: React.FC = () => {
   }, [images.length]);
 
   return (
-    <section className="relative w-full pt-12 pb-20 md:pt-24 md:pb-32 bg-primary text-white overflow-hidden font-black">
+    <section className="relative w-full pt-4 pb-12 md:pt-6 md:pb-16 bg-primary text-white overflow-hidden font-black">
 
       <div className="container mx-auto px-6 text-center max-w-6xl relative z-10">
 
         {/* Badge */}
-        <div className="mb-8 inline-block">
-          <span className="px-4 py-1.5 md:px-6 md:py-2 rounded-full bg-white/20 backdrop-blur-sm border border-white/40 text-white font-black text-sm md:text-xl tracking-widest">
-            {t.hero.badge}
-          </span>
-        </div>
+        {t.hero.badge && (
+          <div className="mb-8 inline-block">
+            <span className="px-4 py-1.5 md:px-6 md:py-2 rounded-full bg-white/20 backdrop-blur-sm border border-white/40 text-white font-black text-sm md:text-xl tracking-widest">
+              {t.hero.badge}
+            </span>
+          </div>
+        )}
 
         {/* Main Heading - Adjusted font size for mobile to keep it in 3 lines */}
-        <h1 className="text-2xl sm:text-3xl md:text-5xl lg:text-6xl font-black leading-snug md:leading-relaxed tracking-tight mb-8 md:mb-8 drop-shadow-sm">
-          {t.hero.title.split('\n').map((line, i) => (
-            <React.Fragment key={i}>
-              {line}
-              {i < t.hero.title.split('\n').length - 1 && <br />}
-            </React.Fragment>
-          ))}
-        </h1>
+        {t.hero.title && (
+          <h1 className="text-2xl sm:text-3xl md:text-5xl lg:text-6xl font-black leading-snug md:leading-relaxed tracking-tight mb-8 md:mb-8 drop-shadow-sm">
+            {t.hero.title.split('\n').map((line, i) => (
+              <React.Fragment key={i}>
+                {line}
+                {i < t.hero.title.split('\n').length - 1 && <br />}
+              </React.Fragment>
+            ))}
+          </h1>
+        )}
 
         {/* Visual Content */}
         <div className="relative w-full max-w-4xl mx-auto">
           {/* Shadow/Glow behind image */}
           <div className="absolute inset-0 bg-black/20 blur-3xl transform translate-y-10 rounded-full"></div>
 
-          <div className="bg-white rounded-[2.5rem] p-3 md:p-4 shadow-2xl rotate-1 md:rotate-0 transition-transform hover:rotate-0">
+          <div className="bg-white rounded-[2.5rem] p-2 md:p-3 shadow-2xl rotate-1 md:rotate-0 transition-transform hover:rotate-0">
             <div className="bg-gray-50 rounded-[2rem] overflow-hidden border border-gray-100 flex flex-col md:flex-row">
               {/* Image (fade slideshow) */}
               <div className="w-full md:w-1/2 aspect-square relative overflow-hidden">
@@ -96,12 +100,14 @@ const Hero: React.FC = () => {
                   </p>
                 </div>
 
-                <div className="mt-auto p-4 bg-bg-soft rounded-xl border border-primary-light/20 flex items-center gap-3">
+                <div className="-mt-2 p-3 bg-bg-soft rounded-xl border border-primary-light/20 flex items-center gap-3">
                   <div className="w-12 h-12 bg-primary rounded-full flex items-center justify-center text-white shrink-0">
                     <Sparkles className="w-6 h-6" />
                   </div>
                   <div>
-                    <p className="text-xs text-primary font-black mb-0.5">{t.hero.advisor_label}</p>
+                    {(t.hero.advisor_label || true) && (
+                      <p className="text-xs text-primary font-black mb-0.5 hidden md:block">AI ADVISOR</p>
+                    )}
                     <p className="text-base font-black text-text-main">
                       {t.hero.advisor_text.split('\n').map((line, i) => (
                         <React.Fragment key={i}>
