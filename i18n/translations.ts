@@ -25,7 +25,7 @@ export const translations = {
             label: "HOW TO USE",
             title: "今すぐ簡単２ステップ",
             desc1: "最初の1回、\nコスメを1枚の写真に収めるだけ\nあとは何もしなくてOK！",
-            desc2: "毎日の朝時間、\n気分や着る服を伝えると、\nすぐにあなた専用レシピが届きます💡",
+            desc2: "毎日の朝時間、\n気分や着る服を伝えると、\nあなた専用レシピが届きます💡",
         },
         cta: {
             title: "あなたのメイクに、\n革命を。",
@@ -66,7 +66,7 @@ export const translations = {
             label: "CARA PENGGUNAAN",
             title: "2 Langkah Mudah untuk Memulai",
             desc1: "Cukup sekali di awal,\nsemua kosmetik dalam satu foto.\nSisanya tak perlu apa-apa!",
-            desc2: "Tiap pagi,\nKasih tahu mood atau outfit\nresep khusus buatmu langsung jadi! 💡",
+            desc2: "Tiap pagi,\nKasih tahu mood atau outfit\nresep khusus buatmu! 💡",
         },
         cta: {
             title: "Revolusi pada\nMakeup Anda.",
@@ -107,7 +107,7 @@ export const translations = {
             label: "HOW TO USE",
             title: "2 Easy Steps to Start",
             desc1: "Just once at the start,\nfit all your cosmetics in one photo\nThat's it, nothing else to do!",
-            desc2: "Every morning,\nshare your mood and outfit,\nget your custom recipe instantly! 💡",
+            desc2: "Every morning,\nshare your mood and outfit,\nget your custom recipe instantly💡",
         },
         cta: {
             title: "Revolution in\nyour makeup.",
