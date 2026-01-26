@@ -29,7 +29,7 @@ export const translations = {
         },
         cta: {
             title: "あなたのメイクに、\n革命を。",
-            subtitle: "ログインのみですぐにご利用いただけます。",
+            subtitle: "ログインのみで\nすぐにご利用いただけます。",
             button: "試してみる",
         },
         footer: {
