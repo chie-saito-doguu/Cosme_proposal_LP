@@ -23,7 +23,7 @@ export const translations = {
         },
         benefits: {
             label: "FEATURES",
-            title: "Cosme AIのここが新しい！",
+            title: "ここが新しい！",
             item1_title: "手持ちコスメで\nメイク提案",
             item1_desc: "あなたの外見に合わせて\nアフターイメージも作ります",
             item2_title: "好みを自動診断",
@@ -75,7 +75,7 @@ export const translations = {
         },
         benefits: {
             label: "FEATURES",
-            title: "Ini yang Baru dari Cosme AI!",
+            title: "Ini yang Baru!",
             item1_title: "Saran makeup\nkosmetik sendiri",
             item1_desc: "Sarankan makeup terbaik\nkosmetik sendiri,\njuga buat after-image",
             item2_title: "Diagnosa preferensi otomatis",
@@ -127,7 +127,7 @@ export const translations = {
         },
         benefits: {
             label: "FEATURES",
-            title: "What's New About Cosme AI!",
+            title: "What's New!",
             item1_title: "Makeup suggestions\nwith your cosmetics",
             item1_desc: "Suggests makeup\nwith your cosmetics,\nalso creates after-image",
             item2_title: "Automatic\npreference diagnosis",
