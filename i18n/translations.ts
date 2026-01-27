@@ -28,7 +28,7 @@ export const translations = {
             item1_desc: "あなたの外見に合わせて\nアフターイメージも作ります",
             item2_title: "好みを自動診断",
             item2_desc: "あなたの好みをAIが\n自動で診断します",
-            item3_title: "買い足し相談ができる",
+            item3_title: "買い足し相談",
             item3_desc: "あなたの好みを考慮して\nアドバイスします",
             item4_title: "必要なものだけ\nおすすめ",
             item4_desc: "あなたのポーチに+αの\n提案をします",
