@@ -47,22 +47,22 @@ const Benefits: React.FC = () => {
     {
       title: t.benefits.item1_title,
       desc: t.benefits.item1_desc,
-      icon: '/benefits-icons/icon1.png',
+      icon: '/icon1.png',
     },
     {
       title: t.benefits.item2_title,
       desc: t.benefits.item2_desc,
-      icon: '/benefits-icons/icon2.png',
+      icon: '/icon2.png',
     },
     {
       title: t.benefits.item3_title,
       desc: t.benefits.item3_desc,
-      icon: '/benefits-icons/icon3.png',
+      icon: '/icon3.png',
     },
     {
       title: t.benefits.item4_title,
       desc: t.benefits.item4_desc,
-      icon: '/benefits-icons/icon4.png',
+      icon: '/icon4.png',
     },
   ];
 
