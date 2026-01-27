@@ -88,18 +88,18 @@ const HowTo: React.FC = () => {
         </div>
 
         {/* ステップ */}
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-6 max-w-4xl mx-auto items-center">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-6 max-w-5xl mx-auto items-center">
           {/* Step 1 */}
           <div className="bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-md transition-shadow w-[90%] mx-auto">
-            <div className="p-5 md:p-6">
-              <div className="flex gap-4 items-start">
+            <div className="p-5 md:p-8">
+              <div className="flex gap-4 md:gap-6 items-start">
                 <div className="flex-shrink-0">
-                  <div className="w-12 h-12 bg-primary rounded-xl flex items-center justify-center">
-                    <span className="text-white font-black text-xl">1</span>
+                  <div className="w-12 h-12 md:w-14 md:h-14 bg-primary rounded-xl flex items-center justify-center">
+                    <span className="text-white font-black text-xl md:text-2xl">1</span>
                   </div>
                 </div>
                 <div className="flex-1">
-                  <p className="text-gray-800 font-bold text-sm md:text-base leading-relaxed">
+                  <p className="text-gray-800 font-bold text-sm md:text-xl leading-relaxed">
                     {t.howto.desc1.split('\n').map((line, i) => (
                       <React.Fragment key={i}>
                         {line}
@@ -110,8 +110,8 @@ const HowTo: React.FC = () => {
                 </div>
               </div>
             </div>
-            <div className="px-5 pb-5 md:px-6 md:pb-6 flex justify-center">
-              <div className="relative w-[80%]">
+            <div className="px-5 pb-5 md:px-6 md:pb-8 flex justify-center">
+              <div className="relative w-[80%] md:w-[85%]">
                 <ImageSlideshow images={step1Images} alt="ステップ1" />
               </div>
             </div>
@@ -119,15 +119,15 @@ const HowTo: React.FC = () => {
 
           {/* Step 2 */}
           <div className="bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-md transition-shadow w-[90%] mx-auto">
-            <div className="p-5 md:p-6">
-              <div className="flex gap-4 items-start">
+            <div className="p-5 md:p-8">
+              <div className="flex gap-4 md:gap-6 items-start">
                 <div className="flex-shrink-0">
-                  <div className="w-12 h-12 bg-primary rounded-xl flex items-center justify-center">
-                    <span className="text-white font-black text-xl">2</span>
+                  <div className="w-12 h-12 md:w-14 md:h-14 bg-primary rounded-xl flex items-center justify-center">
+                    <span className="text-white font-black text-xl md:text-2xl">2</span>
                   </div>
                 </div>
                 <div className="flex-1">
-                  <p className="text-gray-800 font-bold text-sm md:text-base leading-relaxed">
+                  <p className="text-gray-800 font-bold text-sm md:text-xl leading-relaxed">
                     {t.howto.desc2.split('\n').map((line, i) => (
                       <React.Fragment key={i}>
                         {line}
@@ -138,8 +138,8 @@ const HowTo: React.FC = () => {
                 </div>
               </div>
             </div>
-            <div className="px-5 pb-5 md:px-6 md:pb-6 flex justify-center">
-              <div className="relative w-[80%]">
+            <div className="px-5 pb-5 md:px-6 md:pb-8 flex justify-center">
+              <div className="relative w-[80%] md:w-[85%]">
                 <ImageSlideshow images={step2Images} alt="ステップ2" />
               </div>
             </div>

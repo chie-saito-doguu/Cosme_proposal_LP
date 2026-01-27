@@ -49,7 +49,7 @@ const Hero: React.FC = () => {
         )}
 
         {/* Visual Content */}
-        <div className="relative w-full max-w-4xl mx-auto">
+        <div className="relative w-full max-w-6xl mx-auto">
           {/* Shadow/Glow behind image */}
           <div className="absolute inset-0 bg-black/20 blur-3xl transform translate-y-10 rounded-full"></div>
 
@@ -73,13 +73,13 @@ const Hero: React.FC = () => {
               </div>
 
               {/* Content */}
-              <div className="w-full md:w-1/2 p-8 md:p-12 flex flex-col justify-center text-left bg-white text-text-main">
+              <div className="w-full md:w-1/2 p-8 md:p-14 flex flex-col justify-center text-left bg-white text-text-main">
                 <div className="mb-2 md:mb-4">
                   {/* 上の赤いライン */}
                   <span className="inline-block w-10 h-2 bg-primary rounded-full mb-3 md:mb-6"></span>
 
                   {/* タイトル（スマホだけ少し小さく） */}
-                  <h3 className="text-2xl sm:text-3xl md:text-4xl font-black leading-snug md:leading-tight mb-3 md:mb-4 text-primary">
+                  <h3 className="text-2xl sm:text-3xl md:text-[2.5rem] font-black leading-snug md:leading-tight mb-3 md:mb-4 text-primary">
                     {t.hero.subtitle.split('\n').map((line, i) => (
                       <React.Fragment key={i}>
                         {line}
@@ -90,7 +90,7 @@ const Hero: React.FC = () => {
 
                 </div>
                 <div className="space-y-4 mb-8">
-                  <p className="text-text-main font-black text-base md:text-xl leading-relaxed">
+                  <p className="text-text-main font-black text-base md:text-2xl leading-relaxed">
                     {t.hero.description.split('\n').map((line, i) => (
                       <React.Fragment key={i}>
                         {line}
@@ -100,15 +100,15 @@ const Hero: React.FC = () => {
                   </p>
                 </div>
 
-                <div className="-mt-2 p-3 bg-bg-soft rounded-xl border border-primary-light/20 flex items-center gap-3">
-                  <div className="w-12 h-12 bg-primary rounded-full flex items-center justify-center text-white shrink-0">
-                    <Sparkles className="w-6 h-6" />
+                <div className="-mt-2 p-3 md:p-4 bg-bg-soft rounded-xl border border-primary-light/20 flex items-center gap-3">
+                  <div className="w-12 h-12 md:w-14 md:h-14 bg-primary rounded-full flex items-center justify-center text-white shrink-0">
+                    <Sparkles className="w-6 h-6 md:w-7 md:h-7" />
                   </div>
                   <div>
                     {(t.hero.advisor_label || true) && (
-                      <p className="text-xs text-primary font-black mb-0.5 hidden md:block">AI ADVISOR</p>
+                      <p className="text-xs md:text-sm text-primary font-black mb-0.5 hidden md:block">AI ADVISOR</p>
                     )}
-                    <p className="text-base font-black text-text-main">
+                    <p className="text-base md:text-lg font-black text-text-main">
                       {t.hero.advisor_text.split('\n').map((line, i) => (
                         <React.Fragment key={i}>
                           {line}
