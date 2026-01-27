@@ -4,7 +4,7 @@ import { ChevronLeft, ChevronRight } from 'lucide-react';
 import { getOptimizedImage } from '../utils/imageUtils';
 
 const Benefits: React.FC = () => {
-  const { t } = useLanguage();
+  const { t, language } = useLanguage();
   const scrollContainerRef = useRef<HTMLDivElement>(null);
   const [canScrollLeft, setCanScrollLeft] = useState(false);
   const [canScrollRight, setCanScrollRight] = useState(true);
@@ -80,11 +80,12 @@ const Benefits: React.FC = () => {
         </div>
 
         {/* デスクトップ版: 横並び */}
-        <div className="hidden md:grid md:grid-cols-4 gap-6 max-w-[85rem] mx-auto">
+        <div className="hidden md:grid gap-6 max-w-[85rem] mx-auto justify-center" style={language === 'ja' ? { gridTemplateColumns: 'repeat(4, 1fr)' } : { gridTemplateColumns: 'repeat(2, auto)' }}>
           {benefits.map((benefit, index) => (
             <div
               key={index}
               className="group relative bg-primary/90 rounded-2xl p-8 md:p-10 hover:shadow-xl transition-all duration-300 hover:scale-105 flex flex-col overflow-hidden border-2 border-primary"
+              style={language !== 'ja' ? { width: '408px' } : {}}
             >
               {/* 右上の薄ピンクの扇形 */}
               <div className="absolute top-0 right-0 w-[104px] h-[104px] overflow-hidden">

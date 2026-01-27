@@ -78,7 +78,7 @@ export const translations = {
             title: "Ini yang Baru!",
             item1_title: "Saran makeup\nkosmetik sendiri",
             item1_desc: "Sarankan makeup terbaik\nkosmetik sendiri,\njuga buat after-image",
-            item2_title: "Diagnosa preferensi otomatis",
+            item2_title: "Diagnosa preferensi\notomatis",
             item2_desc: "AI mendiagnosa preferensi\nAnda secara otomatis",
             item3_title: "Konsultasi pembelian",
             item3_desc: "Berikan saran sesuai\npreferensi Anda",
