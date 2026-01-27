@@ -132,7 +132,7 @@ export const translations = {
             item1_desc: "Suggests makeup\nwith your cosmetics,\nalso creates after-image",
             item2_title: "Automatic\npreference diagnosis",
             item2_desc: "AI automatically diagnoses\nyour preferences",
-            item3_title: "Purchase consultation\navailable",
+            item3_title: "Purchase advice",
             item3_desc: "Give advice based on\nyour preferences",
             item4_title: "Only recommend\nwhat you need",
             item4_desc: "Suggest additions to\nyour makeup pouch",
