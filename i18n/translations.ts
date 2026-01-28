@@ -51,7 +51,7 @@ export const translations = {
             announcement_label: "お知らせ",
             announcement_date: "",
             announcement: "",
-            instagram_title: "Instagramで\nリアルなBefore/After配信中！",
+            instagram_title: "リアルなBefore/After配信中！",
         },
     },
     id: {
