@@ -26,7 +26,7 @@ export const translations = {
             title: "ここが新しい！",
             item1_title: "手持ちコスメで\nメイク提案",
             item1_desc: "あなたの外見に合わせて\nアフターイメージも作ります",
-            item2_title: "コスメの好み診断",
+            item2_title: "好み診断",
             item2_desc: "あなたの好みをAIが\n自動で診断します",
             item3_title: "買い足し相談",
             item3_desc: "あなたの好みを考慮して\nアドバイスします",
