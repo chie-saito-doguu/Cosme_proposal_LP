@@ -51,6 +51,7 @@ export const translations = {
             announcement_label: "お知らせ",
             announcement_date: "",
             announcement: "",
+            instagram_title: "InstagramでリアルなBefore/After配信中！",
         },
     },
     id: {
@@ -103,6 +104,7 @@ export const translations = {
             announcement_label: "Pengumuman",
             announcement_date: "",
             announcement: "",
+            instagram_title: "Before/After nyata di Instagram!",
         },
     },
     en: {
@@ -155,6 +157,7 @@ export const translations = {
             announcement_label: "Announcement",
             announcement_date: "",
             announcement: "",
+            instagram_title: "Real Before/After on Instagram!",
         },
     },
 };

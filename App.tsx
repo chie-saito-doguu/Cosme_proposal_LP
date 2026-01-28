@@ -1,6 +1,6 @@
 import React from 'react';
 import { Routes, Route, Link } from 'react-router-dom';
-import { Sparkles } from 'lucide-react';
+import { Sparkles, Instagram } from 'lucide-react';
 import LanguageSelector from './components/LanguageSelector';
 import LanguageModal from './components/LanguageModal';
 import ScrollTracking from './components/ScrollTracking';
@@ -9,6 +9,7 @@ import HomePage from './pages/HomePage';
 import Terms from './pages/terms';
 import Privacy from './pages/privacy';
 import Tokushoho from './pages/tokushoho';
+import { getOptimizedImage } from './utils/imageUtils';
 
 const App: React.FC = () => {
   const { t, hasSelectedLanguage } = useLanguage();
@@ -60,14 +61,28 @@ const App: React.FC = () => {
                   (window as any).fbq('track', 'Lead');
                 }
               }}
-              className="bg-white text-primary hover:bg-gray-100
-                        px-5 py-2.5 rounded-full
+              className="group relative text-primary rounded-full
+                        px-5 py-2.5
                         text-xs sm:text-sm md:text-base
-                        font-black transition-colors shadow-md
-                        flex items-center gap-2 whitespace-nowrap"
+                        font-black transition-all transform hover:-translate-y-0.5 active:scale-95
+                        flex items-center gap-2 whitespace-nowrap overflow-hidden border-2 border-white/60"
+              style={{
+                background: 'linear-gradient(to bottom, #ffffff 0%, #ffeef2 30%, #ffc2d4 100%)',
+                boxShadow: '0 4px 12px rgba(0, 0, 0, 0.12), 0 2px 6px rgba(0, 0, 0, 0.08), inset 0 2px 4px rgba(255, 255, 255, 1), inset 0 -2px 4px rgba(180, 140, 160, 0.5)'
+              }}
             >
-              <Sparkles className="w-4 h-4 fill-primary" />
-              {t.header.start}
+              {/* 上部の光沢（丸みに沿って） */}
+              <div className="absolute top-0 left-1 right-1 h-[60%] rounded-t-full pointer-events-none" style={{
+                background: 'linear-gradient(to bottom, rgba(255,255,255,0.6) 0%, rgba(255,255,255,0) 100%)'
+              }}></div>
+
+              {/* 下部の影（丸みに沿って） */}
+              <div className="absolute bottom-0 left-2 right-2 h-[30%] rounded-b-full pointer-events-none" style={{
+                background: 'linear-gradient(to top, rgba(255, 200, 220, 0.3) 0%, rgba(255, 200, 220, 0.1) 60%, transparent 100%)'
+              }}></div>
+
+              <Sparkles className="w-4 h-4 fill-primary relative z-10" />
+              <span className="relative z-10">{t.header.start}</span>
             </a>
           </div>
 
@@ -85,6 +100,109 @@ const App: React.FC = () => {
 
       <footer className="bg-gray-900 text-white py-16 border-t border-gray-800">
         <div className="container mx-auto px-6 text-center">
+
+          {/* Instagramセクション */}
+          <div className="mb-12">
+            {/* 吹き出しデザイン */}
+            <div className="relative inline-block mb-6">
+              <div className="bg-gradient-to-r from-purple-500 via-pink-500 to-orange-500 text-white px-6 py-3 rounded-full font-black text-sm md:text-base shadow-lg inline-flex items-center gap-2">
+                <Instagram className="w-5 h-5" />
+                <span>{t.footer.instagram_title}</span>
+              </div>
+              {/* 吹き出しの三角形 */}
+              <div className="absolute left-20 transform -translate-x-1/2 -bottom-2 w-0 h-0 border-l-8 border-r-8 border-t-8 border-l-transparent border-r-transparent border-t-purple-500"></div>
+            </div>
+
+            {/* Instagram投稿カード */}
+            <div className="flex justify-center max-w-4xl mx-auto">
+              {/* 投稿1（一番右） */}
+              <a
+                href="https://www.instagram.com/p/DTqS1W7EmZy/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="group relative w-40 h-56 md:w-52 md:h-72 overflow-hidden shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105 border border-white"
+                onClick={() => {
+                  if (typeof window !== 'undefined' && (window as any).gtag) {
+                    (window as any).gtag('event', 'click', {
+                      'link_type': 'instagram_post',
+                      'post_id': 'DTqS1W7EmZy',
+                      'position': 1
+                    });
+                  }
+                }}
+              >
+                <img
+                  src={getOptimizedImage('/instagram-post-1.png')}
+                  alt="Instagram投稿1"
+                  className="w-full h-full object-cover"
+                  onError={(e) => {
+                    (e.target as HTMLImageElement).src = 'data:image/svg+xml,%3Csvg xmlns="http://www.w3.org/2000/svg" width="100" height="100"%3E%3Crect fill="%23E1306C" width="100" height="100"/%3E%3Ctext x="50%25" y="50%25" fill="white" text-anchor="middle" dy=".3em"%3EInstagram%3C/text%3E%3C/svg%3E';
+                  }}
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end justify-center pb-2">
+                  <Instagram className="w-6 h-6 text-white" />
+                </div>
+              </a>
+
+              {/* 投稿2（真ん中） */}
+              <a
+                href="https://www.instagram.com/p/DTuDHmtEiIg/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="group relative w-40 h-56 md:w-52 md:h-72 overflow-hidden shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105 border border-white"
+                onClick={() => {
+                  if (typeof window !== 'undefined' && (window as any).gtag) {
+                    (window as any).gtag('event', 'click', {
+                      'link_type': 'instagram_post',
+                      'post_id': 'DTuDHmtEiIg',
+                      'position': 2
+                    });
+                  }
+                }}
+              >
+                <img
+                  src={getOptimizedImage('/instagram-post-2.jpeg')}
+                  alt="Instagram投稿2"
+                  className="w-full h-full object-cover"
+                  onError={(e) => {
+                    (e.target as HTMLImageElement).src = 'data:image/svg+xml,%3Csvg xmlns="http://www.w3.org/2000/svg" width="100" height="100"%3E%3Crect fill="%23E1306C" width="100" height="100"/%3E%3Ctext x="50%25" y="50%25" fill="white" text-anchor="middle" dy=".3em"%3EInstagram%3C/text%3E%3C/svg%3E';
+                  }}
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end justify-center pb-2">
+                  <Instagram className="w-6 h-6 text-white" />
+                </div>
+              </a>
+
+              {/* 投稿3（一番左） - デスクトップのみ表示 */}
+              <a
+                href="https://www.instagram.com/p/DTxY-dSEqvM/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="hidden md:block group relative w-40 h-56 md:w-52 md:h-72 overflow-hidden shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105 border border-white"
+                onClick={() => {
+                  if (typeof window !== 'undefined' && (window as any).gtag) {
+                    (window as any).gtag('event', 'click', {
+                      'link_type': 'instagram_post',
+                      'post_id': 'DTxY-dSEqvM',
+                      'position': 3
+                    });
+                  }
+                }}
+              >
+                <img
+                  src={getOptimizedImage('/instagram-post-3.jpeg')}
+                  alt="Instagram投稿3"
+                  className="w-full h-full object-cover"
+                  onError={(e) => {
+                    (e.target as HTMLImageElement).src = 'data:image/svg+xml,%3Csvg xmlns="http://www.w3.org/2000/svg" width="100" height="100"%3E%3Crect fill="%23E1306C" width="100" height="100"/%3E%3Ctext x="50%25" y="50%25" fill="white" text-anchor="middle" dy=".3em"%3EInstagram%3C/text%3E%3C/svg%3E';
+                  }}
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end justify-center pb-2">
+                  <Instagram className="w-6 h-6 text-white" />
+                </div>
+              </a>
+            </div>
+          </div>
 
           {/* お知らせ欄 */}
           {t.footer.announcement && (

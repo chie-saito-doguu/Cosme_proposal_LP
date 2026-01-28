@@ -52,8 +52,22 @@ const CTA: React.FC = () => {
                 (window as any).fbq('track', 'Lead');
               }
             }}
-            className="group relative min-w-[240px] md:min-w-[300px] py-4 px-8 md:py-6 md:px-12 bg-white text-primary rounded-full font-black text-2xl md:text-4xl shadow-2xl hover:shadow-white/30 transition-all transform hover:-translate-y-1 active:scale-95 flex items-center justify-center overflow-visible cursor-pointer"
+            className="group relative min-w-[240px] md:min-w-[300px] py-4 px-8 md:py-6 md:px-12 text-primary rounded-full font-black text-2xl md:text-4xl transition-all transform hover:-translate-y-1 active:scale-95 flex items-center justify-center overflow-visible cursor-pointer border-2 border-white/60"
+            style={{
+              background: 'linear-gradient(to bottom, #ffffff 0%, #ffeef2 30%, #ffc2d4 100%)',
+              boxShadow: '0 8px 20px rgba(0, 0, 0, 0.15), 0 4px 8px rgba(0, 0, 0, 0.1), inset 0 4px 8px rgba(255, 255, 255, 1), inset 0 -4px 8px rgba(180, 140, 160, 0.5)'
+            }}
           >
+            {/* 上部の光沢（丸みに沿って） */}
+            <div className="absolute top-1 left-1 right-1 h-[65%] rounded-t-full pointer-events-none" style={{
+              background: 'linear-gradient(to bottom, rgba(255,255,255,0.7) 0%, rgba(255,255,255,0) 100%)'
+            }}></div>
+
+            {/* 下部の影（丸みに沿って） */}
+            <div className="absolute bottom-1 left-3 right-3 h-[35%] rounded-b-full pointer-events-none" style={{
+              background: 'linear-gradient(to top, rgba(255, 200, 220, 0.3) 0%, rgba(255, 200, 220, 0.1) 60%, transparent 100%)'
+            }}></div>
+
             {/* --- Hearts floating (ポワポワ白ハート) --- */}
             <div className="absolute inset-0 pointer-events-none">
               <Heart
