@@ -5,7 +5,7 @@ const Problem: React.FC = () => {
   const { t } = useLanguage();
 
   return (
-    <section className="py-24 bg-white relative overflow-hidden font-black">
+    <section className="pt-12 pb-12 md:py-24 bg-white relative overflow-hidden font-black">
       {/* Decorative Background Text - Moved up to avoid overlap */}
       <div className="absolute top-0 left-0 right-0 flex justify-center pointer-events-none opacity-[0.03]">
         <span className="text-[25vw] font-black leading-none text-black select-none translate-y-[-30%]">
@@ -29,7 +29,7 @@ const Problem: React.FC = () => {
           </h3>
         </div>
 
-        {/* Grid Layout - Centered and Compact */}
+        {/* Grid Layout - スマホ版は縦並び、デスクトップ版は横並び */}
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-6xl mx-auto items-start">
 
           {/* Item 1 */}
