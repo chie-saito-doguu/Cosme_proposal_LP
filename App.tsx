@@ -24,12 +24,12 @@ const App: React.FC = () => {
 
       <header className="fixed top-0 left-0 right-0 z-50 bg-primary border-b border-primary-dark/10">
         <div className="
-          container mx-auto px-6 h-16 md:h-20 
-          flex md:flex justify-between items-center
+          container mx-auto px-6 h-16 md:h-20
+          flex justify-between items-center
         ">
 
-          {/* 左：ロゴ（スマホは左端、PCも左端） */}
-          <div className="flex-1">
+          {/* 左：ロゴ */}
+          <div className="flex-none">
             <Link
               to="/"
               className="text-xl sm:text-2xl md:text-3xl font-black text-white tracking-tight"
@@ -38,19 +38,16 @@ const App: React.FC = () => {
             </Link>
           </div>
 
-          {/* 中央：言語セレクター（🔥スマホのみ表示） */}
-          <div className="flex-1 flex justify-center md:hidden">
+          {/* 右：言語セレクター（スマホ版） */}
+          <div className="md:hidden ml-auto">
             <LanguageSelector />
           </div>
 
-          {/* 右：はじめるボタン＋PC用LanguageSelector */}
-          <div className="flex-1 flex justify-end items-center gap-4">
+          {/* 右：PC用LanguageSelector + ログインボタン */}
+          <div className="hidden md:flex items-center gap-4">
+            <LanguageSelector />
 
-            {/* 🔥 PCではここに言語セレクターを表示 */}
-            <div className="hidden md:block">
-              <LanguageSelector />
-            </div>
-
+            {/* デスクトップ版：フラットな白背景＋ピンク文字のボタン */}
             <a
               href="https://cosme-proposal.com/"
               target="_blank"
@@ -61,28 +58,13 @@ const App: React.FC = () => {
                   (window as any).fbq('track', 'Lead');
                 }
               }}
-              className="group relative text-primary rounded-full
-                        px-5 py-2.5
-                        text-xs sm:text-sm md:text-base
+              className="inline-flex bg-white text-primary rounded-full
+                        px-6 py-2.5
+                        text-base
                         font-black transition-all transform hover:-translate-y-0.5 active:scale-95
-                        flex items-center gap-2 whitespace-nowrap overflow-hidden border-2 border-white/60"
-              style={{
-                background: 'linear-gradient(to bottom, #ffffff 0%, #ffeef2 30%, #ffc2d4 100%)',
-                boxShadow: '0 4px 12px rgba(0, 0, 0, 0.12), 0 2px 6px rgba(0, 0, 0, 0.08), inset 0 2px 4px rgba(255, 255, 255, 1), inset 0 -2px 4px rgba(180, 140, 160, 0.5)'
-              }}
+                        items-center whitespace-nowrap border-2 border-primary"
             >
-              {/* 上部の光沢（丸みに沿って） */}
-              <div className="absolute top-0 left-1 right-1 h-[60%] rounded-t-full pointer-events-none" style={{
-                background: 'linear-gradient(to bottom, rgba(255,255,255,0.6) 0%, rgba(255,255,255,0) 100%)'
-              }}></div>
-
-              {/* 下部の影（丸みに沿って） */}
-              <div className="absolute bottom-0 left-2 right-2 h-[30%] rounded-b-full pointer-events-none" style={{
-                background: 'linear-gradient(to top, rgba(255, 200, 220, 0.3) 0%, rgba(255, 200, 220, 0.1) 60%, transparent 100%)'
-              }}></div>
-
-              <Sparkles className="w-4 h-4 fill-primary relative z-10" />
-              <span className="relative z-10">{t.header.start}</span>
+              <span>{t.header.login}</span>
             </a>
           </div>
 

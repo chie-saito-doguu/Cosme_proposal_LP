@@ -3,12 +3,13 @@ export type Language = 'ja' | 'id' | 'en';
 export const translations = {
     ja: {
         header: {
-            start: "試してみる",
+            start: "無料でお試し",
+            login: "ログイン",
         },
         hero: {
             badge: "",
             title: "",
-            subtitle: "あなたのコスメで\n毎日メイクを提案",
+            subtitle: "あなたのコスメで\n旬顔メイクを提案",
             description: "気分や着る服に合わせてくれる\nあなただけのメイクアドバイザー\n毎日のメイク時間が楽しくなる。",
             match: "MATCH 98%",
             advisor_label: "",
@@ -41,7 +42,7 @@ export const translations = {
         },
         cta: {
             title: "あなたのメイクに、\n革命を。",
-            button: "試してみる",
+            button: "無料でお試し",
         },
         footer: {
             privacy: "プライバシーポリシー",
@@ -61,7 +62,7 @@ export const translations = {
         hero: {
             badge: "",
             title: "",
-            subtitle: "Saran makeup harian\ndengan kosmetikmu",
+            subtitle: "Ide Makeup Harian\nPakai Kosmetikmu",
             description: "Penasihat makeup pribadi:\nsesuaikan mood & outfit.\nMakeup harian jadi seru!",
             match: "COCOK 98%",
             advisor_label: "",
@@ -94,7 +95,7 @@ export const translations = {
         },
         cta: {
             title: "Revolusi pada\nMakeup Anda.",
-            button: "Coba",
+            button: "Coba Gratis",
         },
         footer: {
             privacy: "Kebijakan Privasi",
@@ -114,7 +115,7 @@ export const translations = {
         hero: {
             badge: "",
             title: "",
-            subtitle: "Daily makeup suggestions\nwith your cosmetics",
+            subtitle: "Daily Makeup Guide\nwith your cosmetics",
             description: "Your personal makeup advisor that adapts to your mood and outfit.\nLove your daily makeup routine!",
             match: "MATCH 98%",
             advisor_label: "",
@@ -147,7 +148,7 @@ export const translations = {
         },
         cta: {
             title: "Revolution in\nyour makeup.",
-            button: "Try it",
+            button: "Try for Free",
         },
         footer: {
             privacy: "Privacy Policy",
