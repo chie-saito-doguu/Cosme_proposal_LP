@@ -99,7 +99,10 @@ const Hero: React.FC = () => {
                     }`}
                   />
                 ))}
-                <div className="absolute top-4 left-4 bg-white text-primary px-4 py-2 rounded-full text-sm font-black shadow-sm">
+                <div className="absolute top-4 left-4 text-white px-4 py-2 rounded-full text-sm md:text-lg md:px-6 font-black" style={{
+                  background: 'linear-gradient(135deg, #db2777 0%, #be185d 50%, #9d174d 100%)',
+                  boxShadow: '0 4px 12px rgba(190, 24, 93, 0.5), 0 2px 4px rgba(0, 0, 0, 0.15)'
+                }}>
                   {t.hero.match}
                 </div>
               </div>
