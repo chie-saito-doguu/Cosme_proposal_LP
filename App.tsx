@@ -10,7 +10,6 @@ import Terms from './pages/terms';
 import Privacy from './pages/privacy';
 import Tokushoho from './pages/tokushoho';
 import { getOptimizedImage } from './utils/imageUtils';
-
 const App: React.FC = () => {
   const { t, hasSelectedLanguage } = useLanguage();
 
@@ -83,8 +82,8 @@ const App: React.FC = () => {
       <footer className="bg-gray-900 text-white py-16 border-t border-gray-800">
         <div className="container mx-auto px-6 text-center">
 
-          {/* Instagramセクション */}
-          <div className="mb-12">
+          {/* Instagramセクション（デスクトップ版のみ） */}
+          <div className="hidden md:block mb-12">
             {/* 吹き出しデザイン */}
             <div className="relative inline-block mb-6">
               <div className="bg-gradient-to-r from-purple-500 via-pink-500 to-orange-500 text-white px-6 py-3 rounded-full font-black text-sm md:text-base shadow-lg inline-flex items-center gap-2">
@@ -155,12 +154,12 @@ const App: React.FC = () => {
                 </div>
               </a>
 
-              {/* 投稿3（一番左） - デスクトップのみ表示 */}
+              {/* 投稿3（一番左） */}
               <a
                 href="https://www.instagram.com/p/DTxY-dSEqvM/"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="hidden md:block group relative w-40 h-56 md:w-52 md:h-72 overflow-hidden shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105 border border-white"
+                className="group relative w-40 h-56 md:w-52 md:h-72 overflow-hidden shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105 border border-white"
                 onClick={() => {
                   if (typeof window !== 'undefined' && (window as any).gtag) {
                     (window as any).gtag('event', 'click', {

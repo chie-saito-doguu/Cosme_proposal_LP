@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react';
+import { Instagram } from 'lucide-react';
 import { useLanguage } from '../LanguageContext';
 import { getOptimizedImage } from '../utils/imageUtils';
 
@@ -143,6 +144,82 @@ const HowTo: React.FC = () => {
                 <ImageSlideshow images={step2Images} alt="ステップ2" />
               </div>
             </div>
+          </div>
+        </div>
+
+        {/* Instagramセクション（スマホ版のみ） */}
+        <div className="mt-12 md:mt-16 md:hidden">
+          {/* 吹き出しデザイン */}
+          <div className="flex justify-center mb-6">
+            <div className="relative">
+              <div className="bg-gradient-to-r from-purple-500 via-pink-500 to-orange-500 text-white px-6 py-3 rounded-full font-black text-sm md:text-base shadow-lg inline-flex items-center gap-2">
+                <Instagram className="w-5 h-5" />
+                <span>{t.footer.instagram_title}</span>
+              </div>
+              {/* 吹き出しの三角形 */}
+              <div className="absolute left-20 transform -translate-x-1/2 -bottom-2 w-0 h-0 border-l-8 border-r-8 border-t-8 border-l-transparent border-r-transparent border-t-purple-500"></div>
+            </div>
+          </div>
+
+          {/* Instagram投稿カード */}
+          <div className="flex justify-center max-w-4xl mx-auto">
+            {/* 投稿1 */}
+            <a
+              href="https://www.instagram.com/p/DTqS1W7EmZy/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="group relative w-32 h-44 md:w-40 md:h-56 overflow-hidden shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105 border border-white"
+              onClick={() => {
+                if (typeof window !== 'undefined' && (window as any).gtag) {
+                  (window as any).gtag('event', 'click', {
+                    'link_type': 'instagram_post',
+                    'post_id': 'DTqS1W7EmZy',
+                    'position': 1
+                  });
+                }
+              }}
+            >
+              <img
+                src={getOptimizedImage('/instagram-post-1.png')}
+                alt="Instagram投稿1"
+                className="w-full h-full object-cover"
+                onError={(e) => {
+                  (e.target as HTMLImageElement).src = 'data:image/svg+xml,%3Csvg xmlns="http://www.w3.org/2000/svg" width="100" height="100"%3E%3Crect fill="%23E1306C" width="100" height="100"/%3E%3Ctext x="50%25" y="50%25" fill="white" text-anchor="middle" dy=".3em"%3EInstagram%3C/text%3E%3C/svg%3E';
+                }}
+              />
+              <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end justify-center pb-2">
+                <Instagram className="w-6 h-6 text-white" />
+              </div>
+            </a>
+
+            {/* 投稿2 */}
+            <a
+              href="https://www.instagram.com/p/DTuDHmtEiIg/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="group relative w-32 h-44 md:w-40 md:h-56 overflow-hidden shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105 border border-white"
+              onClick={() => {
+                if (typeof window !== 'undefined' && (window as any).gtag) {
+                  (window as any).gtag('event', 'click', {
+                    'link_type': 'instagram_post',
+                    'post_id': 'DTuDHmtEiIg',
+                    'position': 2
+                  });
+                }
+              }}
+            >
+              <img
+                src={getOptimizedImage('/instagram-post-2.jpeg')}
+                alt="Instagram投稿2"
+                className="w-full h-full object-cover"
+                onError={(e) => {
+                  (e.target as HTMLImageElement).src = 'data:image/svg+xml,%3Csvg xmlns="http://www.w3.org/2000/svg" width="100" height="100"%3E%3Crect fill="%23E1306C" width="100" height="100"/%3E%3Ctext x="50%25" y="50%25" fill="white" text-anchor="middle" dy=".3em"%3EInstagram%3C/text%3E%3C/svg%3E';
+                }}
+              />
+              <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end justify-center pb-2">
+                <Instagram className="w-6 h-6 text-white" />
+              </div>
+            </a>
           </div>
         </div>
       </div>
